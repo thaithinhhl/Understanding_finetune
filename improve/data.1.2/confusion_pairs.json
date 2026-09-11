@@ -1,0 +1,372 @@
+[
+  {
+    "ground_truth": "Đầu tư",
+    "model_chose": "Xây dựng - đô thị",
+    "count": 5
+  },
+  {
+    "ground_truth": "Đầu tư",
+    "model_chose": "Dịch vụ pháp lý",
+    "count": 3
+  },
+  {
+    "ground_truth": "Bảo hiểm",
+    "model_chose": "Lao động - tiền lương",
+    "count": 3
+  },
+  {
+    "ground_truth": "Quyền dân sự",
+    "model_chose": "Bộ máy hành chính",
+    "count": 2
+  },
+  {
+    "ground_truth": "Quyền dân sự",
+    "model_chose": "Dịch vụ pháp lý",
+    "count": 2
+  },
+  {
+    "ground_truth": "Đầu tư",
+    "model_chose": "Doanh nghiệp",
+    "count": 2
+  },
+  {
+    "ground_truth": "Vi phạm hành chính",
+    "model_chose": "Văn hóa - xã hội",
+    "count": 2
+  },
+  {
+    "ground_truth": "Thương mại",
+    "model_chose": "Lĩnh vực khác",
+    "count": 2
+  },
+  {
+    "ground_truth": "Tiền tệ ngân hàng",
+    "model_chose": "Tài nguyên - môi trường",
+    "count": 2
+  },
+  {
+    "ground_truth": "Thương mại",
+    "model_chose": "Dịch vụ pháp lý",
+    "count": 2
+  },
+  {
+    "ground_truth": "Thủ tục tố tụng",
+    "model_chose": "Dịch vụ pháp lý",
+    "count": 2
+  },
+  {
+    "ground_truth": "Bộ máy hành chính",
+    "model_chose": "Văn hóa - xã hội",
+    "count": 2
+  },
+  {
+    "ground_truth": "Đầu tư",
+    "model_chose": "Thương mại",
+    "count": 2
+  },
+  {
+    "ground_truth": "Lĩnh vực khác",
+    "model_chose": "Kế toán - kiểm toán",
+    "count": 2
+  },
+  {
+    "ground_truth": "Lĩnh vực khác",
+    "model_chose": "Sở hữu trí tuệ",
+    "count": 2
+  },
+  {
+    "ground_truth": "Doanh nghiệp",
+    "model_chose": "Xây dựng - đô thị",
+    "count": 2
+  },
+  {
+    "ground_truth": "Quyền dân sự",
+    "model_chose": "Doanh nghiệp",
+    "count": 2
+  },
+  {
+    "ground_truth": "Đầu tư",
+    "model_chose": "Giao thông vận tải",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thể thao - y tế",
+    "model_chose": "Tiền tệ ngân hàng",
+    "count": 1
+  },
+  {
+    "ground_truth": "Tiền tệ ngân hàng",
+    "model_chose": "Dịch vụ pháp lý",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thương mại",
+    "model_chose": "Xuất nhập khẩu",
+    "count": 1
+  },
+  {
+    "ground_truth": "Vi phạm hành chính",
+    "model_chose": "Giao thông vận tải",
+    "count": 1
+  },
+  {
+    "ground_truth": "Bộ máy hành chính",
+    "model_chose": "Lĩnh vực khác",
+    "count": 1
+  },
+  {
+    "ground_truth": "Tài chính nhà nước",
+    "model_chose": "Đầu tư",
+    "count": 1
+  },
+  {
+    "ground_truth": "Tiền tệ ngân hàng",
+    "model_chose": "Thương mại",
+    "count": 1
+  },
+  {
+    "ground_truth": "Quyền dân sự",
+    "model_chose": "Lao động - tiền lương",
+    "count": 1
+  },
+  {
+    "ground_truth": "Lĩnh vực khác",
+    "model_chose": "Giáo dục",
+    "count": 1
+  },
+  {
+    "ground_truth": "Bảo hiểm",
+    "model_chose": "Lĩnh vực khác",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thủ tục tố tụng",
+    "model_chose": "Trách nhiệm hình sự",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thủ tục tố tụng",
+    "model_chose": "Quyền dân sự",
+    "count": 1
+  },
+  {
+    "ground_truth": "Lĩnh vực khác",
+    "model_chose": "Văn hóa - xã hội",
+    "count": 1
+  },
+  {
+    "ground_truth": "Bảo hiểm",
+    "model_chose": "Bộ máy hành chính",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thủ tục tố tụng",
+    "model_chose": "Bất động sản",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thủ tục tố tụng",
+    "model_chose": "Xuất nhập khẩu",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thể thao - y tế",
+    "model_chose": "Dịch vụ pháp lý",
+    "count": 1
+  },
+  {
+    "ground_truth": "Lĩnh vực khác",
+    "model_chose": "Giao thông vận tải",
+    "count": 1
+  },
+  {
+    "ground_truth": "Lĩnh vực khác",
+    "model_chose": "Quyền dân sự",
+    "count": 1
+  },
+  {
+    "ground_truth": "Văn hóa - xã hội",
+    "model_chose": "Giao thông vận tải",
+    "count": 1
+  },
+  {
+    "ground_truth": "Đầu tư",
+    "model_chose": "Xuất nhập khẩu",
+    "count": 1
+  },
+  {
+    "ground_truth": "Lao động - tiền lương",
+    "model_chose": "Chứng khoán",
+    "count": 1
+  },
+  {
+    "ground_truth": "Doanh nghiệp",
+    "model_chose": "Văn hóa - xã hội",
+    "count": 1
+  },
+  {
+    "ground_truth": "Quyền dân sự",
+    "model_chose": "Thể thao - y tế",
+    "count": 1
+  },
+  {
+    "ground_truth": "Bộ máy hành chính",
+    "model_chose": "Quyền dân sự",
+    "count": 1
+  },
+  {
+    "ground_truth": "Lĩnh vực khác",
+    "model_chose": "Tài nguyên - môi trường",
+    "count": 1
+  },
+  {
+    "ground_truth": "Trách nhiệm hình sự",
+    "model_chose": "Chứng khoán",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thuế - phí - lệ phí",
+    "model_chose": "Bộ máy hành chính",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thể thao - y tế",
+    "model_chose": "Tài chính nhà nước",
+    "count": 1
+  },
+  {
+    "ground_truth": "Kế toán - kiểm toán",
+    "model_chose": "Thủ tục tố tụng",
+    "count": 1
+  },
+  {
+    "ground_truth": "Đầu tư",
+    "model_chose": "Bộ máy hành chính",
+    "count": 1
+  },
+  {
+    "ground_truth": "Lĩnh vực khác",
+    "model_chose": "Doanh nghiệp",
+    "count": 1
+  },
+  {
+    "ground_truth": "Sở hữu trí tuệ",
+    "model_chose": "Đầu tư",
+    "count": 1
+  },
+  {
+    "ground_truth": "Tiền tệ ngân hàng",
+    "model_chose": "Doanh nghiệp",
+    "count": 1
+  },
+  {
+    "ground_truth": "Doanh nghiệp",
+    "model_chose": "Tiền tệ ngân hàng",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thương mại",
+    "model_chose": "Tài chính nhà nước",
+    "count": 1
+  },
+  {
+    "ground_truth": "Quyền dân sự",
+    "model_chose": "Lĩnh vực khác",
+    "count": 1
+  },
+  {
+    "ground_truth": "Sở hữu trí tuệ",
+    "model_chose": "Dịch vụ pháp lý",
+    "count": 1
+  },
+  {
+    "ground_truth": "Xuất nhập khẩu",
+    "model_chose": "Lao động - tiền lương",
+    "count": 1
+  },
+  {
+    "ground_truth": "Tiền tệ ngân hàng",
+    "model_chose": "Lĩnh vực khác",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thương mại",
+    "model_chose": "Tài nguyên - môi trường",
+    "count": 1
+  },
+  {
+    "ground_truth": "Quyền dân sự",
+    "model_chose": "Thủ tục tố tụng",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thủ tục tố tụng",
+    "model_chose": "Văn hóa - xã hội",
+    "count": 1
+  },
+  {
+    "ground_truth": "Bộ máy hành chính",
+    "model_chose": "Xây dựng - đô thị",
+    "count": 1
+  },
+  {
+    "ground_truth": "Dịch vụ pháp lý",
+    "model_chose": "Lĩnh vực khác",
+    "count": 1
+  },
+  {
+    "ground_truth": "Sở hữu trí tuệ",
+    "model_chose": "Tài chính nhà nước",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thể thao - y tế",
+    "model_chose": "Bộ máy hành chính",
+    "count": 1
+  },
+  {
+    "ground_truth": "Bộ máy hành chính",
+    "model_chose": "Dịch vụ pháp lý",
+    "count": 1
+  },
+  {
+    "ground_truth": "Doanh nghiệp",
+    "model_chose": "Bộ máy hành chính",
+    "count": 1
+  },
+  {
+    "ground_truth": "Doanh nghiệp",
+    "model_chose": "Sở hữu trí tuệ",
+    "count": 1
+  },
+  {
+    "ground_truth": "Trách nhiệm hình sự",
+    "model_chose": "Dịch vụ pháp lý",
+    "count": 1
+  },
+  {
+    "ground_truth": "Thể thao - y tế",
+    "model_chose": "Bất động sản",
+    "count": 1
+  },
+  {
+    "ground_truth": "Tài chính nhà nước",
+    "model_chose": "Kế toán - kiểm toán",
+    "count": 1
+  },
+  {
+    "ground_truth": "Trách nhiệm hình sự",
+    "model_chose": "Quyền dân sự",
+    "count": 1
+  },
+  {
+    "ground_truth": "Tiền tệ ngân hàng",
+    "model_chose": "Bộ máy hành chính",
+    "count": 1
+  },
+  {
+    "ground_truth": "Đầu tư",
+    "model_chose": "Lĩnh vực khác",
+    "count": 1
+  }
+]
