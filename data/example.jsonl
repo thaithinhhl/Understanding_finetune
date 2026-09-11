@@ -1,0 +1,3 @@
+{"messages":[{"role":"system","content":"Bạn là trợ lý pháp lý Việt Nam."},{"role":"user","content":"Hợp đồng dân sự có thể được giao kết bằng những hình thức nào?"},{"role":"assistant","content":"Hợp đồng dân sự có thể được giao kết bằng lời nói, bằng văn bản hoặc bằng hành vi cụ thể, trừ trường hợp luật yêu cầu một hình thức nhất định."}]}
+{"instruction":"Tóm tắt nội dung pháp lý sau","input":"Bên thuê phải trả đủ tiền thuê đúng thời hạn đã thỏa thuận.","output":"Bên thuê có nghĩa vụ thanh toán đầy đủ và đúng hạn theo thỏa thuận."}
+

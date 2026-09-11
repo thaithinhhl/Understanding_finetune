@@ -1,0 +1,10 @@
+{"index": 0, "ground_truth": ["A", "D"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1, "ground_truth": ["B", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 2, "ground_truth": ["C", "D"], "prediction": ["B"], "correct": false, "raw_output": "B, G"}
+{"index": 3, "ground_truth": ["A", "B"], "prediction": ["A", "B"], "correct": true, "raw_output": "A, B"}
+{"index": 4, "ground_truth": ["A", "B"], "prediction": ["A", "B"], "correct": true, "raw_output": "A, B"}
+{"index": 5, "ground_truth": ["B", "C"], "prediction": ["B", "C"], "correct": true, "raw_output": "B, C"}
+{"index": 6, "ground_truth": ["A", "B"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 7, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 8, "ground_truth": ["C", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 9, "ground_truth": ["B", "C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}

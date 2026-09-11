@@ -1,0 +1,49 @@
+# Cấu hình này dành cho GPU >=48 GB hoặc multi-GPU. Không khuyến nghị chạy
+# pipeline Transformers/TRL này trên một RTX 4090 24 GB.
+model:
+  name_or_path: models/32b/Qwen2.5-32B-Instruct
+  trust_remote_code: false
+  use_4bit: true
+  bnb_4bit_quant_type: nf4
+  bnb_4bit_use_double_quant: true
+  bnb_4bit_compute_dtype: bfloat16
+
+data:
+  train_file: data/train.jsonl
+  validation_file: data/validation.jsonl
+  max_seq_length: 2048
+  num_proc: 8
+  packing: false
+  default_system_prompt: >-
+    Bạn là trợ lý pháp lý Việt Nam. Trả lời chính xác, nêu rõ căn cứ khi có đủ
+    thông tin và không tự tạo điều luật hoặc văn bản pháp luật.
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: all-linear
+
+training:
+  output_dir: checkpoints/32b/qwen2.5-32b-legal
+  final_adapter_dir: adapters/32b/qwen2.5-32b-legal
+  num_train_epochs: 2
+  learning_rate: 0.0001
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 32
+  gradient_checkpointing: true
+  optim: paged_adamw_8bit
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.03
+  weight_decay: 0.0
+  max_grad_norm: 0.3
+  logging_steps: 10
+  eval_steps: 100
+  save_steps: 100
+  save_total_limit: 3
+  seed: 42
+  bf16: true
+  tf32: true
+  report_to: none
+

@@ -1,0 +1,310 @@
+{"index": 1049, "ground_truth": ["A"], "prediction": ["A", "B", "C"], "correct": false, "raw_output": "A, B, C"}
+{"index": 1050, "ground_truth": ["A"], "prediction": ["A", "C", "D"], "correct": false, "raw_output": "A, C, D"}
+{"index": 1051, "ground_truth": ["D"], "prediction": ["B", "D"], "correct": false, "raw_output": "D, B"}
+{"index": 1052, "ground_truth": ["A"], "prediction": ["D"], "correct": false, "raw_output": "D, G"}
+{"index": 1053, "ground_truth": ["B", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1054, "ground_truth": ["A", "C"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1055, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 1056, "ground_truth": ["A", "C"], "prediction": ["A", "B", "C"], "correct": false, "raw_output": "A, B, C"}
+{"index": 1057, "ground_truth": ["A", "C"], "prediction": ["A", "B", "C"], "correct": false, "raw_output": "A, B, C"}
+{"index": 1058, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 1059, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 1060, "ground_truth": ["A", "C"], "prediction": ["A", "C"], "correct": true, "raw_output": "A, C"}
+{"index": 1061, "ground_truth": ["A", "C"], "prediction": ["A", "B", "C"], "correct": false, "raw_output": "A, B, C"}
+{"index": 1062, "ground_truth": ["A", "C"], "prediction": ["A", "B", "C"], "correct": false, "raw_output": "A, B, C"}
+{"index": 1063, "ground_truth": ["C", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1064, "ground_truth": ["A", "B"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1065, "ground_truth": ["C", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1066, "ground_truth": ["A", "C"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1067, "ground_truth": ["B", "D"], "prediction": ["D"], "correct": false, "raw_output": "D, legal_query"}
+{"index": 1068, "ground_truth": ["A", "B"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1069, "ground_truth": ["B"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1070, "ground_truth": ["D"], "prediction": ["A", "C", "D"], "correct": false, "raw_output": "A, C, D"}
+{"index": 1071, "ground_truth": ["B", "C"], "prediction": ["C"], "correct": false, "raw_output": "C, G"}
+{"index": 1072, "ground_truth": ["B", "C"], "prediction": ["B", "C"], "correct": true, "raw_output": "B, C"}
+{"index": 1073, "ground_truth": ["A", "B"], "prediction": ["A", "B"], "correct": true, "raw_output": "A, B"}
+{"index": 1074, "ground_truth": ["A", "B"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1075, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 1076, "ground_truth": ["A", "B"], "prediction": ["A", "B"], "correct": true, "raw_output": "A, B"}
+{"index": 1077, "ground_truth": ["A", "D"], "prediction": ["A", "B", "D"], "correct": false, "raw_output": "A, B, D"}
+{"index": 1078, "ground_truth": ["D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1079, "ground_truth": ["C"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1080, "ground_truth": ["A"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1081, "ground_truth": ["B"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1082, "ground_truth": ["A", "C", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1083, "ground_truth": ["B", "C", "D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1084, "ground_truth": ["A", "C", "D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1085, "ground_truth": ["B", "C", "D"], "prediction": ["C"], "correct": false, "raw_output": "C, G"}
+{"index": 1086, "ground_truth": ["B", "D"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1087, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 1088, "ground_truth": ["C"], "prediction": ["A", "C", "D"], "correct": false, "raw_output": "A, C, D"}
+{"index": 1089, "ground_truth": ["D"], "prediction": ["B", "D"], "correct": false, "raw_output": "D, B"}
+{"index": 1090, "ground_truth": ["B"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1091, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "D, C"}
+{"index": 1092, "ground_truth": ["A", "B"], "prediction": ["A", "C", "D"], "correct": false, "raw_output": "A, C, D"}
+{"index": 1093, "ground_truth": ["D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1094, "ground_truth": ["C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D, C"}
+{"index": 1095, "ground_truth": ["D"], "prediction": ["B", "C", "D"], "correct": false, "raw_output": "B, C, D"}
+{"index": 1096, "ground_truth": ["C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1097, "ground_truth": ["C"], "prediction": ["C"], "correct": true, "raw_output": "C, E"}
+{"index": 1098, "ground_truth": ["D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1099, "ground_truth": ["D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1100, "ground_truth": ["C"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1101, "ground_truth": ["B"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1102, "ground_truth": ["C", "D"], "prediction": ["D"], "correct": false, "raw_output": "D,"}
+{"index": 1103, "ground_truth": ["B", "C"], "prediction": ["C"], "correct": false, "raw_output": "C, E"}
+{"index": 1104, "ground_truth": ["C"], "prediction": ["B", "C", "D"], "correct": false, "raw_output": "B, C, D"}
+{"index": 1105, "ground_truth": ["B"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1106, "ground_truth": ["B"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1107, "ground_truth": ["B", "C", "D"], "prediction": ["D"], "correct": false, "raw_output": "D, legal_query"}
+{"index": 1108, "ground_truth": ["A", "B", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1109, "ground_truth": ["A", "C", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1110, "ground_truth": ["A", "B", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1111, "ground_truth": ["A", "B", "C"], "prediction": ["A", "B", "C"], "correct": true, "raw_output": "A, B, C"}
+{"index": 1112, "ground_truth": ["B", "C", "D"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1113, "ground_truth": ["A", "B", "C"], "prediction": ["B", "D"], "correct": false, "raw_output": "D, B"}
+{"index": 1114, "ground_truth": ["A", "C", "D"], "prediction": ["D"], "correct": false, "raw_output": "D,"}
+{"index": 1115, "ground_truth": ["B", "C", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1116, "ground_truth": ["B", "C", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1117, "ground_truth": ["A", "B", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1118, "ground_truth": ["B", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1119, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 1120, "ground_truth": ["B", "C"], "prediction": ["B", "C"], "correct": true, "raw_output": "B, C"}
+{"index": 1121, "ground_truth": ["B"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1122, "ground_truth": ["D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1123, "ground_truth": ["A"], "prediction": ["A", "C", "D"], "correct": false, "raw_output": "A, C, D"}
+{"index": 1124, "ground_truth": ["A", "B", "D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1125, "ground_truth": ["A", "C", "D"], "prediction": ["A", "B", "C"], "correct": false, "raw_output": "A, B, C"}
+{"index": 1126, "ground_truth": ["A", "B", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1127, "ground_truth": ["A", "C", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1128, "ground_truth": ["C"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1129, "ground_truth": ["B"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1130, "ground_truth": ["D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1131, "ground_truth": ["B"], "prediction": ["A", "B", "D"], "correct": false, "raw_output": "A, B, D"}
+{"index": 1132, "ground_truth": ["D"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1133, "ground_truth": ["D"], "prediction": ["D"], "correct": true, "raw_output": "D"}
+{"index": 1134, "ground_truth": ["C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1135, "ground_truth": ["D"], "prediction": ["C", "D"], "correct": false, "raw_output": "D, C"}
+{"index": 1136, "ground_truth": ["B"], "prediction": ["B", "C", "D"], "correct": false, "raw_output": "B, C, D"}
+{"index": 1137, "ground_truth": ["B", "D"], "prediction": ["B", "C", "D"], "correct": false, "raw_output": "B, C, D"}
+{"index": 1138, "ground_truth": ["B", "C"], "prediction": ["A", "B", "C"], "correct": false, "raw_output": "A, B, C"}
+{"index": 1139, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 1140, "ground_truth": ["A", "B"], "prediction": ["A", "C", "D"], "correct": false, "raw_output": "A, C, D"}
+{"index": 1141, "ground_truth": ["A", "D"], "prediction": ["A", "C", "D"], "correct": false, "raw_output": "A, C, D"}
+{"index": 1142, "ground_truth": ["A", "D"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1143, "ground_truth": ["A", "B", "C"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1144, "ground_truth": ["A", "B", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1145, "ground_truth": ["B", "C", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1146, "ground_truth": ["A", "C", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1147, "ground_truth": ["B", "C", "D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1148, "ground_truth": ["A", "C", "D"], "prediction": ["A", "B", "C"], "correct": false, "raw_output": "A, B, C"}
+{"index": 1149, "ground_truth": ["A", "C", "D"], "prediction": ["A", "B", "D"], "correct": false, "raw_output": "A, B, D"}
+{"index": 1150, "ground_truth": ["B", "C", "D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1151, "ground_truth": ["A", "B"], "prediction": ["A", "B"], "correct": true, "raw_output": "A, B"}
+{"index": 1152, "ground_truth": ["A", "B"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1153, "ground_truth": ["D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1154, "ground_truth": ["B"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1155, "ground_truth": ["B"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1156, "ground_truth": ["D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1157, "ground_truth": ["B"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1158, "ground_truth": ["D"], "prediction": ["A", "D"], "correct": false, "raw_output": "D, A"}
+{"index": 1159, "ground_truth": ["C"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1160, "ground_truth": ["B"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1161, "ground_truth": ["C", "D"], "prediction": ["D"], "correct": false, "raw_output": "D,"}
+{"index": 1162, "ground_truth": ["A", "C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1163, "ground_truth": ["B", "D"], "prediction": ["B", "C", "D"], "correct": false, "raw_output": "D, C, B"}
+{"index": 1164, "ground_truth": ["A", "C"], "prediction": ["A", "C", "D"], "correct": false, "raw_output": "A, C, D"}
+{"index": 1165, "ground_truth": ["B", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1166, "ground_truth": ["A", "C"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1167, "ground_truth": ["B", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1168, "ground_truth": ["C", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1169, "ground_truth": ["A", "B"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1170, "ground_truth": ["A", "B"], "prediction": ["A", "C", "D"], "correct": false, "raw_output": "A, C, D"}
+{"index": 1171, "ground_truth": ["A", "C"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1172, "ground_truth": ["B"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1173, "ground_truth": ["B"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1174, "ground_truth": ["B"], "prediction": ["B", "C"], "correct": false, "raw_output": "C, B"}
+{"index": 1175, "ground_truth": ["B"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1176, "ground_truth": ["D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1177, "ground_truth": ["A"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1178, "ground_truth": ["C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1179, "ground_truth": ["D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1180, "ground_truth": ["A"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1181, "ground_truth": ["A"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1182, "ground_truth": ["B"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1183, "ground_truth": ["B"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1184, "ground_truth": ["D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1185, "ground_truth": ["D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1186, "ground_truth": ["D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1187, "ground_truth": ["B", "D"], "prediction": ["B", "D"], "correct": true, "raw_output": "B, D"}
+{"index": 1188, "ground_truth": ["A", "D"], "prediction": ["A", "D"], "correct": true, "raw_output": "A, D"}
+{"index": 1189, "ground_truth": ["B", "C"], "prediction": ["B", "C"], "correct": true, "raw_output": "B, C"}
+{"index": 1190, "ground_truth": ["A", "D"], "prediction": ["A", "D"], "correct": true, "raw_output": "A, D"}
+{"index": 1191, "ground_truth": ["A", "D"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1192, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 1193, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 1194, "ground_truth": ["A", "C"], "prediction": ["A", "C"], "correct": true, "raw_output": "A, C"}
+{"index": 1195, "ground_truth": ["A", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1196, "ground_truth": ["B", "D"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1197, "ground_truth": ["A", "D"], "prediction": ["A", "D"], "correct": true, "raw_output": "A, D"}
+{"index": 1198, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 1199, "ground_truth": ["A", "D"], "prediction": ["A", "D"], "correct": true, "raw_output": "A, D"}
+{"index": 1200, "ground_truth": ["B", "D"], "prediction": ["D"], "correct": false, "raw_output": "D, legal_query"}
+{"index": 1201, "ground_truth": ["C", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1202, "ground_truth": ["A", "C"], "prediction": ["B", "D"], "correct": false, "raw_output": "D, B"}
+{"index": 1203, "ground_truth": ["A", "C"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1204, "ground_truth": ["C", "D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1205, "ground_truth": ["A", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1206, "ground_truth": ["A", "B"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1207, "ground_truth": ["B", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "D, A"}
+{"index": 1208, "ground_truth": ["C", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1209, "ground_truth": ["A", "C"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1210, "ground_truth": ["C", "D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1211, "ground_truth": ["A", "D"], "prediction": ["D"], "correct": false, "raw_output": "D, chitchat"}
+{"index": 1212, "ground_truth": ["A", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1213, "ground_truth": ["A", "C"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1214, "ground_truth": ["B", "D"], "prediction": ["D"], "correct": false, "raw_output": "D, legal_query"}
+{"index": 1215, "ground_truth": ["B", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "D, A"}
+{"index": 1216, "ground_truth": ["B", "D"], "prediction": ["D"], "correct": false, "raw_output": "D,"}
+{"index": 1217, "ground_truth": ["B", "D"], "prediction": ["B", "D"], "correct": true, "raw_output": "B, D"}
+{"index": 1218, "ground_truth": ["B", "C"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1219, "ground_truth": ["A", "C"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1220, "ground_truth": ["B", "C"], "prediction": ["B", "C"], "correct": true, "raw_output": "B, C"}
+{"index": 1221, "ground_truth": ["B", "C"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1222, "ground_truth": ["A", "D"], "prediction": ["B"], "correct": false, "raw_output": "B, G"}
+{"index": 1223, "ground_truth": ["B", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1224, "ground_truth": ["A", "D"], "prediction": ["C", "D"], "correct": false, "raw_output": "D, C"}
+{"index": 1225, "ground_truth": ["B"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1226, "ground_truth": ["C"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1227, "ground_truth": ["B", "C", "D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1228, "ground_truth": ["A", "C", "D"], "prediction": ["C"], "correct": false, "raw_output": "C, G"}
+{"index": 1229, "ground_truth": ["A", "B", "D"], "prediction": ["A", "B", "D"], "correct": true, "raw_output": "A, B, D"}
+{"index": 1230, "ground_truth": ["A", "C", "D"], "prediction": ["C"], "correct": false, "raw_output": "C, G"}
+{"index": 1231, "ground_truth": ["A", "B", "C"], "prediction": ["A", "B", "C"], "correct": true, "raw_output": "A, B, C"}
+{"index": 1232, "ground_truth": ["A", "B", "D"], "prediction": ["A", "B", "D"], "correct": true, "raw_output": "A, B, D"}
+{"index": 1233, "ground_truth": ["A", "C", "D"], "prediction": ["A", "C", "D"], "correct": true, "raw_output": "A, C, D"}
+{"index": 1234, "ground_truth": ["B", "C", "D"], "prediction": ["B", "D"], "correct": false, "raw_output": "D, B"}
+{"index": 1235, "ground_truth": ["A", "B", "C"], "prediction": ["A", "B", "C"], "correct": true, "raw_output": "A, B, C"}
+{"index": 1236, "ground_truth": ["A"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1237, "ground_truth": ["A"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1238, "ground_truth": ["C", "D"], "prediction": ["B", "C", "D"], "correct": false, "raw_output": "B, C, D"}
+{"index": 1239, "ground_truth": ["A", "D"], "prediction": ["A", "D"], "correct": true, "raw_output": "A, D"}
+{"index": 1240, "ground_truth": ["B", "C"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1241, "ground_truth": ["B", "C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1242, "ground_truth": ["B", "C"], "prediction": ["B", "C"], "correct": true, "raw_output": "B, C"}
+{"index": 1243, "ground_truth": ["A", "B"], "prediction": ["B", "C", "D"], "correct": false, "raw_output": "B, C, D"}
+{"index": 1244, "ground_truth": ["A", "B"], "prediction": ["A", "B", "D"], "correct": false, "raw_output": "A, B, D"}
+{"index": 1245, "ground_truth": ["A", "D"], "prediction": ["A", "D"], "correct": true, "raw_output": "A, D"}
+{"index": 1246, "ground_truth": ["B", "C"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1247, "ground_truth": ["A", "B"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1248, "ground_truth": ["A", "B"], "prediction": ["B", "C", "D"], "correct": false, "raw_output": "B, C, D"}
+{"index": 1249, "ground_truth": ["B", "C", "D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1250, "ground_truth": ["A", "B", "D"], "prediction": ["C"], "correct": false, "raw_output": "C, G"}
+{"index": 1251, "ground_truth": ["A", "B", "C"], "prediction": ["D"], "correct": false, "raw_output": "D, G"}
+{"index": 1252, "ground_truth": ["A", "B", "C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1253, "ground_truth": ["A", "C", "D"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1254, "ground_truth": ["B", "C", "D"], "prediction": ["A", "C", "D"], "correct": false, "raw_output": "A, C, D"}
+{"index": 1255, "ground_truth": ["A", "B", "D"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1256, "ground_truth": ["A", "B", "D"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1257, "ground_truth": ["A", "C", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "D, A"}
+{"index": 1258, "ground_truth": ["A", "C", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1259, "ground_truth": ["B", "C", "D"], "prediction": ["D"], "correct": false, "raw_output": "D"}
+{"index": 1260, "ground_truth": ["A", "C", "D"], "prediction": ["A", "C", "D"], "correct": true, "raw_output": "A, C, D"}
+{"index": 1261, "ground_truth": ["A", "B", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1262, "ground_truth": ["A", "B", "C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1263, "ground_truth": ["D"], "prediction": ["D"], "correct": true, "raw_output": "D, legal_query"}
+{"index": 1264, "ground_truth": ["D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1265, "ground_truth": ["B"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1266, "ground_truth": ["A"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1267, "ground_truth": ["D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1268, "ground_truth": ["A", "B", "C", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1269, "ground_truth": ["A", "B", "C", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1270, "ground_truth": ["A", "B", "C", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1271, "ground_truth": ["A", "B", "C", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1272, "ground_truth": ["A", "B", "C", "D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1273, "ground_truth": ["A", "B", "C", "D"], "prediction": ["A", "C", "D"], "correct": false, "raw_output": "A, C, D"}
+{"index": 1274, "ground_truth": ["A", "B", "C", "D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1275, "ground_truth": ["A", "B", "C", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1276, "ground_truth": ["A", "B", "C", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1277, "ground_truth": ["A", "B", "C", "D"], "prediction": ["A", "C", "D"], "correct": false, "raw_output": "A, C, D"}
+{"index": 1278, "ground_truth": ["A", "B", "C", "D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1279, "ground_truth": ["A", "B", "C", "D"], "prediction": null, "correct": false, "raw_output": "general"}
+{"index": 1280, "ground_truth": ["B", "C"], "prediction": ["C"], "correct": false, "raw_output": "C, E"}
+{"index": 1281, "ground_truth": ["A", "D"], "prediction": ["A", "D"], "correct": true, "raw_output": "A, D"}
+{"index": 1282, "ground_truth": ["C", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1283, "ground_truth": ["A", "B"], "prediction": ["A", "B"], "correct": true, "raw_output": "A, B"}
+{"index": 1284, "ground_truth": ["A", "C"], "prediction": ["A", "C"], "correct": true, "raw_output": "A, C"}
+{"index": 1285, "ground_truth": ["A", "C"], "prediction": ["A", "B", "C"], "correct": false, "raw_output": "A, B, C"}
+{"index": 1286, "ground_truth": ["A", "D"], "prediction": ["A", "D"], "correct": true, "raw_output": "A, D"}
+{"index": 1287, "ground_truth": ["B", "C"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1288, "ground_truth": ["A", "D"], "prediction": ["C"], "correct": false, "raw_output": "C"}
+{"index": 1289, "ground_truth": ["B", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1290, "ground_truth": ["A", "B"], "prediction": ["C"], "correct": false, "raw_output": "C, G"}
+{"index": 1291, "ground_truth": ["B", "C"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1292, "ground_truth": ["A", "B"], "prediction": ["C", "D"], "correct": false, "raw_output": "C,D"}
+{"index": 1293, "ground_truth": ["B", "C"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1294, "ground_truth": ["B", "C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1295, "ground_truth": ["C", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1296, "ground_truth": ["A", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1297, "ground_truth": ["C", "D"], "prediction": ["C"], "correct": false, "raw_output": "C, legal_query"}
+{"index": 1298, "ground_truth": ["A", "C"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1299, "ground_truth": ["B", "C"], "prediction": ["A"], "correct": false, "raw_output": "A"}
+{"index": 1300, "ground_truth": ["A", "B"], "prediction": ["D"], "correct": false, "raw_output": "D, G"}
+{"index": 1301, "ground_truth": ["A", "C"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1302, "ground_truth": ["A", "C"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1303, "ground_truth": ["A", "C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1304, "ground_truth": ["A", "B"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1305, "ground_truth": ["C", "D"], "prediction": ["A", "B", "D"], "correct": false, "raw_output": "D, A, B"}
+{"index": 1306, "ground_truth": ["A", "D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1307, "ground_truth": ["B", "C"], "prediction": ["D"], "correct": false, "raw_output": "D, E"}
+{"index": 1308, "ground_truth": ["A", "B"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1309, "ground_truth": ["A", "D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1310, "ground_truth": ["B", "C"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1311, "ground_truth": ["A", "C"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1312, "ground_truth": ["A", "C"], "prediction": ["D"], "correct": false, "raw_output": "D, G"}
+{"index": 1313, "ground_truth": ["A", "C"], "prediction": ["B"], "correct": false, "raw_output": "B, G"}
+{"index": 1314, "ground_truth": ["C", "D"], "prediction": ["D"], "correct": false, "raw_output": "D, G"}
+{"index": 1315, "ground_truth": ["B", "C"], "prediction": ["A", "B", "C"], "correct": false, "raw_output": "A, B, C"}
+{"index": 1316, "ground_truth": ["B", "D"], "prediction": ["D"], "correct": false, "raw_output": "D, G"}
+{"index": 1317, "ground_truth": ["B", "C"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1318, "ground_truth": ["B", "D"], "prediction": ["B", "D"], "correct": true, "raw_output": "B, D"}
+{"index": 1319, "ground_truth": ["A", "D"], "prediction": ["D"], "correct": false, "raw_output": "D, G"}
+{"index": 1320, "ground_truth": ["A", "C"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1321, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 1322, "ground_truth": ["A", "B"], "prediction": ["A", "B", "D"], "correct": false, "raw_output": "A, B, D"}
+{"index": 1323, "ground_truth": ["A"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1324, "ground_truth": ["D"], "prediction": ["A", "D"], "correct": false, "raw_output": "D, A"}
+{"index": 1325, "ground_truth": ["A", "B", "C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1326, "ground_truth": ["A", "B", "C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1327, "ground_truth": ["A", "C", "D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1328, "ground_truth": ["B", "C", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1329, "ground_truth": ["A", "B", "C"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1330, "ground_truth": ["A", "C", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1331, "ground_truth": ["B"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1332, "ground_truth": ["D"], "prediction": ["A", "B", "D"], "correct": false, "raw_output": "A, B, D"}
+{"index": 1333, "ground_truth": ["A"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1334, "ground_truth": ["A", "C"], "prediction": ["A", "C"], "correct": true, "raw_output": "A, C"}
+{"index": 1335, "ground_truth": ["C", "D"], "prediction": ["C", "D"], "correct": true, "raw_output": "C, D"}
+{"index": 1336, "ground_truth": ["A", "C", "D"], "prediction": ["A", "D"], "correct": false, "raw_output": "A, D"}
+{"index": 1337, "ground_truth": ["A", "B", "D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1338, "ground_truth": ["A", "B", "C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1339, "ground_truth": ["A", "B", "C"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1340, "ground_truth": ["C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1341, "ground_truth": ["C"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1342, "ground_truth": ["B"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1343, "ground_truth": ["B", "D"], "prediction": ["B", "D"], "correct": true, "raw_output": "B, D"}
+{"index": 1344, "ground_truth": ["A", "D"], "prediction": ["D"], "correct": false, "raw_output": "D,"}
+{"index": 1345, "ground_truth": ["B", "D"], "prediction": null, "correct": false, "raw_output": "general, document_retrieval"}
+{"index": 1346, "ground_truth": ["C"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1347, "ground_truth": ["C"], "prediction": ["C"], "correct": true, "raw_output": "C, legal_query"}
+{"index": 1348, "ground_truth": ["A", "B", "C", "D"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1349, "ground_truth": ["A", "B", "C", "D"], "prediction": ["B", "D"], "correct": false, "raw_output": "B, D"}
+{"index": 1350, "ground_truth": ["A", "B", "C", "D"], "prediction": ["D"], "correct": false, "raw_output": "D"}
+{"index": 1351, "ground_truth": ["A", "B", "C", "D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1352, "ground_truth": ["A", "B", "C", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1353, "ground_truth": ["A", "B", "C", "D"], "prediction": ["A", "B"], "correct": false, "raw_output": "A, B"}
+{"index": 1354, "ground_truth": ["A", "B", "C", "D"], "prediction": ["B", "C"], "correct": false, "raw_output": "B, C"}
+{"index": 1355, "ground_truth": ["A", "B", "C", "D"], "prediction": ["A", "C"], "correct": false, "raw_output": "A, C"}
+{"index": 1356, "ground_truth": ["A", "B", "C", "D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1357, "ground_truth": ["A", "B", "C", "D"], "prediction": ["C", "D"], "correct": false, "raw_output": "C, D"}
+{"index": 1358, "ground_truth": ["A", "B", "C", "D"], "prediction": ["D"], "correct": false, "raw_output": "D, D, D"}

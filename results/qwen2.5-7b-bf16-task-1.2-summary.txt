@@ -1,0 +1,8 @@
+Model: Qwen/Qwen2.5-7B-Instruct
+Precision: BF16
+Dataset: data/vlegal_task_1_2_test.jsonl
+
+Đúng:       551/683
+Accuracy:   80.67%
+Output lỗi: 0
+OOM:        Không

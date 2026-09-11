@@ -1,0 +1,2 @@
+{"index": 0, "ground_truth": "Đúng", "prediction": "Đúng", "correct": true, "raw_output": "Đúng", "id": "1291397"}
+{"index": 1, "ground_truth": "Sai", "prediction": "Đúng", "correct": false, "raw_output": "Đúng", "id": "1344655"}

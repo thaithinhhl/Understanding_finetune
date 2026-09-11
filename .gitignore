@@ -1,0 +1,22 @@
+.venv/
+legal/
+.claude/
+__pycache__/
+*.py[cod]
+.env
+
+# Base model gốc: tải công khai từ HuggingFace (scripts/download_model.py),
+# không commit vì quá lớn (~15GB/7B, ~65GB/32B) và redundant với HF Hub.
+models/
+
+# Checkpoint training trung gian (không phải adapter cuối cùng)
+checkpoints/
+wandb/
+
+# Trọng số adapter (nặng, tải/lưu riêng ngoài git) — vẫn giữ config/tokenizer
+# nhỏ đi kèm trong adapters/ để biết cấu trúc, chỉ loại phần trọng số
+*.safetensors
+
+data/*.json
+data/*.jsonl
+!data/example.jsonl

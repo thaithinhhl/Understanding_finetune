@@ -1,0 +1,18 @@
+Model: Qwen/Qwen2.5-7B-Instruct
+Precision: 4-bit NF4 (double quantization, BF16 compute)
+Dataset: data/vlegal_task_1_2_test.jsonl
+
+Đúng:       540/683
+Accuracy:   79.06%
+Output lỗi: 0
+OOM:        Không
+
+Accuracy theo nhãn:
+A: 81/117  = 69.23%
+B: 92/121  = 76.03%
+C: 79/111  = 71.17%
+D: 98/113  = 86.73%
+E: 108/129 = 83.72%
+F: 82/92   = 89.13%
+
+So với BF16: thấp hơn 11 câu đúng và 1.61 điểm phần trăm.
