@@ -1,0 +1,92 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+/home/ubuntu/Understanding_finetune/.venv/lib/python3.10/site-packages/awq/__init__.py:21: DeprecationWarning: 
+I have left this message as the final dev message to help you transition.
+
+Important Notice:
+- AutoAWQ is officially deprecated and will no longer be maintained.
+- The last tested configuration used Torch 2.6.0 and Transformers 4.51.3.
+- If future versions of Transformers break AutoAWQ compatibility, please report the issue to the Transformers project.
+
+Alternative:
+- AutoAWQ has been adopted by the vLLM Project: https://github.com/vllm-project/llm-compressor
+
+For further inquiries, feel free to reach out:
+- X: https://x.com/casper_hansen_
+- LinkedIn: https://www.linkedin.com/in/casper-hansen-804005170/
+
+  warnings.warn(_FINAL_DEV_MESSAGE, category=DeprecationWarning, stacklevel=1)
+Phát hiện model đã lượng tử hoá sẵn (AWQ) — dùng fp16 thay vì bf16.
+Loading checkpoint shards:   0%|          | 0/11 [00:00<?, ?it/s]Loading checkpoint shards:   9%|▉         | 1/11 [00:01<00:12,  1.25s/it]Loading checkpoint shards:  18%|█▊        | 2/11 [00:02<00:10,  1.13s/it]Loading checkpoint shards:  27%|██▋       | 3/11 [00:03<00:08,  1.02s/it]Loading checkpoint shards:  36%|███▋      | 4/11 [00:04<00:06,  1.03it/s]Loading checkpoint shards:  45%|████▌     | 5/11 [00:04<00:05,  1.06it/s]Loading checkpoint shards:  55%|█████▍    | 6/11 [00:06<00:04,  1.01it/s]Loading checkpoint shards:  64%|██████▎   | 7/11 [00:07<00:04,  1.02s/it]Loading checkpoint shards:  73%|███████▎  | 8/11 [00:08<00:02,  1.02it/s]Loading checkpoint shards:  82%|████████▏ | 9/11 [00:09<00:01,  1.01it/s]Loading checkpoint shards:  91%|█████████ | 10/11 [00:10<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 11/11 [00:10<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 11/11 [00:10<00:00,  1.04it/s]
+[0001/0720] group=U1 json_ok=True
+[0002/0720] group=U1 json_ok=True
+[0003/0720] group=U3 json_ok=True
+[0004/0720] group=U2 json_ok=True
+[0005/0720] group=U3 json_ok=True
+[0006/0720] group=C1 json_ok=True
+[0007/0720] group=U2 json_ok=True
+[0008/0720] group=C1 json_ok=True
+[0009/0720] group=U1 json_ok=True
+[0010/0720] group=U3 json_ok=True
+[0011/0720] group=U1 json_ok=True
+[0012/0720] group=U3 json_ok=True
+[0013/0720] group=C1 json_ok=True
+[0014/0720] group=U1 json_ok=True
+[0015/0720] group=U2 json_ok=True
+[0016/0720] group=C1 json_ok=True
+[0017/0720] group=C1 json_ok=True
+[0018/0720] group=U1 json_ok=True
+[0019/0720] group=U2 json_ok=True
+[0020/0720] group=C1 json_ok=True
+[0021/0720] group=U1 json_ok=True
+[0022/0720] group=U3 json_ok=True
+[0023/0720] group=U3 json_ok=True
+[0024/0720] group=U2 json_ok=True
+[0025/0720] group=U1 json_ok=True
+[0026/0720] group=U3 json_ok=True
+[0027/0720] group=C1 json_ok=True
+[0028/0720] group=C1 json_ok=True
+[0029/0720] group=U2 json_ok=True
+[0030/0720] group=C1 json_ok=True
+[0031/0720] group=C1 json_ok=True
+[0032/0720] group=U3 json_ok=True
+[0033/0720] group=C1 json_ok=True
+[0034/0720] group=U2 json_ok=True
+[0035/0720] group=C1 json_ok=True
+[0036/0720] group=U1 json_ok=True
+[0037/0720] group=U3 json_ok=True
+[0038/0720] group=U2 json_ok=True
+[0039/0720] group=U1 json_ok=True
+[0040/0720] group=C1 json_ok=True
+[0041/0720] group=U3 json_ok=True
+[0042/0720] group=C1 json_ok=True
+[0043/0720] group=U3 json_ok=True
+[0044/0720] group=U3 json_ok=True
+[0045/0720] group=U1 json_ok=True
+[0046/0720] group=U2 json_ok=True
+[0047/0720] group=U3 json_ok=True
+[0048/0720] group=C1 json_ok=True
+[0049/0720] group=U1 json_ok=True
+[0050/0720] group=U3 json_ok=True
+[0051/0720] group=U1 json_ok=True
+[0052/0720] group=U2 json_ok=True
+[0053/0720] group=U1 json_ok=True
+[0054/0720] group=C1 json_ok=True
+[0055/0720] group=U1 json_ok=True
+[0056/0720] group=U3 json_ok=True
+[0057/0720] group=C1 json_ok=True
+[0058/0720] group=C1 json_ok=True
+[0059/0720] group=U2 json_ok=True
+[0060/0720] group=U3 json_ok=True
+[0061/0720] group=U2 json_ok=True
+[0062/0720] group=U2 json_ok=True
+[0063/0720] group=U1 json_ok=True
+[0064/0720] group=U2 json_ok=True
+[0065/0720] group=U3 json_ok=True
+[0066/0720] group=U2 json_ok=True
+[0067/0720] group=U1 json_ok=True
+[0068/0720] group=U2 json_ok=True
+[0069/0720] group=U1 json_ok=True
+[0070/0720] group=U3 json_ok=True
+[0071/0720] group=U1 json_ok=True
+[0072/0720] group=U3 json_ok=True
+[0073/0720] group=U1 json_ok=True

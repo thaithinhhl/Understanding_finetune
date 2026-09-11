@@ -1,4 +1,6 @@
 .venv/
+.venv-dl/
+.venv-vllm/
 legal/
 .claude/
 __pycache__/
