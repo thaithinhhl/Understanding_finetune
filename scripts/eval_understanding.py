@@ -74,13 +74,27 @@ def main() -> None:
         raise ValueError("Không có mẫu nào trong khoảng offset/limit đã chọn (kiểm tra group C1/U1/U2/U3).")
 
     tokenizer = AutoTokenizer.from_pretrained(args.model, local_files_only=True)
+
+    # Model đã lượng tử hoá sẵn (AWQ/GPTQ) mang theo quantization_config riêng trong
+    # config.json — không truyền thêm BitsAndBytesConfig, và kernel AWQ (autoawq/Triton)
+    # yêu cầu fp16, không tương thích bf16 (lỗi "Both operands must be same dtype").
+    config_path = args.model / "config.json"
+    is_prequantized = False
+    if config_path.exists():
+        model_config = json.loads(config_path.read_text(encoding="utf-8"))
+        quant_method = (model_config.get("quantization_config") or {}).get("quant_method")
+        is_prequantized = quant_method is not None
+        if quant_method == "awq":
+            print(f"Phát hiện model đã lượng tử hoá sẵn (AWQ) — dùng fp16 thay vì bf16.")
+
+    dtype = torch.float16 if is_prequantized else torch.bfloat16
     model_kwargs: dict[str, Any] = {
         "local_files_only": True,
         "device_map": {"": 0},
-        "torch_dtype": torch.bfloat16,
+        "torch_dtype": dtype,
         "attn_implementation": args.attn_implementation,
     }
-    if args.precision == "4bit":
+    if args.precision == "4bit" and not is_prequantized:
         model_kwargs["quantization_config"] = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_quant_type="nf4",
@@ -141,7 +155,7 @@ def main() -> None:
         "task_family": "understanding",
         "model": str(args.model),
         "adapter": str(args.adapter) if args.adapter else None,
-        "precision": args.precision,
+        "precision": quant_method if is_prequantized else args.precision,
         "data": str(args.data),
         "max_new_tokens": args.max_new_tokens,
         "num_examples": len(results),

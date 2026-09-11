@@ -9,16 +9,22 @@ Mỗi task có 2 dòng — dòng "Chưa fine-tune" và dòng "Fine-tune" — đ�
 
 | Task | Việc model phải làm | Model | Accuracy | F1 (tính điểm một phần) | Tỷ lệ không bịa khi nên để trống |
 |---|---|---|---|---|---|
-| **U1** | Nhận diện ý định câu hỏi | Chưa fine-tune | 76.7% | 65.9% | – |
-| | | **Fine-tune** | **88.9%** | **86.1%** | – |
-| **U2** | Trích khái niệm pháp lý | Chưa fine-tune | 18.9% | 17.7% | 35.3% |
-| | | **Fine-tune** | **62.2%** | **58.7%** | **94.1%** |
-| **U3** | Trích phạm vi & tình tiết | Chưa fine-tune | 35.6% | 12.4% | 95.2% |
-| | | **Fine-tune** | **84.4%** | **94.7%** | **100.0%** |
-| **C1** | Viết lại câu hỏi cho độc lập | Chưa fine-tune | 35.6% | – | – |
-| | | **Fine-tune** | **62.2%** | – | – |
+| **U1** | Nhận diện ý định câu hỏi | 7B chưa fine-tune | 76.7% | 65.9% | – |
+| | | 32B chưa fine-tune (AWQ 4bit) | 82.8% | 71.8% | – |
+| | | **7B fine-tune** | **88.9%** | **86.1%** | – |
+| **U2** | Trích khái niệm pháp lý | 7B chưa fine-tune | 18.9% | 17.7% | 35.3% |
+| | | 32B chưa fine-tune (AWQ 4bit) | 29.4% | 27.0% | 35.3% |
+| | | **7B fine-tune** | **62.2%** | **58.7%** | **94.1%** |
+| **U3** | Trích phạm vi & tình tiết | 7B chưa fine-tune | 35.6% | 12.4% | 95.2% |
+| | | 32B chưa fine-tune (AWQ 4bit) | 47.2% | 66.3% | 80.6% |
+| | | **7B fine-tune** | **84.4%** | **94.7%** | **100.0%** |
+| **C1** | Viết lại câu hỏi cho độc lập | 7B chưa fine-tune | 35.6% | – | – |
+| | | 32B chưa fine-tune (AWQ 4bit) | 41.1% | – | – |
+| | | **7B fine-tune** | **62.2%** | – | – |
 
 Fine-tune cải thiện rõ rệt ở **cả 4 task**, khác hẳn với 3 benchmark trắc nghiệm A-F (task 1.2/2.4/2.5) — lý do là 4 task understanding này (C1/U1/U2/U3) dùng đúng định dạng JSON mà model đã được huấn luyện, còn benchmark A-F dùng định dạng model chưa từng thấy lúc train.
+
+**Phát hiện quan trọng: model lớn hơn không thay thế được fine-tune.** 32B gốc (chưa fine-tune, chạy AWQ 4-bit) nhỉnh hơn 7B gốc ở mọi task nhờ quy mô lớn hơn — nhưng **vẫn thua xa 7B đã fine-tune** ở tất cả các chỉ số chính, có task cách biệt hơn 30 điểm % (U2: 29.4% vs 62.2%). Riêng `user_facts_micro` của 32B rơi về **0.0%** (TP=0, hoàn toàn không trích đúng tình tiết nào) — tệ hơn cả 7B chưa fine-tune. Kết luận: với domain hẹp như pháp lý Việt Nam, fine-tune đúng dữ liệu quan trọng hơn việc dùng model to hơn 4.5 lần.
 
 ### Accuracy nghĩa là gì ở mỗi task
 

@@ -1,0 +1,891 @@
+[
+  {
+    "index": 7,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B được giao nhiệm vụ thực hiện chiến dịch tuyên truyền nâng cao nhận thức về tác hại của rượu bia trong cộng đồng. Để đảm bảo thông điệp của ông tuân thủ quy định hiện hành, ông cần tìm hiểu xem nghị định mới nhất có liên quan đến việc hướng dẫn thi hành luật về giảm thiểu tác động tiêu cực của rượu bia là nghị định nào?",
+    "answers": "A. Giao thông vận tải B. Vi phạm hành chính C. Giáo dục D. Thể thao - y tế E. Bảo hiểm F. Lao động - tiền lương",
+    "ground_truth": "B"
+  },
+  {
+    "index": 8,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Trong năm 2026, anh B, một thanh niên đến tuổi thực hiện nghĩa vụ quân sự, đang thắc mắc về lịch trình tuyển quân của quốc gia. Anh muốn biết liệu có phải trong năm đó, chính sách chỉ có một đợt tuyển chọn quân sự duy nhất được áp dụng trên toàn quốc hay không. Điều này sẽ ảnh hưởng như thế nào đến kế hoạch cá nhân và nghĩa vụ công dân của anh?",
+    "answers": "A. Quyền dân sự B. Dịch vụ pháp lý C. Vi phạm hành chính D. Bộ máy hành chính E. Thủ tục tố tụng F. Tài chính nhà nước",
+    "ground_truth": "A"
+  },
+  {
+    "index": 9,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một người bạn trẻ vừa không đạt tiêu chuẩn trong lần khám sức khỏe nghĩa vụ quân sự năm trước, nhưng đột nhiên nhận được thông báo tái khám vào năm nay. Trong tình huống này, bạn trẻ cần tìm hiểu xem có những quy định hoặc điều kiện nào từ cơ quan chức năng có thể dẫn đến việc gọi khám lại nghĩa vụ quân sự hàng năm, và những yếu tố nào có thể ảnh hưởng đến sự thay đổi kết quả đánh giá sức khỏe qua từng năm?",
+    "answers": "A. Dịch vụ pháp lý B. Giáo dục C. Trách nhiệm hình sự D. Quyền dân sự E. Tài chính nhà nước F. Lĩnh vực khác",
+    "ground_truth": "D"
+  },
+  {
+    "index": 29,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang quản lý một dự án xây dựng lớn và vừa hoàn tất quá trình lựa chọn nhà thầu. Luật pháp yêu cầu các thông tin liên quan đến quyết định này phải được công khai một cách minh bạch. Trong bối cảnh này, ông B cần biết rõ đơn vị hoặc cá nhân chịu trách nhiệm chính trong việc công bố thông tin và kết quả lựa chọn nhà thầu ra công chúng, để tuân thủ đúng quy định hiện hành. Ai là người hoặc tổ chức sẽ thực hiện việc đăng tải thông tin này?",
+    "answers": "A. Bộ máy hành chính B. Bảo hiểm C. Giao thông vận tải D. Kế toán - kiểm toán E. Đầu tư F. Xây dựng - đô thị",
+    "ground_truth": "E"
+  },
+  {
+    "index": 36,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Đang sở hữu một doanh nghiệp nhỏ chuyên kinh doanh đồ chơi figure, chị Lan muốn làm mới bộ sưu tập của mình bằng cách phát triển các hình ảnh sản phẩm độc đáo. Chị nghe nói rằng vào năm 2025, có một công cụ hữu ích giúp thực hiện công việc này thông qua công nghệ AI. Với sự trợ giúp của công cụ cây bút kỹ thuật số nổi tiếng, ChatGPT, chị muốn biết các bước chi tiết để tạo ra những hình ảnh hộp đồ chơi figure một cách hiệu quả và thu hút người tiêu dùng. Vậy, quy trình thực hiện này gồm những bước cụ thể nào và cần lưu ý những điều quan trọng gì?",
+    "answers": "A. Kế toán - kiểm toán B. Lĩnh vực khác C. Sở hữu trí tuệ D. Thương mại E. Giao thông vận tải F. Trách nhiệm hình sự",
+    "ground_truth": "C"
+  },
+  {
+    "index": 37,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Khi một thành phố lớn đang lên kế hoạch xây dựng một cây cầu mới nhằm cải thiện giao thông và kết nối các khu vực, nhóm quản lý dự án cần thực hiện việc theo dõi và kiểm tra tiến độ thực hiện một cách chặt chẽ. Điều này đòi hỏi nắm rõ các yếu tố cần giám sát, bao gồm tiến độ thi công, phân bổ ngân sách, và hiệu quả sử dụng nguồn lực. Như vậy, nội dung cần theo dõi và kiểm tra trong kế hoạch đầu tư cho công trình này sẽ bao gồm những gì cụ thể?",
+    "answers": "A. Đầu tư B. Vi phạm hành chính C. Tài nguyên - môi trường D. Thủ tục tố tụng E. Xuất nhập khẩu F. Giao thông vận tải",
+    "ground_truth": "A"
+  },
+  {
+    "index": 43,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một công ty bất động sản đang xem xét việc hỗ trợ khách hàng trong quá trình mua bán nhà đất. Đội ngũ pháp lý của họ nhận được thông tin về một công văn quan trọng, số 5553/KV2-TTRA, liên quan đến vấn đề tạm dừng dịch vụ cho vay đặt cọc. Điều này có ảnh hưởng như thế nào đến quy trình và quyền lợi của khách hàng khi thực hiện các giao dịch nhà ở thông qua dịch vụ tài chính không?",
+    "answers": "A. Bất động sản B. Tiền tệ ngân hàng C. Kế toán - kiểm toán D. Xây dựng - đô thị E. Văn hóa - xã hội F. Giáo dục",
+    "ground_truth": "A"
+  },
+  {
+    "index": 46,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Khi công ty B tham gia đấu thầu một dự án lớn trong ngành xây dựng, hợp đồng hiện tại mà họ đã trình cho gói thầu gặp vấn đề không đáp ứng đúng yêu cầu kỹ thuật. Công ty đang xem xét việc thay thế bằng một tài liệu tương đương để đảm bảo đủ tiêu chuẩn dự thầu. Trong trường hợp này, công ty B cần tìm hiểu liệu họ có thể thực hiện việc thay thế hợp đồng đó và những điều kiện nào họ phải đáp ứng để được chấp thuận hợp pháp.",
+    "answers": "A. Vi phạm hành chính B. Quyền dân sự C. Thuế - phí - lệ phí D. Xuất nhập khẩu E. Đầu tư F. Doanh nghiệp",
+    "ground_truth": "E"
+  },
+  {
+    "index": 50,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một câu chuyện gần đây tại một hội thảo giáo dục sức khỏe đã đề cập đến việc nâng cao ý thức cộng đồng về bảo vệ thế hệ trẻ. Ở đây, câu hỏi được đặt ra là: \"Trong những trường hợp cụ thể, khi mà một nhà hàng phải nâng cao ý thức trách nhiệm xã hội của mình, việc bán hoặc tặng rượu bia cho khách hàng còn đang trong độ tuổi chưa đủ trưởng thành sẽ bị giới hạn ở độ tuổi nhất định nào theo pháp luật?\"",
+    "answers": "A. Thể thao - y tế B. Thuế - phí - lệ phí C. Chứng khoán D. Bộ máy hành chính E. Doanh nghiệp F. Tiền tệ ngân hàng",
+    "ground_truth": "A"
+  },
+  {
+    "index": 52,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Anh B đang lập kế hoạch cho một sự kiện đặc biệt tại công ty vào ngày 18 tháng 11 năm 2025. Anh muốn chắc chắn rằng ngày này không trùng với bất kỳ dịp quan trọng nào cần chú ý hơn. Vì thế, anh B cần kiểm tra xem liệu ngày này có phải là một ngày kỷ niệm lớn hay sự kiện trọng đại nào không, để có thể lên kế hoạch chi tiết một cách hợp lý.",
+    "answers": "A. Văn hóa - xã hội B. Lĩnh vực khác C. Bất động sản D. Giáo dục E. Đầu tư F. Xây dựng - đô thị",
+    "ground_truth": "B"
+  },
+  {
+    "index": 71,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang quan tâm đến việc tham gia một gói thầu xây dựng cho công ty của mình và gói thầu này áp dụng phương pháp một giai đoạn một túi hồ sơ. Trước khi đưa ra quyết định cuối cùng, ông muốn biết trong những hoàn cảnh nào thì bước thương thảo hợp đồng có thể được tiến hành, nhằm đảm bảo rằng các điều khoản hợp tác sẽ mang lại lợi ích tối ưu cho doanh nghiệp mình. Liệu ông B cần chuẩn bị những gì và tuân thủ các quy trình nào để đảm bảo việc thương thảo diễn ra thuận lợi và hợp pháp?",
+    "answers": "A. Xây dựng - đô thị B. Lĩnh vực khác C. Văn hóa - xã hội D. Lao động - tiền lương E. Dịch vụ pháp lý F. Đầu tư",
+    "ground_truth": "F"
+  },
+  {
+    "index": 86,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Doanh nghiệp X đang hoạt động trong lĩnh vực xuất nhập khẩu và mới nhận được thông báo có thể phải đối mặt với các xử phạt liên quan đến hải quan. Công ty đã nghe nói rằng Bộ Tài chính đang chuẩn bị các hướng dẫn mới, và họ muốn tìm hiểu rõ hơn về các quy định cụ thể có trong dự thảo Nghị định về xử lý các sai phạm liên quan. Công ty cần biết Nghị định này sẽ ảnh hưởng thế nào đến hoạt động của họ?",
+    "answers": "A. Bất động sản B. Sở hữu trí tuệ C. Tiền tệ ngân hàng D. Lĩnh vực khác E. Vi phạm hành chính F. Văn hóa - xã hội",
+    "ground_truth": "E"
+  },
+  {
+    "index": 90,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Doanh nghiệp B đang chuẩn bị xuất khẩu sản phẩm của mình sang thị trường quốc tế, nhưng họ muốn đảm bảo rằng sản phẩm đáp ứng mọi tiêu chuẩn chất lượng cần thiết theo quy định pháp luật. Trong quá trình tìm hiểu, nhóm pháp chế của doanh nghiệp đang tra cứu thông tin để biết được văn bản pháp luật hướng dẫn việc áp dụng Luật Chất lượng sản phẩm hàng hóa. Vậy, nhóm cần xác định rõ xem đó là nghị định nào và có những chỉ dẫn cụ thể nào liên quan đến việc đảm bảo chất lượng sản phẩm?",
+    "answers": "A. Sở hữu trí tuệ B. Giao thông vận tải C. Bất động sản D. Dịch vụ pháp lý E. Thương mại F. Lĩnh vực khác",
+    "ground_truth": "E"
+  },
+  {
+    "index": 92,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Chị B đang gặp khó khăn trong việc thanh toán khoản vay tại một tổ chức tín dụng có uy tín, và có nguy cơ rơi vào tình trạng nợ xấu. Từ ngày 15/10/2025, nếu ngân hàng quyết định xử lý tài sản bảo đảm của chị, ngân hàng đó phải tuân thủ những quy trình và điều kiện cụ thể nào để đảm bảo việc thu giữ tài sản được thực hiện đúng quy định pháp luật?",
+    "answers": "A. Tiền tệ ngân hàng B. Bộ máy hành chính C. Đầu tư D. Kế toán - kiểm toán E. Thuế - phí - lệ phí F. Dịch vụ pháp lý",
+    "ground_truth": "A"
+  },
+  {
+    "index": 93,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Nhà đầu tư B đang chuẩn bị thành lập một công ty mới trong khu vực kinh tế phát triển đặc biệt theo chính sách của chính phủ. Tuy nhiên, ông muốn biết liệu các lợi ích mà nhà đầu tư có thể nhận được từ chính sách khuyến khích này sẽ kéo dài trong bao lâu. Liệu các ưu đãi đó có bị giới hạn trong một khoảng thời gian cụ thể hoặc có thể hưởng dài hạn mà không hạn chế gì?",
+    "answers": "A. Doanh nghiệp B. Đầu tư C. Tài chính nhà nước D. Giao thông vận tải E. Quyền dân sự F. Văn hóa - xã hội",
+    "ground_truth": "A"
+  },
+  {
+    "index": 96,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Doanh nhân B đang có kế hoạch mở rộng công ty và muốn tuân thủ đầy đủ các quy định của pháp luật để tránh những rắc rối không mong muốn. Đặc biệt, ông B nhận thấy tầm quan trọng của việc phòng chống vấn đề tài chính bất hợp pháp. Vì vậy, ông cần tìm hiểu chi tiết về nghị định hướng dẫn mới nhất liên quan đến việc ngăn chặn hành vi rửa tiền. Nghị định đó hiện nay được nhận diện như thế nào và có những điểm mới đáng chú ý nào cần lưu ý?",
+    "answers": "A. Tiền tệ ngân hàng B. Bảo hiểm C. Lao động - tiền lương D. Chứng khoán E. Thuế - phí - lệ phí F. Tài nguyên - môi trường",
+    "ground_truth": "A"
+  },
+  {
+    "index": 98,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B là chủ một doanh nghiệp thực phẩm mới thành lập, đang tìm cách đảm bảo rằng tất cả các sản phẩm của mình tuân thủ các quy định pháp lý hiện hành. Trong quá trình tìm hiểu, ông B nhận ra mình cần nắm vững các chi tiết trong hướng dẫn pháp lý từ chính phủ liên quan đến an toàn thực phẩm. Vậy ông B cần biết Nghị định nào hiện tại đang hướng dẫn chi tiết về Luật An toàn thực phẩm để có sự tuân thủ nghiêm ngặt?",
+    "answers": "A. Xuất nhập khẩu B. Thương mại C. Văn hóa - xã hội D. Bảo hiểm E. Giáo dục F. Tiền tệ ngân hàng",
+    "ground_truth": "B"
+  },
+  {
+    "index": 101,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B là một học giả đang nghiên cứu về hệ thống quản lý công tại các quốc gia Đông Nam Á. Khi phân tích khung pháp lý của Việt Nam, ông muốn hiểu rõ về những nguyên tắc cơ bản định hướng cho cơ cấu và hoạt động của Nhà nước theo quy định hiện hành. Dựa trên Hiến pháp được thông qua năm 2013, ông B cần xác định cụ thể những nguyên tắc nào là nền tảng cho việc tổ chức và vận hành bộ máy nhà nước này?",
+    "answers": "A. Giáo dục B. Chứng khoán C. Vi phạm hành chính D. Doanh nghiệp E. Sở hữu trí tuệ F. Giao thông vận tải",
+    "ground_truth": "C"
+  },
+  {
+    "index": 128,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Bà B đang lên kế hoạch về quê thăm gia đình tại Hồi Xuân, tỉnh Thanh Hóa, và bà cần thực hiện một số thủ tục liên quan đến bảo hiểm xã hội. Bà B muốn biết chính xác địa chỉ mới của cơ quan Bảo hiểm Xã hội tại địa phương này để có thể lên kế hoạch công việc một cách hiệu quả từ sau tháng 10 năm 2025. Vậy địa chỉ mới đó nằm ở đâu?",
+    "answers": "A. Bảo hiểm B. Xây dựng - đô thị C. Kế toán - kiểm toán D. Lao động - tiền lương E. Giáo dục F. Sở hữu trí tuệ",
+    "ground_truth": "A"
+  },
+  {
+    "index": 131,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một công ty lớn đang bị điều tra vì nghi ngờ liên quan đến các hoạt động bất hợp pháp. Quá trình tố tụng hình sự đang diễn ra, và có nhiều biện pháp ngăn chặn khác nhau đang được xem xét áp dụng. Ban lãnh đạo công ty đang tìm hiểu và thảo luận xem liệu những biện pháp này có áp dụng cho bị can là pháp nhân trong tình huống của họ, và những yếu tố nào có thể ảnh hưởng đến việc triển khai các biện pháp này. Vậy, các quy định pháp luật hiện hành quy định như thế nào về việc sử dụng biện pháp ngăn chặn đối với pháp nhân là bị can trong bối cảnh này?",
+    "answers": "A. Kế toán - kiểm toán B. Thủ tục tố tụng C. Trách nhiệm hình sự D. Quyền dân sự E. Bộ máy hành chính F. Xuất nhập khẩu",
+    "ground_truth": "C"
+  },
+  {
+    "index": 133,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Anh B, một đảng viên mới được kết nạp, đang tìm cách truy cập vào hệ thống điện tử hỗ trợ công tác đảng viên trên máy tính cá nhân của mình. Anh được tư vấn rằng cần sử dụng cổng thông tin trực tuyến để theo dõi và quản lý thông tin cá nhân cũng như các nhiệm vụ liên quan. Vậy, quy trình chính xác và chi tiết để anh B đăng nhập vào nền tảng sổ tay điện tử dành cho đảng viên là gì?",
+    "answers": "A. Bất động sản B. Bộ máy hành chính C. Đầu tư D. Công nghệ thông tin E. Văn hóa - xã hội F. Giao thông vận tải",
+    "ground_truth": "B"
+  },
+  {
+    "index": 135,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Bà B đang tham gia một buổi hội thảo về vai trò của các cơ quan lập pháp trong việc duy trì và phát triển quốc gia. Trong buổi thảo luận, bà nhận thấy có nhiều ý kiến về nhiệm vụ và quyền hạn của một cơ quan quyền lực cao nhất trong nước. Để làm rõ hơn, bà muốn tìm hiểu chi tiết về các quyền và trách nhiệm cụ thể mà cơ quan này đảm nhận theo quy định hiện hành, nhất là những điểm được đề cập theo một điều khoản cụ thể trong văn bản quan trọng từ năm 2013. Vậy, bà B cần tìm kiếm thông tin nào để có cái nhìn rõ ràng hơn về vấn đề này?",
+    "answers": "A. Bộ máy hành chính B. Giao thông vận tải C. Trách nhiệm hình sự D. Giáo dục E. Bất động sản F. Lĩnh vực khác",
+    "ground_truth": "A"
+  },
+  {
+    "index": 138,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B, một nhà quản lý dự án, đang lên kế hoạch cho một dự án đầu tư công quy mô lớn để phát triển hạ tầng. Trong quá trình chuẩn bị, ông tìm hiểu về các điều khoản liên quan đến bảo lãnh tạm ứng theo Nghị định 254 nhằm đảm bảo sự tuân thủ pháp lý. Ông B muốn biết cụ thể những trường hợp mà dự án này có thể không cần yêu cầu bảo lãnh tạm ứng là những trường hợp nào để dễ dàng quản lý tài chính dự án?",
+    "answers": "A. Tài chính nhà nước B. Công nghệ thông tin C. Đầu tư D. Thương mại E. Bộ máy hành chính F. Giáo dục",
+    "ground_truth": "A"
+  },
+  {
+    "index": 140,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang muốn lập kế hoạch cho công việc cá nhân và cần sắp xếp thời gian hợp lý trong thời gian tới. Khi nghe nói có quy định mới được công bố bởi chính quyền liên quan đến việc thực hiện nghĩa vụ quân sự, ông rất quan tâm đến những thông tin chi tiết về lịch trình cụ thể của năm 2026. Làm thế nào để ông có thể cập nhật những mốc thời gian quan trọng và tất cả thông báo chính thức liên quan đến nghĩa vụ này?",
+    "answers": "A. Công nghệ thông tin B. Quyền dân sự C. Lĩnh vực khác D. Bộ máy hành chính E. Bảo hiểm F. Thuế - phí - lệ phí",
+    "ground_truth": "B"
+  },
+  {
+    "index": 144,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Trong bối cảnh công ty X đang nỗ lực cải thiện chương trình tuân thủ nội bộ nhằm đáp ứng tốt hơn các yêu cầu pháp lý hiện hành, họ phát hiện rằng một số thông tin quan trọng đã thay đổi và cần được cập nhật. Để đảm bảo sự chính xác và đầy đủ của hồ sơ, công ty X cần tìm kiếm mẫu đơn phù hợp để thực hiện sửa đổi và bổ sung thông tin theo đúng quy định trong Nghị định 259. Vậy họ phải sử dụng mẫu đơn nào để tiến hành các thay đổi cần thiết này?",
+    "answers": "A. Đầu tư B. Dịch vụ pháp lý C. Thể thao - y tế D. Vi phạm hành chính E. Tiền tệ ngân hàng F. Thương mại",
+    "ground_truth": "F"
+  },
+  {
+    "index": 157,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một thành phố đang lên kế hoạch triển khai dự án phát triển đô thị thông minh để cải thiện chất lượng cuộc sống cho cư dân. Để thực hiện kế hoạch này, họ cần biết các khoản tài chính khả dụng không chỉ từ ngân sách công mà còn từ các nguồn tài trợ khác. Thành phố có thể khám phá những lựa chọn tài chính nào ngoài ngân sách nhà nước để đảm bảo dự án được thực hiện hiệu quả và duy trì liên tục?",
+    "answers": "A. Quyền dân sự B. Tiền tệ ngân hàng C. Công nghệ thông tin D. Tài nguyên - môi trường E. Tài chính nhà nước F. Đầu tư",
+    "ground_truth": "E"
+  },
+  {
+    "index": 165,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B, một giám đốc công ty xây dựng, vừa hoàn thành dự án lớn và cần tiến hành quyết toán với chủ đầu tư. Trong quá trình này, ông ấy yêu cầu một bảng tính chính xác để xác định giá trị quyết toán hợp đồng, nhằm đảm bảo tính minh bạch và tránh tranh chấp. Ông B nên tìm kiếm file EXCEL của Mẫu 03c theo Nghị định 254 để phục vụ cho việc tính toán quan trọng này ở đâu?",
+    "answers": "A. Giáo dục B. Doanh nghiệp C. Đầu tư D. Bảo hiểm E. Công nghệ thông tin F. Vi phạm hành chính",
+    "ground_truth": "C"
+  },
+  {
+    "index": 168,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một doanh nghiệp khai thác vàng đang có kế hoạch mở rộng thị trường ra quốc tế nhằm tăng doanh thu và mở rộng mối quan hệ hợp tác thương mại. Để thực hiện mục tiêu này, công ty cần chuẩn bị một bộ hồ sơ đầy đủ để xin Giấy phép xuất khẩu vàng nguyên liệu từ Việt Nam, có hiệu lực từ sau ngày 10/10/2025. Doanh nghiệp cần xác định rõ các yêu cầu về giấy tờ và thủ tục cần thiết trong hồ sơ để đảm bảo tuân thủ các quy định hiện hành. Vậy những giấy tờ và thông tin nào cần được bao gồm trong hồ sơ để nộp cho cơ quan quản lý nhà nước?",
+    "answers": "A. Lĩnh vực khác B. Kế toán - kiểm toán C. Thương mại D. Tiền tệ ngân hàng E. Quyền dân sự F. Thể thao - y tế",
+    "ground_truth": "D"
+  },
+  {
+    "index": 171,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một công ty luật đang chuẩn bị tài liệu để tư vấn cho khách hàng về quá trình giải quyết tranh chấp pháp lý. Trong bối cảnh đó, họ cần cập nhật thông tin về các quy định mới nhất liên quan đến giám định tư pháp để đưa ra hướng dẫn chính xác và kịp thời. Những gì công ty luật cần biết là, theo quy định pháp luật hiện hành, nghị định nào đang được áp dụng để hướng dẫn chi tiết về Luật giám định tư pháp?",
+    "answers": "A. Đầu tư B. Công nghệ thông tin C. Thủ tục tố tụng D. Bộ máy hành chính E. Dịch vụ pháp lý F. Quyền dân sự",
+    "ground_truth": "C"
+  },
+  {
+    "index": 173,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Anh B, là chủ một doanh nghiệp nhỏ, đã quên nộp tờ khai thuế thu nhập cá nhân cho quý 3 năm 2025 đúng hạn. Điều này khiến anh lo lắng về những hậu quả có thể xảy ra. Vậy, trong trường hợp này, anh B sẽ phải chịu mức xử phạt như thế nào cho việc nộp muộn tờ khai thuế quan trọng đó?",
+    "answers": "A. Thuế - phí - lệ phí B. Giao thông vận tải C. Vi phạm hành chính D. Kế toán - kiểm toán E. Xuất nhập khẩu F. Văn hóa - xã hội",
+    "ground_truth": "C"
+  },
+  {
+    "index": 175,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Người bạn của tôi là một nhà kinh doanh đang quan tâm tới các hoạt động vui chơi giải trí hợp pháp tại Việt Nam. Anh ấy nghe nói có thông tin về việc thí điểm cho người dân trong nước tham gia chơi ở một số sòng bạc cụ thể, như ở Vân Đồn và Hồ Tràm. Để chắc chắn, anh ta muốn biết rõ các điều kiện và quy trình mà người dân cần đáp ứng để tham gia những hoạt động giải trí này có thể được thực hiện như thế nào, cũng như những quy định cụ thể và giới hạn nào được áp dụng trong giai đoạn thử nghiệm này?",
+    "answers": "A. Xây dựng - đô thị B. Thể thao - y tế C. Văn hóa - xã hội D. Bộ máy hành chính E. Vi phạm hành chính F. Tiền tệ ngân hàng",
+    "ground_truth": "E"
+  },
+  {
+    "index": 178,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B vừa mở một trung tâm dịch vụ liên quan đến xe ô tô và đang tìm hiểu về các quy định pháp lý để đảm bảo hoạt động kinh doanh hợp pháp. Ông nghe nói rằng, việc cung cấp dịch vụ bảo hành và bảo dưỡng xe ô tô đã được loại khỏi danh sách các ngành nghề yêu cầu điều kiện đầu tư đặc biệt. Ông B cần xác minh xem thông tin này có đúng không và những yếu tố nào cần chú ý khi vận hành dịch vụ này?",
+    "answers": "A. Doanh nghiệp B. Thuế - phí - lệ phí C. Lao động - tiền lương D. Quyền dân sự E. Đầu tư F. Tài chính nhà nước",
+    "ground_truth": "A"
+  },
+  {
+    "index": 179,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Bà H quản lý một công ty chuyên tổ chức các chương trình xổ số trúng thưởng và đang lo ngại về các rủi ro liên quan đến việc chấp hành pháp luật trong hoạt động này. Nhằm đảm bảo mọi quy trình được diễn ra an toàn và đúng quy định pháp luật, bà H cần tìm hiểu chi tiết về việc thực hiện các biện pháp ngăn ngừa hành vi vi phạm theo chỉ dẫn cụ thể từ Công văn số 15405/BTC-ĐCTC năm 2025 là như thế nào?",
+    "answers": "A. Thuế - phí - lệ phí B. Thương mại C. Trách nhiệm hình sự D. Vi phạm hành chính E. Bất động sản F. Lao động - tiền lương",
+    "ground_truth": "B"
+  },
+  {
+    "index": 185,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Bà B đang chuẩn bị nộp đơn xin làm việc tại một công ty lớn và được yêu cầu cung cấp thông tin liên quan đến lý lịch tư pháp của mình, bao gồm cả thông tin về án tích. Để hoàn tất hồ sơ một cách chính xác và đầy đủ, bà B cần tìm hiểu kỹ nguồn gốc từ đâu mà các thông tin về án tích của một cá nhân được thiết lập và lưu trữ. Trong quá trình này, bà B phải chú ý đến những nguồn thông tin chính nào liên quan đến việc đăng ký và quản lý dữ liệu này?",
+    "answers": "A. Quyền dân sự B. Thương mại C. Thuế - phí - lệ phí D. Xây dựng - đô thị E. Lao động - tiền lương F. Thể thao - y tế",
+    "ground_truth": "A"
+  },
+  {
+    "index": 188,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang làm việc trong một tổ chức phi chính phủ và đang chịu trách nhiệm xây dựng chương trình giáo dục cộng đồng về các nguy cơ của việc sử dụng sản phẩm gây hại cho sức khỏe. Để đảm bảo các hoạt động của mình tuân thủ pháp luật hiện hành và tác động tích cực, ông muốn tìm hiểu về các hướng dẫn của chính phủ liên quan đến việc phòng ngừa tác hại do sử dụng sản phẩm này. Ông B cần biết rõ, văn bản nào của cơ quan quản lý được ban hành để chỉ đạo thực hiện các điều này một cách cụ thể và chính xác?",
+    "answers": "A. Đầu tư B. Văn hóa - xã hội C. Tài nguyên - môi trường D. Lĩnh vực khác E. Giáo dục F. Tiền tệ ngân hàng",
+    "ground_truth": "B"
+  },
+  {
+    "index": 197,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Anh B sống tại Gia Lai và sắp tới sẽ cần thực hiện một số thủ tục liên quan đến chính sách an sinh xã hội. Để chuẩn bị tốt nhất, anh muốn biết rõ địa chỉ mới nhất của cơ quan phụ trách chế độ an sinh ở Đak Đoa sau ngày 1 tháng 10, năm 2025. Liệu ai có thể cung cấp thông tin chính xác về địa điểm sẽ hoạt động của văn phòng này không?",
+    "answers": "A. Tiền tệ ngân hàng B. Thương mại C. Lĩnh vực khác D. Bảo hiểm E. Quyền dân sự F. Giao thông vận tải",
+    "ground_truth": "D"
+  },
+  {
+    "index": 201,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Trong quá trình giảng dạy về lịch sử pháp luật tại Việt Nam, cô giáo Lan đã đề cập đến một trong những văn bản pháp lý quan trọng của nước ta. Cô yêu cầu các em học sinh tìm hiểu sâu hơn về điều khoản thứ tám của Hiến pháp năm 1946. Bà Lan muốn các em phân tích kỹ càng về nội dung, ý nghĩa và tác động của quy định này trong bối cảnh lịch sử cụ thể lúc bấy giờ. Vậy, các em sẽ giải thích và làm rõ những điểm chính của điều khoản đó như thế nào?",
+    "answers": "A. Văn hóa - xã hội B. Bộ máy hành chính C. Thủ tục tố tụng D. Tài nguyên - môi trường E. Xây dựng - đô thị F. Chứng khoán",
+    "ground_truth": "B"
+  },
+  {
+    "index": 211,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B, một cư dân sống tại huyện Cao Phong, tỉnh Phú Thọ, đang có nhu cầu tìm hiểu thông tin chi tiết về địa chỉ của cơ quan Bảo hiểm Xã hội tại khu vực mình sinh sống. Do chuẩn bị hoàn tất thủ tục hưởng chế độ bảo hiểm thất nghiệp, ông B cần biết chính xác nơi đặt trụ sở cơ quan này để nộp hồ sơ. Vậy, ông B cần tham khảo thông tin ở đâu để có thể xác định một cách rõ ràng địa chỉ của cơ quan Bảo hiểm Xã hội cơ sở tại huyện Cao Phong là như thế nào?",
+    "answers": "A. Bảo hiểm B. Giao thông vận tải C. Lĩnh vực khác D. Công nghệ thông tin E. Lao động - tiền lương F. Trách nhiệm hình sự",
+    "ground_truth": "A"
+  },
+  {
+    "index": 216,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang là bị cáo trong một vụ án kéo dài và đến tháng 9 năm 2025, xuất hiện những thông tin mới về giá trị tài sản liên quan đã bị xác định sai. Luật sư của ông cho rằng cần thực hiện việc định giá lại để đảm bảo quyền lợi và chứng cứ trong vụ án. Trong hoàn cảnh như vậy, ông B cần tìm hiểu rõ ràng về các tình huống nào yêu cầu định giá lại tài sản theo quy định mới trong tố tụng hình sự kể từ ngày 22/9/2025?",
+    "answers": "A. Thuế - phí - lệ phí B. Sở hữu trí tuệ C. Bảo hiểm D. Trách nhiệm hình sự E. Xây dựng - đô thị F. Thủ tục tố tụng",
+    "ground_truth": "F"
+  },
+  {
+    "index": 219,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Anh B là một nhà nghiên cứu trong lĩnh vực pháp luật, hiện đang chuẩn bị một bài thuyết trình cho hội thảo sắp diễn ra. Trong quá trình tìm hiểu, anh B muốn nắm rõ cấu trúc của một văn bản pháp lý quan trọng có liên quan đến việc giám định tư pháp. Để có thể phân tích kỹ lưỡng và trình bày thông tin chính xác trong bài thuyết trình, anh B cần biết văn bản này gồm những phần nào và mỗi phần chứa đựng bao nhiêu quy tắc. Liệu có ai có thể cung cấp thông tin chi tiết về số lượng các phần lớn và các quy định nhỏ bên trong văn bản này không?",
+    "answers": "A. Thủ tục tố tụng B. Sở hữu trí tuệ C. Lao động - tiền lương D. Quyền dân sự E. Bộ máy hành chính F. Xuất nhập khẩu",
+    "ground_truth": "A"
+  },
+  {
+    "index": 226,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Cuộc thi trực tuyến về chuyển đổi số dành cho thanh niên An Giang đang diễn ra và đến tuần thứ ba, chị B mới tham gia lần đầu. Chị muốn biết làm thế nào để tìm kiếm thông tin liên quan đến các câu hỏi đã công bố trước đó, đặc biệt là để kiểm tra kết quả của tuần này. Chị B cần hướng dẫn cụ thể về việc tìm kiếm dữ liệu và thông tin hữu ích từ Ban tổ chức cuộc thi, cũng như cách sử dụng nền tảng kỹ thuật số để tra cứu thông tin nhanh chóng và chính xác. Vậy, chị B nên áp dụng phương pháp nào để có được đáp án và kết quả mới nhất một cách hiệu quả?",
+    "answers": "A. Lĩnh vực khác B. Trách nhiệm hình sự C. Thương mại D. Xuất nhập khẩu E. Văn hóa - xã hội F. Giao thông vận tải",
+    "ground_truth": "A"
+  },
+  {
+    "index": 239,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Doanh nghiệp X tại Việt Nam đang tìm cách mở rộng các hoạt động kinh doanh quốc tế của mình thông qua việc phát triển hạ tầng logistics vững mạnh. Để chuẩn bị cho kế hoạch dài hạn, họ cần nắm rõ những định hướng và chiến lược được phê duyệt nhằm phát triển dịch vụ logistics trong giai đoạn từ 2025 đến 2035, cũng như tầm nhìn đến năm 2050. Doanh nghiệp X cần lưu ý đến quan điểm phát triển chủ đạo nào để có kế hoạch đầu tư thích hợp cho bước phát triển này?",
+    "answers": "A. Thương mại B. Xuất nhập khẩu C. Kế toán - kiểm toán D. Lĩnh vực khác E. Xây dựng - đô thị F. Trách nhiệm hình sự",
+    "ground_truth": "B"
+  },
+  {
+    "index": 246,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một doanh nghiệp mới ở TP Hồ Chí Minh muốn đảm bảo phúc lợi cho nhân viên và cần liên hệ với cơ quan BHXH vùng Lái Thiêu để làm thủ tục đăng ký bảo hiểm xã hội. Để tiến hành thuận lợi, họ cần biết thông tin chi tiết về phương thức liên lạc chính xác, bao gồm địa chỉ và số điện thoại của cơ sở này, giúp giải quyết nhanh chóng các yêu cầu liên quan đến bảo hiểm xã hội cho nhân viên.",
+    "answers": "A. Văn hóa - xã hội B. Bất động sản C. Bảo hiểm D. Doanh nghiệp E. Tài chính nhà nước F. Bộ máy hành chính",
+    "ground_truth": "C"
+  },
+  {
+    "index": 251,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B là một luật sư trẻ đang tham gia vào một vụ án hình sự phức tạp. Để chuẩn bị cho phiên tòa sắp tới, ông cần tìm hiểu cách thức làm việc của hội đồng định giá tài sản. Trong quá trình nghiên cứu, ông phát hiện rằng việc định giá tài sản bị ảnh hưởng bởi các quy định trong Nghị định 250. Ông B nên nắm rõ cơ chế hoạt động cụ thể của hội đồng này để đảm bảo quá trình tố tụng diễn ra công bằng và minh bạch như thế nào?",
+    "answers": "A. Tiền tệ ngân hàng B. Trách nhiệm hình sự C. Xuất nhập khẩu D. Thủ tục tố tụng E. Bảo hiểm F. Bất động sản",
+    "ground_truth": "D"
+  },
+  {
+    "index": 258,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B là chủ một doanh nghiệp nhỏ và vừa, bị cáo buộc sử dụng và buôn bán hàng hóa thuộc danh mục cấm. Trong quá trình tố tụng hình sự, tòa án cần định giá chính xác tài sản này để đánh giá mức độ vi phạm và ra phán quyết. Ông B thắc mắc, những yếu tố pháp lý nào cần được xem xét để đảm bảo việc định giá tài sản bị cấm này tuân thủ đúng quy định được nêu trong Nghị định 250?",
+    "answers": "A. Xuất nhập khẩu B. Thủ tục tố tụng C. Bộ máy hành chính D. Quyền dân sự E. Bảo hiểm F. Đầu tư",
+    "ground_truth": "B"
+  },
+  {
+    "index": 267,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Trong một buổi hội thảo về sức khỏe cộng đồng, bà B đang thuyết trình về tầm quan trọng của chế độ ăn uống an toàn và lành mạnh. Để minh họa cho bài nói của mình, bà muốn trích dẫn chi tiết từ Luật An toàn thực phẩm, bao gồm cả cấu trúc của từng phần trong luật. Do đó, bà cần xác định rõ toàn bộ Luật có bao nhiêu chương và bao nhiêu điều để cung cấp thông tin chính xác cho người tham dự.",
+    "answers": "A. Đầu tư B. Dịch vụ pháp lý C. Quyền dân sự D. Chứng khoán E. Giáo dục F. Thể thao - y tế",
+    "ground_truth": "F"
+  },
+  {
+    "index": 273,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B, một cựu chiến binh đang tham gia buổi hội thảo về các chiến dịch quân sự quan trọng trong lịch sử. Tại đây, ông muốn tìm hiểu thêm về một trận đánh cụ thể, nơi mà một quốc gia đã thành công trong việc vô hiệu hóa các chiến thuật quân sự hiện đại như vận tải bằng máy bay và xe bọc thép của đối phương. Trận chiến này đã tạo ra sự chuyển biến lớn trong cuộc xung đột đang diễn ra. Ông B đang rất quan tâm đến việc những yếu tố nào đã góp phần vào chiến thắng này?",
+    "answers": "A. Giao thông vận tải B. Thể thao - y tế C. Lĩnh vực khác D. Thương mại E. Tài chính nhà nước F. Tiền tệ ngân hàng",
+    "ground_truth": "C"
+  },
+  {
+    "index": 276,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Chị Lan vừa nhận được công việc mới trong ngành hàng không quốc tế và cô khá phấn khích về những chuyến bay sắp tới. Tuy nhiên, cô muốn biết rõ hơn về các tình huống mà mình có thể phải tạm ngừng công việc đột ngột. Trong trường hợp chị Lan, điều kiện nào có thể dẫn tới yêu cầu tạm thời rời xa công việc của mình trên các chuyến bay?",
+    "answers": "A. Lĩnh vực khác B. Thủ tục tố tụng C. Thương mại D. Thuế - phí - lệ phí E. Bảo hiểm F. Quyền dân sự",
+    "ground_truth": "A"
+  },
+  {
+    "index": 279,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một doanh nghiệp đang tham gia vào một dự án lớn thông qua quá trình đấu thầu. Sau khi nộp hồ sơ, họ phát hiện ra có những vấn đề cần điều chỉnh và mong muốn gửi kiến nghị đến ban tổ chức. Trong tình huống này, đại diện doanh nghiệp cần biết rõ về quy định hiện hành liên quan đến thời hạn mà phía tổ chức phải phản hồi những kiến nghị của họ theo Nghị định 214 để có kế hoạch chuẩn bị và hành động phù hợp. Thời gian cụ thể cho việc xử lý kiến nghị trong đấu thầu sẽ được xác định như thế nào theo đúng quy định pháp lý mới nhất?",
+    "answers": "A. Thuế - phí - lệ phí B. Đầu tư C. Xây dựng - đô thị D. Thương mại E. Quyền dân sự F. Chứng khoán",
+    "ground_truth": "B"
+  },
+  {
+    "index": 282,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B là một nhà báo đang nghiên cứu về vai trò của Việt Nam trong các sự kiện quốc tế lớn. Trong quá trình tìm hiểu, ông đã phát hiện thông tin rằng Việt Nam có thể đã từng được chọn để tổ chức buổi lễ ký kết một điều ước quốc tế quan trọng liên quan đến an ninh mạng do Liên hợp quốc điều hành. Để viết bài báo chi tiết và chính xác hơn, ông B muốn xác nhận xem thông tin này có chính xác không, và nếu có, đâu là những lý do mà Việt Nam được tin tưởng giao phó nhiệm vụ quan trọng này?",
+    "answers": "A. Tiền tệ ngân hàng B. Văn hóa - xã hội C. Thủ tục tố tụng D. Doanh nghiệp E. Kế toán - kiểm toán F. Giao thông vận tải",
+    "ground_truth": "B"
+  },
+  {
+    "index": 289,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Vợ chồng ông B đang lên kế hoạch cho một chuyến nghỉ dưỡng vào cuối năm 2025 và họ muốn chọn thời điểm phù hợp để kết hợp tham gia các lễ hội truyền thống. Do đó, ông B cần tham khảo lịch âm để xác định chính xác các ngày lễ trong tháng 11 năm 2025, cũng như xem xét chi tiết lịch vạn niên để đưa ra quyết định hợp lý nhất cho kế hoạch của mình. Những thông tin đầy đủ nào về tháng 11 âm lịch năm 2025 có thể giúp ông B?",
+    "answers": "A. Văn hóa - xã hội B. Thủ tục tố tụng C. Lĩnh vực khác D. Tài nguyên - môi trường E. Công nghệ thông tin F. Thể thao - y tế",
+    "ground_truth": "C"
+  },
+  {
+    "index": 302,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một công ty A đang tham gia một dự án lớn và đã chuẩn bị hồ sơ đấu thầu cẩn thận. Trong quá trình xem xét các điều kiện đã được công bố, họ phát hiện rằng hồ sơ mời thầu đưa ra yêu cầu về nguồn gốc xuất xứ của sản phẩm theo nhóm nước hoặc khu vực nhất định, và trong số đó không có tên của Việt Nam. Công ty A dự định cung cấp sản phẩm có nguồn gốc từ Việt Nam. Vậy trong trường hợp này, sản phẩm của họ sẽ được đánh giá thế nào trong bối cảnh đấu thầu này?",
+    "answers": "A. Chứng khoán B. Trách nhiệm hình sự C. Xuất nhập khẩu D. Công nghệ thông tin E. Đầu tư F. Tài chính nhà nước",
+    "ground_truth": "E"
+  },
+  {
+    "index": 309,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang chuẩn bị tham gia một cuộc đấu giá quan trọng do một cơ quan tổ chức. Trước sự kiện này, ông cảm thấy cần nắm rõ về cấu trúc của Luật Đấu giá tài sản để đảm bảo mọi thủ tục được thực hiện đúng. Vì vậy, ông B thắc mắc Luật này gồm mấy chương mấy điều, cũng như cách thức mà mỗi phần của luật điều chỉnh quá trình đấu giá ra sao để anh có thể tự tin trong việc tuân thủ pháp lý.",
+    "answers": "A. Thương mại B. Trách nhiệm hình sự C. Lĩnh vực khác D. Dịch vụ pháp lý E. Bảo hiểm F. Bất động sản",
+    "ground_truth": "A"
+  },
+  {
+    "index": 314,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Gia đình anh B có kế hoạch tổ chức một chuyến du lịch đặc biệt vào dịp cuối năm 2025 và đầu năm 2026. Để thuận tiện cho việc sắp xếp công việc và lên lịch trình cụ thể, anh B cần biết chính xác số ngày nghỉ lễ Tết năm 2026, cùng với thông tin chi tiết về việc các ngày nghỉ này sẽ rơi vào thứ mấy trong tuần. Anh B cần những thông tin này để lên kế hoạch nghỉ phù hợp nhất cho cả gia đình và đảm bảo mọi công việc trước và sau kỳ nghỉ được sắp xếp tốt.",
+    "answers": "A. Công nghệ thông tin B. Lao động - tiền lương C. Sở hữu trí tuệ D. Thể thao - y tế E. Vi phạm hành chính F. Chứng khoán",
+    "ground_truth": "B"
+  },
+  {
+    "index": 317,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Chị B đang làm việc tại phòng kế hoạch của một cơ quan địa phương và được giao nhiệm vụ xác định những hạng mục hàng hóa cần thiết cho năm tài chính mới. Chị nhận ra cần phải tuân theo quy định hiện hành, cụ thể là các hướng dẫn trong Thông tư 40, để đảm bảo rằng kế hoạch mua sắm tập trung được thực hiện một cách hiệu quả nhất. Chị B cần biết quy trình và tiêu chí nào cần được xem xét để xác định đúng nhu cầu mua sắm tập trung tại địa phương mình?",
+    "answers": "A. Sở hữu trí tuệ B. Đầu tư C. Lao động - tiền lương D. Thương mại E. Tài nguyên - môi trường F. Thủ tục tố tụng",
+    "ground_truth": "B"
+  },
+  {
+    "index": 321,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Nhà đầu tư B đang lên kế hoạch triển khai một dự án kinh doanh trên một khu đất mà họ mong muốn được cấp quyền sử dụng từ Nhà nước. Tuy nhiên, trước khi tiến hành, B cần xác định liệu có yêu cầu thực hiện ký quỹ cho dự án này không. Trường hợp nào B sẽ được miễn việc ký quỹ khi dự án liên quan đến việc Nhà nước giao đất, cho thuê đất hoặc cho phép thay đổi mục đích sử dụng khu đất đó?",
+    "answers": "A. Doanh nghiệp B. Văn hóa - xã hội C. Lao động - tiền lương D. Thể thao - y tế E. Công nghệ thông tin F. Giao thông vận tải",
+    "ground_truth": "A"
+  },
+  {
+    "index": 322,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Anh B chuẩn bị đến tuổi thực hiện nghĩa vụ theo quy định và đang tìm hiểu về các nghĩa vụ công dân đối với đất nước. Để chuẩn bị tốt nhất cho quá trình này, anh B muốn biết rõ hơn về việc tham gia nghĩa vụ theo luật định. Vậy, trong năm 2026, anh cần tham khảo những tài liệu nào để nắm được chính xác các quy định hiện hành liên quan đến nghĩa vụ quân sự?",
+    "answers": "A. Thuế - phí - lệ phí B. Chứng khoán C. Công nghệ thông tin D. Xây dựng - đô thị E. Quyền dân sự F. Thể thao - y tế",
+    "ground_truth": "E"
+  },
+  {
+    "index": 334,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Trong một buổi họp với hội đồng quản trị của công ty, bà B được giao nhiệm vụ nghiên cứu các tiêu chuẩn mới liên quan đến việc xử lý khiếu nại và tố cáo trong doanh nghiệp. Để đảm bảo tuân thủ đầy đủ các quy định mới nhất, bà B cần tìm hiểu cụ thể về nghị định nào đang hướng dẫn thực hiện các điều khoản quan trọng của Luật Tố cáo mới ban hành. Vậy, bà B nên tham khảo văn bản pháp luật nào để nắm rõ các quy định này?",
+    "answers": "A. Chứng khoán B. Thủ tục tố tụng C. Bộ máy hành chính D. Thể thao - y tế E. Văn hóa - xã hội F. Quyền dân sự",
+    "ground_truth": "B"
+  },
+  {
+    "index": 345,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Chị B là một nhà hoạt động xã hội, hiện đang tham gia vào một dự án cộng đồng nhằm nâng cao nhận thức về bình đẳng giới. Khi biết đến sự kiện Tháng hành động vì bình đẳng giới và phòng ngừa bạo lực dự kiến diễn ra vào năm 2025, chị muốn tìm hiểu cụ thể về các hướng dẫn, quy định mà Công văn 8935/BNV-CTTN&BĐG đã đưa ra để có thể chuẩn bị các hoạt động của mình một cách hiệu quả và phù hợp với mục tiêu của chương trình. Chị B cần nắm vững các điểm chính trong công văn này như thế nào?",
+    "answers": "A. Bảo hiểm B. Dịch vụ pháp lý C. Quyền dân sự D. Văn hóa - xã hội E. Thể thao - y tế F. Lĩnh vực khác",
+    "ground_truth": "C"
+  },
+  {
+    "index": 348,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B, giám đốc tài chính của một công ty, cần chuẩn bị báo cáo tài chính cuối năm và cần tìm kiếm các biểu mẫu chứng từ kế toán để đảm bảo tuân thủ đúng quy định pháp luật. Trong quá trình tìm kiếm, ông B tự hỏi làm thế nào ông có thể tìm được Phụ lục 1 của Thông tư 99/2025/TT-BTC một cách hiệu quả và nhanh chóng nhất. Liệu có nguồn nào đáng tin cậy hoặc trang web chính thức nào cung cấp thông tin chi tiết về danh mục và biểu mẫu kế toán cần thiết này không?",
+    "answers": "A. Tiền tệ ngân hàng B. Lĩnh vực khác C. Bảo hiểm D. Doanh nghiệp E. Tài nguyên - môi trường F. Kế toán - kiểm toán",
+    "ground_truth": "D"
+  },
+  {
+    "index": 349,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Gia đình bà B sống tại Hà Nội và đang tìm hiểu về các quy tắc quốc tế có thể ảnh hưởng đến cộng đồng xung quanh. Họ quan tâm đặc biệt đến một hiệp định quốc tế có tầm ảnh hưởng sâu rộng dự kiến sẽ được thảo luận vào năm 2025 tại Hà Nội. Bà B đang tự hỏi những vấn đề cốt lõi nào sẽ được đưa ra trong hiệp định đó, cùng với các nguyên tắc cơ bản liên quan đến cách thức ký kết và thực thi mà các quốc gia tham gia cần tuân thủ. Gia đình bà cần biết thêm chi tiết để chuẩn bị cho những thay đổi có thể xảy ra trong tương lai.",
+    "answers": "A. Lĩnh vực khác B. Thủ tục tố tụng C. Dịch vụ pháp lý D. Quyền dân sự E. Bộ máy hành chính F. Tài nguyên - môi trường",
+    "ground_truth": "A"
+  },
+  {
+    "index": 357,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Công ty X là một tổ chức có hoạt động quốc tế, gần đây đang tìm hiểu các quy định pháp lý để đảm bảo tuân thủ an ninh. Ban lãnh đạo công ty muốn nắm rõ các quy định mới nhất về phòng chống khủng bố mà chính phủ đã ban hành. Những nghị định nào đã được ban hành để hướng dẫn và hỗ trợ thi hành Luật Phòng chống khủng bố?",
+    "answers": "A. Thủ tục tố tụng B. Bảo hiểm C. Giao thông vận tải D. Lĩnh vực khác E. Trách nhiệm hình sự F. Chứng khoán",
+    "ground_truth": "D"
+  },
+  {
+    "index": 360,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một công ty phát triển phần mềm đang sử dụng trí tuệ nhân tạo để tối ưu hóa quy trình sản xuất. Để đảm bảo hệ thống hoạt động an toàn và hiệu quả, họ cần thiết lập các biện pháp quản lý và giám sát rủi ro cho hệ thống AI mà họ đang triển khai. Do đó, giám đốc công nghệ của công ty đã yêu cầu đội ngũ chuyên gia nghiên cứu và đề xuất các mức độ rủi ro khác nhau có thể xảy ra. Những mức độ rủi ro này bao gồm những mức độ nào để đảm bảo an toàn và pháp lý trong quá trình áp dụng công nghệ AI?",
+    "answers": "A. Vi phạm hành chính B. Sở hữu trí tuệ C. Công nghệ thông tin D. Thương mại E. Dịch vụ pháp lý F. Thể thao - y tế",
+    "ground_truth": "B"
+  },
+  {
+    "index": 361,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B sở hữu một xưởng sản xuất đồ trang sức và đang có ý định mở rộng quy mô hoạt động của mình. Việc này yêu cầu ông phải tiến hành sửa đổi và bổ sung Giấy chứng nhận cho đủ điều kiện theo quy định hiện hành. Trong bối cảnh này, ông B cần chuẩn bị những loại tài liệu và hồ sơ nào để đáp ứng đúng theo yêu cầu của Thông tư 34?",
+    "answers": "A. Tài nguyên - môi trường B. Giao thông vận tải C. Tiền tệ ngân hàng D. Xuất nhập khẩu E. Thủ tục tố tụng F. Vi phạm hành chính",
+    "ground_truth": "C"
+  },
+  {
+    "index": 386,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Anh B là một kế toán viên tại công ty X, chịu trách nhiệm quản lý và báo cáo các khoản đã nộp về nghĩa vụ tài chính cá nhân cho nhân viên. Trong quý 3 năm 2025, công ty đã thực hiện việc khấu trừ và nộp thay thuế thu nhập cá nhân cho các nhân viên. Để đảm bảo tuân thủ các yêu cầu pháp lý và báo cáo tài chính, anh B cần thực hiện đúng quy trình chi tiết trên phần mềm kê khai để tổng hợp danh sách và số liệu chính xác. Anh B cần biết quy trình từ khâu nhập liệu cho đến cách kiểm tra và xác nhận thông tin đã đúng chưa như thế nào?",
+    "answers": "A. Chứng khoán B. Lao động - tiền lương C. Xây dựng - đô thị D. Tài chính nhà nước E. Thuế - phí - lệ phí F. Bộ máy hành chính",
+    "ground_truth": "E"
+  },
+  {
+    "index": 392,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Trong bối cảnh năm 2025, bà B - một nhà hoạt động xã hội - muốn thực hiện một chuỗi sự kiện nhằm nâng cao nhận thức về quyền bình đẳng giới và phòng ngừa bạo lực dựa trên cơ sở giới trong cộng đồng. Để chuẩn bị tốt cho các hoạt động, bà B cần tìm hiểu chi tiết về chủ đề chính thức của tháng hành động vì bình đẳng giới được tổ chức trên toàn quốc. Bà B sẽ phải xem xét kỹ các khuyến nghị và hoạt động quan trọng nào sẽ được ưu tiên trong giai đoạn này?",
+    "answers": "A. Quyền dân sự B. Trách nhiệm hình sự C. Thể thao - y tế D. Đầu tư E. Văn hóa - xã hội F. Giáo dục",
+    "ground_truth": "A"
+  },
+  {
+    "index": 401,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Trong một cộng đồng đang chứng kiến sự thay đổi nhanh chóng về cấu trúc dân số, các nhà hoạch định chính sách đang nỗ lực tìm kiếm giải pháp nhằm cân bằng tỷ lệ sinh để đảm bảo sự phát triển bền vững. Một số chuyên gia đã đề xuất việc tạo ra các chương trình hỗ trợ cho gia đình trẻ, bao gồm hỗ trợ tài chính và các ưu đãi về chăm sóc y tế. Với tình hình thực tế này, các biện pháp nào có thể được thực hiện để đảm bảo mức sinh thay thế được duy trì ổn định và phát triển bền vững cộng đồng?",
+    "answers": "A. Sở hữu trí tuệ B. Dịch vụ pháp lý C. Thể thao - y tế D. Tài chính nhà nước E. Quyền dân sự F. Đầu tư",
+    "ground_truth": "C"
+  },
+  {
+    "index": 406,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông John, một nhà quản lý cấp cao tại một thành phố đang tiên phong trong lĩnh vực hiện đại hóa đô thị, đã được giao nhiệm vụ lên kế hoạch cho việc phát triển một đô thị thông minh mới. Dự kiến từ giữa tháng 10 năm 2025, dự án này sẽ bắt đầu triển khai. Ông John cần biết chi tiết về các yếu tố và kế hoạch trọng điểm nào mà tổ chức sẽ áp dụng để đảm bảo xã hội được vận hành thông minh hơn. Bao gồm những khía cạnh nào cần chú ý trong việc lập kế hoạch phát triển này?",
+    "answers": "A. Thương mại B. Thủ tục tố tụng C. Xây dựng - đô thị D. Lĩnh vực khác E. Lao động - tiền lương F. Công nghệ thông tin",
+    "ground_truth": "F"
+  },
+  {
+    "index": 408,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B, sống cùng với gia đình, đang đối mặt với tình trạng phức tạp khi hàng xóm thông báo rằng vợ ông có hành vi không đúng mực với con riêng từ cuộc hôn nhân trước. Trong trường hợp này, ông B cần tìm hiểu rõ về các quy định hiện hành liên quan đến vấn đề xử lý hành vi gây tổn thương về tinh thần và thể chất đó. Các cơ quan chức năng sẽ đưa ra hình thức xử phạt thế nào để bảo vệ quyền lợi của trẻ và duy trì trật tự xã hội?",
+    "answers": "A. Bộ máy hành chính B. Vi phạm hành chính C. Văn hóa - xã hội D. Quyền dân sự E. Tiền tệ ngân hàng F. Tài nguyên - môi trường",
+    "ground_truth": "B"
+  },
+  {
+    "index": 409,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B là giám đốc của một công ty khởi nghiệp trong lĩnh vực tài nguyên thiên nhiên. Trong quá trình chuẩn bị kế hoạch kinh doanh và các tài liệu pháp lý cần thiết để đấu thầu một dự án lớn, ông B cần xác định chi tiết mã phân loại cụ thể cho một hạng mục liên quan đến khai thác khí đốt tự nhiên. Ông B muốn biết mã số cấp độ chi tiết nào được gán cho ngành này theo hệ thống phân loại kinh tế hiện hành để đảm bảo tài liệu của công ty hoàn toàn chính xác và phù hợp với các yêu cầu pháp lý.",
+    "answers": "A. Đầu tư B. Thương mại C. Tài chính nhà nước D. Xây dựng - đô thị E. Thủ tục tố tụng F. Tài nguyên - môi trường",
+    "ground_truth": "B"
+  },
+  {
+    "index": 419,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Người dân muốn kiểm tra thông tin về các cá nhân đang bị truy nã để nâng cao cảnh giác trong cộng đồng. Ông B, một người sống ở thành phố, muốn sử dụng thiết bị di động để tra cứu danh sách truy nã thông qua ứng dụng VNeID. Ông cần biết cách thực hiện điều này với phiên bản mới nhất của ứng dụng, bao gồm các bước và yêu cầu cụ thể cần tuân thủ để đảm bảo an toàn và chính xác. Ông B nên làm gì để nhận được thông tin cần thiết?",
+    "answers": "A. Công nghệ thông tin B. Sở hữu trí tuệ C. Lĩnh vực khác D. Thủ tục tố tụng E. Xuất nhập khẩu F. Dịch vụ pháp lý",
+    "ground_truth": "D"
+  },
+  {
+    "index": 422,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B hiện đang điều hành một công ty tư vấn lớn và muốn tham gia một dự án đấu thầu quan trọng. Để đảm bảo độ tin cậy và chất lượng cho hồ sơ thầu, ông B cần thành lập một tổ chuyên gia nội bộ. Ông đang thắc mắc về quy định yêu cầu kinh nghiệm tối thiểu của các thành viên tổ chuyên gia này. Liệu họ cần có bao nhiêu năm làm việc trong lĩnh vực có liên quan để đáp ứng tiêu chí và tăng khả năng thành công trong quá trình tư vấn đấu thầu?",
+    "answers": "A. Bảo hiểm B. Trách nhiệm hình sự C. Đầu tư D. Chứng khoán E. Giao thông vận tải F. Xây dựng - đô thị",
+    "ground_truth": "C"
+  },
+  {
+    "index": 423,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B là chủ một doanh nghiệp nhỏ đang mở rộng kho hàng và cần nhập nhiều vật liệu để đáp ứng nhu cầu sản xuất ngày càng tăng. Để đảm bảo việc quản lý hàng hóa nhập kho một cách hiệu quả và tuân thủ đúng quy định pháp lý, ông B cần biết nơi nào có thể cung cấp mẫu Phiếu nhập kho 01-VT theo Thông tư 99. Liệu ông B có thể truy cập vào tài liệu này qua internet hoặc từ cơ quan quản lý nào để đảm bảo mọi thủ tục được thực hiện chính xác không?",
+    "answers": "A. Tài nguyên - môi trường B. Công nghệ thông tin C. Bất động sản D. Tài chính nhà nước E. Kế toán - kiểm toán F. Thủ tục tố tụng",
+    "ground_truth": "E"
+  },
+  {
+    "index": 426,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Bà B, một quản lý tại một bệnh viện công, đang chuẩn bị cho việc mua sắm thuốc và vật tư y tế cho năm tài chính mới. Bà nghe nói từ ngày 25/10/2025 sẽ có những thay đổi trong quy trình mua sắm thuốc. Để đảm bảo tuân thủ đúng quy định, bà muốn biết những trường hợp cụ thể nào sẽ không cần thực hiện đấu thầu thuốc theo quy định mới nhất trong Thông tư 40 mà bệnh viện cần lưu ý?",
+    "answers": "A. Bất động sản B. Bộ máy hành chính C. Bảo hiểm D. Đầu tư E. Tiền tệ ngân hàng F. Thủ tục tố tụng",
+    "ground_truth": "D"
+  },
+  {
+    "index": 428,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Anh B, khi nhận chức vụ kế toán trưởng cho một công ty, cần thực hiện nghĩa vụ pháp lý cần thiết. Để điều hành hiệu quả tài chính của công ty mình, anh đang tìm hiểu về quy trình đăng ký chữ ký kế toán trưởng với Kho bạc Nhà nước. Vậy, Công văn ban hành mới đây quy định cụ thể những bước và điều khoản nào mà anh B cần tuân thủ khi thực hiện đăng ký này?",
+    "answers": "A. Tiền tệ ngân hàng B. Tài nguyên - môi trường C. Dịch vụ pháp lý D. Vi phạm hành chính E. Kế toán - kiểm toán F. Thủ tục tố tụng",
+    "ground_truth": "A"
+  },
+  {
+    "index": 435,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Trong một phiên họp của Quốc hội, bà B đặt vấn đề về sự công bằng và phát triển bền vững cho các vùng miền có cộng đồng dân tộc thiểu số. Trong bối cảnh đó, bà B muốn biết cơ quan nào của Quốc hội sẽ chịu trách nhiệm chính trong việc xem xét và đánh giá các chính sách liên quan để đảm bảo chúng thực sự đáp ứng nhu cầu và quyền lợi của những cộng đồng này?",
+    "answers": "A. Văn hóa - xã hội B. Công nghệ thông tin C. Trách nhiệm hình sự D. Bảo hiểm E. Xây dựng - đô thị F. Bộ máy hành chính",
+    "ground_truth": "F"
+  },
+  {
+    "index": 442,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một doanh nghiệp đang lên kế hoạch tổ chức sự kiện tri ân khách hàng dự kiến vào ngày 22 tháng 2 năm 2026. Để việc chuẩn bị diễn ra suôn sẻ, họ cần biết chi tiết về ngày này như thứ trong tuần, ngày âm lịch tương ứng và liệu có sự kiện văn hóa hoặc lễ hội quan trọng nào diễn ra vào thời điểm đó mà họ cần lưu ý để lên kế hoạch phù hợp.",
+    "answers": "A. Giáo dục B. Thương mại C. Doanh nghiệp D. Thể thao - y tế E. Lĩnh vực khác F. Xây dựng - đô thị",
+    "ground_truth": "E"
+  },
+  {
+    "index": 450,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Anh B chuẩn bị tổ chức một sự kiện quan trọng vào ngày 23 tháng 4 năm 2025 và cần xác định chính xác hôm đó là ngày nào trong tuần để hoạch định kế hoạch chi tiết. Đồng thời, anh cũng muốn biết ngày âm tương ứng để phù hợp với phong tục và chọn ngày tốt lành cho sự kiện. Vậy, anh B cần biết ngày 23 tháng 4 năm 2025 là thứ mấy và ngày âm lịch nào?",
+    "answers": "A. Kế toán - kiểm toán B. Sở hữu trí tuệ C. Quyền dân sự D. Tiền tệ ngân hàng E. Bảo hiểm F. Đầu tư",
+    "ground_truth": "B"
+  },
+  {
+    "index": 452,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B hiện đang làm việc tại một cơ quan xây dựng và quản lý dự án lớn của thành phố. Trong bối cảnh nguồn tài chính đang có nhiều biến động, ông B được giao nhiệm vụ điều chỉnh lại kế hoạch đầu tư công cho giai đoạn trung hạn và cũng như từng năm dựa trên những quy định mới nhất. Trước tình huống này, ông B cần nắm rõ những điều kiện và trình tự điều chỉnh theo Nghị định 275 để đảm bảo việc áp dụng chính sách vào kế hoạch đầu tư một cách hiệu quả và đúng pháp luật ra sao?",
+    "answers": "A. Đầu tư B. Thuế - phí - lệ phí C. Thương mại D. Xây dựng - đô thị E. Quyền dân sự F. Dịch vụ pháp lý",
+    "ground_truth": "A"
+  },
+  {
+    "index": 456,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B quản lý một cơ sở sản xuất trang sức đã nhiều năm và đang có ý định mở rộng dịch vụ sang lĩnh vực sản xuất vàng miếng. Để tiến hành việc này, ông cần thực hiện thủ tục sửa đổi và bổ sung giấy phép quan trọng đã có. Vậy, ông B cần phải chuẩn bị những giấy tờ và thông tin gì theo quy định hiện hành của Thông tư 34 để quá trình này diễn ra suôn sẻ và đúng luật?",
+    "answers": "A. Tiền tệ ngân hàng B. Thuế - phí - lệ phí C. Quyền dân sự D. Thể thao - y tế E. Doanh nghiệp F. Tài chính nhà nước",
+    "ground_truth": "A"
+  },
+  {
+    "index": 462,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang tham gia vào một dự án đổi mới sáng tạo lớn và đã ký một hợp đồng tài trợ với một tổ chức tài chính để thực hiện nhiệm vụ này. Trong bối cảnh yêu cầu minh bạch và sự cần thiết của việc theo dõi tiến độ, ông B muốn biết liệu trong hợp đồng tài trợ mà ông đã ký có cần quy định rõ ràng về trách nhiệm đối với việc cung cấp, thu thập và báo cáo số liệu cần thiết không, và những hậu quả gì có thể xảy ra nếu bên nhận tài trợ không tuân thủ các quy định này?",
+    "answers": "A. Bảo hiểm B. Lĩnh vực khác C. Thủ tục tố tụng D. Kế toán - kiểm toán E. Công nghệ thông tin F. Trách nhiệm hình sự",
+    "ground_truth": "B"
+  },
+  {
+    "index": 463,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Chị B rất đam mê cống hiến cho đất nước và quyết định tham gia nghĩa vụ quân sự theo diện tự nguyện. Tuy nhiên, chị chưa biết cách để tìm và điền chính xác loại đơn cần thiết cho việc đăng ký này. Vậy, chị B nên làm thế nào để chuẩn bị đầy đủ thủ tục đăng ký tham gia nghĩa vụ quân sự tự nguyện cho nữ, bao gồm việc tìm kiếm và hoàn tất các mẫu đơn liên quan một cách chính xác và hợp lệ?",
+    "answers": "A. Dịch vụ pháp lý B. Sở hữu trí tuệ C. Xây dựng - đô thị D. Quyền dân sự E. Bất động sản F. Doanh nghiệp",
+    "ground_truth": "D"
+  },
+  {
+    "index": 464,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Gia đình chị B điều hành một cửa hàng nhỏ bán lẻ hàng hóa tại địa phương. Từ năm 2026, có nhiều sự thay đổi trong các quy định liên quan đến hoạt động kinh doanh. Chị B đang băn khoăn liệu việc điều hành cửa hàng sẽ yêu cầu phải có một tài khoản ngân hàng riêng biệt chỉ dành cho các giao dịch liên quan đến cửa hàng. Vậy, chị B cần tìm hiểu cụ thể về những quy định mới này là gì để đảm bảo tuân thủ pháp luật và tối ưu hóa hoạt động kinh doanh của mình?",
+    "answers": "A. Vi phạm hành chính B. Kế toán - kiểm toán C. Doanh nghiệp D. Tiền tệ ngân hàng E. Dịch vụ pháp lý F. Thương mại",
+    "ground_truth": "C"
+  },
+  {
+    "index": 467,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Doanh nghiệp của chị B đang xem xét mở rộng lĩnh vực hoạt động sau nhiều năm kinh doanh thành công. Tuy nhiên, họ vừa nhận được thông tin về những thay đổi quy định pháp luật liên quan đến ngành nghề. Chị B thắc mắc liệu việc kinh doanh dịch vụ kế toán sắp tới có còn bị coi là ngành nghề đầu tư cần điều kiện đặc biệt hay không. Trong bối cảnh này, những quy định mới có ảnh hưởng gì đến kế hoạch dài hạn của doanh nghiệp chị B không?",
+    "answers": "A. Công nghệ thông tin B. Thương mại C. Văn hóa - xã hội D. Thể thao - y tế E. Tài chính nhà nước F. Thuế - phí - lệ phí",
+    "ground_truth": "B"
+  },
+  {
+    "index": 470,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Chị B đang tham gia một diễn đàn thảo luận về việc nâng cao quyền bình đẳng tại nơi làm việc. Để chuẩn bị tốt cho buổi trao đổi, chị cần tìm hiểu về các văn bản pháp lý liên quan, cụ thể là những văn bản mới nhất liên quan đến việc hướng dẫn thực hiện bình đẳng giới. Vậy, chị B cần biết rõ những nghị định nào đã được ban hành để hỗ trợ cho Luật Bình đẳng giới hiện hành?",
+    "answers": "A. Đầu tư B. Xuất nhập khẩu C. Lĩnh vực khác D. Quyền dân sự E. Trách nhiệm hình sự F. Sở hữu trí tuệ",
+    "ground_truth": "D"
+  },
+  {
+    "index": 475,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B cảm thấy không hài lòng với một quyết định hành chính của cơ quan địa phương liên quan đến mảnh đất gia đình. Ông đã quyết định gửi đơn khiếu nại để bảo vệ quyền lợi chính đáng của mình. Sau khi nhận được quyết định giải quyết từ cơ quan có thẩm quyền, ông B thắc mắc về thời điểm quyết định này có giá trị và có nên thực hiện khiếu nại lần nữa không. Vậy, ông cần hiểu rõ quá trình và hiệu lực của quyết định này ra sao để có phương án xử lý phù hợp?",
+    "answers": "A. Giao thông vận tải B. Văn hóa - xã hội C. Dịch vụ pháp lý D. Thuế - phí - lệ phí E. Thủ tục tố tụng F. Xuất nhập khẩu",
+    "ground_truth": "E"
+  },
+  {
+    "index": 483,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Nhà phát triển B đang chuẩn bị một dự án xây dựng lớn và muốn đảm bảo rằng quy trình lựa chọn nhà thầu được thực hiện minh bạch và tuân thủ đúng quy định. Anh ta cần biết chi tiết về thời gian tối đa mà các chủ đầu tư phải đăng tải kế hoạch tổng thể chọn nhà thầu lên hệ thống mạng đấu thầu quốc gia. Vậy, trong bối cảnh thực hiện dự án này, thời hạn đăng tải đó được quy định như thế nào và cần lưu ý các bước gì để tuân thủ đúng quy trình?",
+    "answers": "A. Tài nguyên - môi trường B. Trách nhiệm hình sự C. Đầu tư D. Xây dựng - đô thị E. Lao động - tiền lương F. Thuế - phí - lệ phí",
+    "ground_truth": "C"
+  },
+  {
+    "index": 486,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Gia đình ông B, nổi tiếng với đam mê sưu tập tem suốt nhiều thế hệ, quyết định tham gia cuộc thi lớn về tem bưu chính năm 2026. Trước khi đăng ký dự thi, ông B muốn nắm rõ chi tiết về các điều kiện, quy định, và quyền lợi mà cuộc thi này mang lại. Liệu ông B có thể tìm hiểu thông tin đầy đủ về thể lệ và những yêu cầu cụ thể của cuộc thi năm nay ở đâu?",
+    "answers": "A. Bất động sản B. Tài chính nhà nước C. Lĩnh vực khác D. Sở hữu trí tuệ E. Thuế - phí - lệ phí F. Đầu tư",
+    "ground_truth": "C"
+  },
+  {
+    "index": 489,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một công ty dược phẩm đang tìm cách mở rộng thị trường và muốn tham gia vào các dự án cung cấp thuốc cho bệnh viện công. Để chuẩn bị hồ sơ tham gia đấu thầu, giám đốc của công ty cần nắm rõ những quy định cập nhật liên quan đến các văn bản pháp lý điều chỉnh quá trình đấu thầu thuốc tại cơ sở y tế công lập. Vậy, giám đốc cần tìm kiếm thông tin về văn bản mới nhất nào để đảm bảo tuân thủ quy định đấu thầu hiện hành?",
+    "answers": "A. Dịch vụ pháp lý B. Lĩnh vực khác C. Tiền tệ ngân hàng D. Thủ tục tố tụng E. Đầu tư F. Thương mại",
+    "ground_truth": "E"
+  },
+  {
+    "index": 491,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B, một công dân tích cực trong việc nâng cao nhận thức pháp luật, đang thảo luận với bạn bè về các sự kiện quan trọng trong hệ thống pháp luật quốc gia. Nhân dịp này, ông muốn tìm hiểu kỹ về thời điểm tổ chức Ngày Pháp luật Việt Nam trong năm 2025. Bên cạnh đó, ông cũng quan tâm đến cách thức và nội dung mà nhà nước dự kiến áp dụng để thúc đẩy tinh thần thượng tôn pháp luật trong cộng đồng qua sự kiện này. Ông B cần xem xét những quy định cụ thể nào liên quan đến ngày đặc biệt này để có thể chuẩn bị tham gia một cách hiệu quả và ý nghĩa?",
+    "answers": "A. Quyền dân sự B. Đầu tư C. Lĩnh vực khác D. Xây dựng - đô thị E. Bộ máy hành chính F. Chứng khoán",
+    "ground_truth": "C"
+  },
+  {
+    "index": 493,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông Minh đang chuẩn bị nhập một lô hàng tiêu dùng từ nước ngoài về và dự định phân phối trên toàn quốc. Để đảm bảo tuân thủ quy định pháp luật, ông Minh cần hiểu rõ về việc nhãn mác cần thiết cho hàng hóa nhập khẩu. Trong trường hợp này, ông Minh cần tìm hiểu kỹ những thông tin chi tiết nào bắt buộc phải có trên nhãn để đảm bảo không vi phạm quy định gì và tối ưu hóa thông tin nhằm phục vụ cho hoạt động kinh doanh của mình?",
+    "answers": "A. Kế toán - kiểm toán B. Tài nguyên - môi trường C. Giáo dục D. Quyền dân sự E. Sở hữu trí tuệ F. Dịch vụ pháp lý",
+    "ground_truth": "E"
+  },
+  {
+    "index": 504,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một công ty quốc tế hoạt động trong lĩnh vực năng lượng đang muốn củng cố quy trình quản lý rủi ro và tăng cường tính minh bạch trong hoạt động kinh doanh của mình. Để đạt được mục tiêu này, ban giám đốc quyết định thiết lập một chương trình tuân thủ nội bộ chặt chẽ. Trong quá trình thực hiện, họ cần nộp một loại đơn đặc biệt để được cơ quan chức năng xác nhận việc thực hiện chương trình này đúng theo tiêu chuẩn pháp lý hiện hành. Do đó, công ty đang tìm hiểu xem loại văn bản nào họ cần chuẩn bị để đáp ứng đúng theo Nghị định 259 để đảm bảo tính hợp pháp và hiệu quả của chương trình mà họ đang triển khai.",
+    "answers": "A. Thể thao - y tế B. Bảo hiểm C. Thương mại D. Xuất nhập khẩu E. Lao động - tiền lương F. Văn hóa - xã hội",
+    "ground_truth": "C"
+  },
+  {
+    "index": 507,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang chuẩn bị giao dịch một lượng lớn kim loại quý và đá quý với đối tác của mình. Để đảm bảo mọi thủ tục đều diễn ra hợp pháp và minh bạch, ông muốn tìm và điền chính xác mẫu biên bản giao nhận mới nhất cho loại tài sản này. Ông B cần biết tài liệu này có thể được tải xuống từ trang nào và quy trình cụ thể để hoàn thiện mẫu một cách chính xác là gì?",
+    "answers": "A. Thuế - phí - lệ phí B. Chứng khoán C. Xuất nhập khẩu D. Lĩnh vực khác E. Tiền tệ ngân hàng F. Bất động sản",
+    "ground_truth": "E"
+  },
+  {
+    "index": 510,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Bà B đang điều hành một công ty mới chuyên về khai thác nguyên liệu từ tự nhiên. Để đảm bảo hoạt động kinh doanh của mình tuân thủ quy định pháp luật, bà cần đăng ký mã ngành phù hợp cho hoạt động khai thác đá, cát, sỏi, đất sét. Trong bối cảnh này, bà B cần xác định rõ mã ngành kinh tế cấp 4 cho lĩnh vực khai thác này là gì để hoàn tất thủ tục đăng ký kinh doanh theo quy định hiện hành?",
+    "answers": "A. Doanh nghiệp B. Thể thao - y tế C. Vi phạm hành chính D. Xây dựng - đô thị E. Kế toán - kiểm toán F. Thương mại",
+    "ground_truth": "F"
+  },
+  {
+    "index": 515,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một doanh nghiệp nông nghiệp ở miền Trung đang lên kế hoạch mở rộng hoạt động vào lĩnh vực trồng trọt để đáp ứng nhu cầu ngày càng tăng của thị trường. Họ đang tìm hiểu xem mã số ngành kinh tế cấp 4 sẽ cần thiết khi đăng ký cho hoạt động trồng ngô và các cây lương thực hạt khác. Để đảm bảo sự tuân thủ với các quy định hiện hành, mã ngành chính xác mà doanh nghiệp cần áp dụng khi thực hiện thủ tục đăng ký kinh doanh là gì?",
+    "answers": "A. Giao thông vận tải B. Thương mại C. Tài nguyên - môi trường D. Dịch vụ pháp lý E. Xuất nhập khẩu F. Văn hóa - xã hội",
+    "ground_truth": "B"
+  },
+  {
+    "index": 516,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Anh B là quản lý tài chính của một doanh nghiệp vừa và nhỏ. Để chuẩn bị cho cuộc họp định kỳ với hội đồng quản trị, anh cần tạo ra một báo cáo tài chính năm đầy đủ và chính xác theo quy định hiện hành. Vì vậy, anh muốn biết cụ thể cách tải hệ thống báo cáo tài chính năm chi tiết theo Thông tư 99, bao gồm các bước thực hiện và các điểm cần lưu ý khi thao tác trên hệ thống này.",
+    "answers": "A. Công nghệ thông tin B. Sở hữu trí tuệ C. Lĩnh vực khác D. Bảo hiểm E. Tiền tệ ngân hàng F. Kế toán - kiểm toán",
+    "ground_truth": "A"
+  },
+  {
+    "index": 522,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một doanh nhân nước ngoài dự định mở rộng hoạt động kinh doanh tại Việt Nam từ năm 2025. Để thuận tiện cho việc đi lại giữa các quốc gia, ông ta muốn tìm hiểu về chính sách thị thực mới nhất và giá trị thực tiễn của loại thẻ miễn thị thực đặc biệt được cấp cho người nước ngoài từ ngày 15/08/2025. Các điều kiện cũng như lợi ích cụ thể mà doanh nhân này cần nắm rõ là gì để phù hợp với các yêu cầu trong lĩnh vực ông đang hoạt động?",
+    "answers": "A. Chứng khoán B. Quyền dân sự C. Tài nguyên - môi trường D. Xây dựng - đô thị E. Xuất nhập khẩu F. Thủ tục tố tụng",
+    "ground_truth": "E"
+  },
+  {
+    "index": 523,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Bà B đang xem xét cách thức mà cơ quan chức năng sẽ sử dụng để thu thập dữ liệu giọng nói của công dân phục vụ cho việc cấp Căn cước công dân. Bà muốn biết cụ thể từng bước trong quy trình đó, bắt đầu từ lúc chuẩn bị thiết bị, tiếp đón công dân, cho đến khi hoàn thành việc ghi nhận sinh trắc học giọng nói. Quy trình chi tiết này gồm những bước nào và có những yêu cầu thủ tục cụ thể gì đối với người thực hiện?",
+    "answers": "A. Vi phạm hành chính B. Quyền dân sự C. Bảo hiểm D. Kế toán - kiểm toán E. Xuất nhập khẩu F. Doanh nghiệp",
+    "ground_truth": "B"
+  },
+  {
+    "index": 525,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B sống trong một khu phố thường xuyên xảy ra tranh chấp nhỏ lẻ giữa các hộ dân. Để giảm thiểu xung đột và duy trì hòa khí, ông B đang tìm hiểu về cách thức giải quyết xung đột hiệu quả mà không cần đưa ra tòa án. Trong quá trình tìm kiếm, ông đã nghe đến một quy định mới của chính phủ hướng dẫn về việc hòa giải tại các địa phương. Ông B cần tra cứu xem quy định mới nhất và các chi tiết liên quan đến việc này là gì để có thể áp dụng kịp thời khi cần thiết.",
+    "answers": "A. Xuất nhập khẩu B. Tài nguyên - môi trường C. Công nghệ thông tin D. Thuế - phí - lệ phí E. Thủ tục tố tụng F. Văn hóa - xã hội",
+    "ground_truth": "E"
+  },
+  {
+    "index": 531,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một công ty mới thành lập tại Tuyên Quang đang cần thu thập thông tin để đảm bảo quyền lợi của nhân viên. Giám đốc nhân sự muốn tìm cách liên hệ với cơ quan BHXH địa phương để giải đáp thắc mắc về quy trình tham gia bảo hiểm xã hội cho người lao động. Nhờ đó, cô cần biết rõ cách thức liên lạc hiệu quả với BHXH tỉnh Tuyên Quang. Vậy có những phương thức nào tối ưu để cô có thể nắm thông tin chính xác này?",
+    "answers": "A. Bảo hiểm B. Lao động - tiền lương C. Đầu tư D. Trách nhiệm hình sự E. Vi phạm hành chính F. Tài chính nhà nước",
+    "ground_truth": "A"
+  },
+  {
+    "index": 536,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Để khuyến khích sự tham gia của người dân và doanh nghiệp trong tỉnh, anh B được thông báo về một cuộc thi tìm hiểu về Chuyển đổi số năm 2025 do tỉnh Lâm Đồng tổ chức. Anh B đang tìm kiếm thông tin cụ thể về cách thức tham gia, điều lệ cuộc thi, cũng như các phần thưởng hấp dẫn dành cho người thắng cuộc. Vậy anh B cần biết thêm chi tiết về cuộc thi này sẽ như thế nào?",
+    "answers": "A. Tài nguyên - môi trường B. Lĩnh vực khác C. Trách nhiệm hình sự D. Tiền tệ ngân hàng E. Bộ máy hành chính F. Kế toán - kiểm toán",
+    "ground_truth": "B"
+  },
+  {
+    "index": 538,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B sống ở khu vực đang phát triển thuộc thành phố Cần Thơ. Với kế hoạch di dời cơ sở kinh doanh của mình, ông cần tìm hiểu rõ về sự hình thành và thay đổi của các khu vực hành chính trong thành phố. Cụ thể, kể từ ngày 1/7/2025, phường Tân Lộc sẽ có những phường, xã nào được sáp nhập hoặc tái cơ cấu? Điều này quan trọng để ông B có thể lập kế hoạch kinh doanh tương lai của mình một cách hiệu quả.",
+    "answers": "A. Bộ máy hành chính B. Bảo hiểm C. Giao thông vận tải D. Bất động sản E. Xuất nhập khẩu F. Xây dựng - đô thị",
+    "ground_truth": "A"
+  },
+  {
+    "index": 540,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B là chủ một công ty dược phẩm đang chuẩn bị tham gia vào một đấu thầu cung cấp thuốc cho bệnh viện công. Đây là lần đầu tiên công ty ông B dự thầu cho một gói thuốc generic. Ông B muốn nắm rõ các yêu cầu và những điều kiện pháp lý bắt buộc để đảm bảo hồ sơ dự thầu của mình đáp ứng đầy đủ tiêu chuẩn cần thiết. Các chi tiết cụ thể liên quan đến việc tham gia dự thầu đối với loại thuốc này ra sao?",
+    "answers": "A. Doanh nghiệp B. Đầu tư C. Thương mại D. Xây dựng - đô thị E. Vi phạm hành chính F. Tài nguyên - môi trường",
+    "ground_truth": "B"
+  },
+  {
+    "index": 551,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Bà H đang công tác tại một cơ quan thuộc hệ thống pháp luật và đã có nhiều đóng góp đáng kể trong hơn 20 năm qua. Bà H dự định đề nghị xét tặng Kỷ niệm chương \"Vì sự nghiệp Tư pháp\" để ghi nhận cống hiến của mình. Để chuẩn bị tốt nhất cho việc này, bà cần tìm hiểu chi tiết các bước và yêu cầu cần thiết trong quá trình xét duyệt từ ngày 15/09/2025 theo quy định hiện hành. Vậy, bà H nên chuẩn bị hồ sơ và thực hiện các thủ tục nào để đảm bảo tính hợp lệ cho đề xuất của mình?",
+    "answers": "A. Sở hữu trí tuệ B. Dịch vụ pháp lý C. Lĩnh vực khác D. Tiền tệ ngân hàng E. Giáo dục F. Vi phạm hành chính",
+    "ground_truth": "B"
+  },
+  {
+    "index": 553,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Gia đình ông B sở hữu một doanh nghiệp với sự tham gia vốn của nhà nước. Trong bối cảnh các chính sách kinh tế mới được ban hành, ông B đang cân nhắc việc tái cơ cấu nguồn vốn này để tối ưu hóa lợi ích và khả năng cạnh tranh của công ty. Ông B cần tìm hiểu chi tiết về những hình thức cơ cấu lại vốn mà nhà nước có thể áp dụng tại doanh nghiệp. Hãy nêu rõ các hình thức này cũng như cách thức chúng có thể ảnh hưởng đến hoạt động kinh doanh của doanh nghiệp ông B.",
+    "answers": "A. Doanh nghiệp B. Thuế - phí - lệ phí C. Đầu tư D. Công nghệ thông tin E. Tài chính nhà nước F. Chứng khoán",
+    "ground_truth": "A"
+  },
+  {
+    "index": 560,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một công ty sản xuất đồ uống đang chuẩn bị ra mắt dòng sản phẩm nước uống đóng chai mới. Trước khi đưa sản phẩm ra thị trường, giám đốc cần đảm bảo mọi tiêu chuẩn và quy định hiện hành về chất lượng và an toàn. Do đó, ông đã yêu cầu đội ngũ pháp lý kiểm tra kỹ lưỡng các tiêu chuẩn quy định, đặc biệt là các thông số cụ thể theo yêu cầu của QCVN 6-1:2010/BYT. Vậy những chi tiết và yêu cầu cụ thể nào mà họ cần phải tuân thủ để đảm bảo sản phẩm tuân thủ đúng quy chuẩn kỹ thuật quốc gia đối với nước khoáng thiên nhiên và nước uống đóng chai?",
+    "answers": "A. Tiền tệ ngân hàng B. Quyền dân sự C. Sở hữu trí tuệ D. Bảo hiểm E. Bất động sản F. Tài chính nhà nước",
+    "ground_truth": "C"
+  },
+  {
+    "index": 564,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Trong một cuộc họp của ngành y tế, bà B thông báo rằng chính phủ đang thực hiện chiến lược điều động các bác sĩ đến các trạm y tế xã nhằm nâng cao chất lượng chăm sóc sức khỏe tại địa phương. Trong giai đoạn từ năm 2025 đến 2030, liệu có thực sự cần thiết áp dụng quy định theo Nghị quyết 72 để đảm bảo việc luân chuyển tối thiểu 1000 bác sĩ mỗi năm không?",
+    "answers": "A. Đầu tư B. Bảo hiểm C. Chứng khoán D. Thể thao - y tế E. Lao động - tiền lương F. Bộ máy hành chính",
+    "ground_truth": "D"
+  },
+  {
+    "index": 567,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Giả sử Công ty X mới được chỉ định tham gia vào việc cung ứng các thiết bị hỗ trợ cho lực lượng quốc phòng trong những năm tới. Để thực hiện điều này một cách hiệu quả, ban lãnh đạo đang tìm hiểu các quy định và hướng dẫn cụ thể liên quan đến chính sách tài chính được nêu ra trong Thông tư 97/2025/TT-BTC. Công ty X cần nắm bắt những điểm cần thiết nào để đảm bảo việc triển khai dự án diễn ra suôn sẻ và đúng quy định?",
+    "answers": "A. Bộ máy hành chính B. Công nghệ thông tin C. Doanh nghiệp D. Trách nhiệm hình sự E. Thuế - phí - lệ phí F. Dịch vụ pháp lý",
+    "ground_truth": "A"
+  },
+  {
+    "index": 573,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang lên kế hoạch mở rộng hoạt động chăn nuôi để sản xuất giống các loài ngựa, lừa, và la ở một trang trại mới tại vùng ngoại ô. Để thuận lợi trong việc đăng ký kinh doanh và tuân thủ đúng quy định, ông B cần xác định mã ngành kinh tế chi tiết cho mô hình chăn nuôi này. Vậy ông B cần biết mã ngành cụ thể của hoạt động chăn nuôi và sản xuất giống các loài này là gì?",
+    "answers": "A. Chứng khoán B. Xây dựng - đô thị C. Thương mại D. Doanh nghiệp E. Bộ máy hành chính F. Bất động sản",
+    "ground_truth": "C"
+  },
+  {
+    "index": 585,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang xem xét mở rộng hoạt động kinh doanh và đang nghiên cứu các mã ngành liên quan để đảm bảo thực hiện theo đúng quy định pháp lý. Trong quá trình tìm hiểu, ông phát hiện ra mã ngành 0520 và muốn biết theo Quyết định 36, nội dung cụ thể và chi tiết về hoạt động hay lĩnh vực mà mã này đại diện là gì. Ông cần thông tin để chuẩn bị hồ sơ pháp lý liên quan đúng cách.",
+    "answers": "A. Văn hóa - xã hội B. Doanh nghiệp C. Thương mại D. Công nghệ thông tin E. Thể thao - y tế F. Xây dựng - đô thị",
+    "ground_truth": "C"
+  },
+  {
+    "index": 595,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Trong bối cảnh năm 2026, bà B là giám đốc một doanh nghiệp đang chuẩn bị cho kỳ tổng điều tra kinh tế toàn quốc. Bà ấy cần phải đảm bảo rằng thông tin của công ty được báo cáo đầy đủ và chính xác theo yêu cầu của cục thống kê. Để thực hiện điều này, bà B cần tìm hiểu cách thức đăng nhập vào hệ thống điều tra kinh tế trên trang web chính thức của chính phủ. Bà cần thực hiện các bước nào để hoàn thành quá trình đăng nhập một cách suôn sẻ và chính xác nhất?",
+    "answers": "A. Kế toán - kiểm toán B. Tiền tệ ngân hàng C. Giao thông vận tải D. Thương mại E. Trách nhiệm hình sự F. Lao động - tiền lương",
+    "ground_truth": "D"
+  },
+  {
+    "index": 602,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B là chủ một doanh nghiệp chuẩn bị tung sản phẩm mới ra thị trường nhằm nâng cao doanh số bán hàng. Để thu hút sự quan tâm của khách hàng, ông cân nhắc thực hiện các chương trình khuyến mãi hấp dẫn. Ông B muốn tìm hiểu những quy định mới nhất có thể sẽ có ảnh hưởng tới việc tiến hành các chương trình này, nhằm đảm bảo mọi hoạt động đều hợp pháp và hiệu quả. Do đó, ông cần xác định rõ cách thức điều chỉnh đối tượng hàng hóa hay dịch vụ được dùng cho mục đích khuyến mại theo dự thảo sửa đổi là như thế nào?",
+    "answers": "A. Thương mại B. Dịch vụ pháp lý C. Lao động - tiền lương D. Bảo hiểm E. Bất động sản F. Văn hóa - xã hội",
+    "ground_truth": "A"
+  },
+  {
+    "index": 606,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang nghiên cứu về các công ty liên quan đến lĩnh vực công nghiệp do nhà nước quản lý. Để phục vụ cho dự án đầu tư của mình, ông ấy muốn có thông tin cập nhật về những công ty do Bộ Công Thương quản lý trực tiếp. Ông B nên tìm kiếm danh sách các công ty này ở đâu và thông tin đó gồm những công ty nào hiện nay?",
+    "answers": "A. Xây dựng - đô thị B. Doanh nghiệp C. Công nghệ thông tin D. Quyền dân sự E. Lĩnh vực khác F. Bộ máy hành chính",
+    "ground_truth": "B"
+  },
+  {
+    "index": 608,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B vừa tham dự một tọa đàm tại địa phương về nguy cơ và thực trạng của nạn mua bán người trong xã hội hiện nay. Sau sự kiện, ông B muốn biết chi tiết về vai trò mà cơ quan chức năng, đặc biệt là Bộ Tư pháp, đảm nhận trong việc quản lý, ngăn chặn và xử lý các vấn nạn liên quan đến mua bán người. Ông B nên tìm hiểu những nội dung trách nhiệm nào thuộc về Bộ Tư pháp trong bối cảnh này?",
+    "answers": "A. Giáo dục B. Văn hóa - xã hội C. Doanh nghiệp D. Bảo hiểm E. Bộ máy hành chính F. Chứng khoán",
+    "ground_truth": "B"
+  },
+  {
+    "index": 614,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông Minh đang điều hành một trung tâm nghiên cứu khoa học tại Hà Nội và muốn tận dụng nguồn lực sẵn có để khởi nghiệp. Trước khi tiến hành, ông quan tâm đến việc sử dụng các tài sản thuộc quyền sở hữu của trung tâm để đầu tư vào một doanh nghiệp mới, nhằm thương mại hóa các phát minh công nghệ đã nghiên cứu. Vậy, ông Minh cần tìm hiểu những loại tài sản nào thuộc quyền quản lý của trung tâm có thể được sử dụng để góp vốn vào doanh nghiệp trong khuôn khổ pháp luật hiện hành?",
+    "answers": "A. Sở hữu trí tuệ B. Lao động - tiền lương C. Giao thông vận tải D. Đầu tư E. Doanh nghiệp F. Công nghệ thông tin",
+    "ground_truth": "E"
+  },
+  {
+    "index": 616,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Doanh nghiệp X đang chuẩn bị mở rộng hoạt động ra thị trường quốc tế bằng cách xuất khẩu một số hàng hóa đặc biệt có thể sử dụng cho cả mục đích dân sự và quân sự. Để tuân thủ pháp luật, họ cần hoàn thiện hồ sơ xin cấp giấy phép cần thiết. Công ty X phải tìm hiểu xem mẫu đơn nào được quy định theo Nghị định 259 để đảm bảo các thủ tục hoàn toàn hợp pháp và đầy đủ. Vậy, mẫu đơn đề nghị cấp giấy phép được doanh nghiệp cần chuẩn bị trong tình huống này là gì?",
+    "answers": "A. Xuất nhập khẩu B. Giao thông vận tải C. Thương mại D. Công nghệ thông tin E. Tài nguyên - môi trường F. Dịch vụ pháp lý",
+    "ground_truth": "C"
+  },
+  {
+    "index": 620,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Bà B là trưởng phòng đào tạo tại một cơ quan nhà nước, đang phụ trách tổ chức khóa bồi dưỡng cho công chức địa phương. Để đảm bảo chất lượng và hiệu quả cho khóa học, bà B cần nắm rõ mức chi tiêu hợp lý cho việc biên soạn các tài liệu giảng dạy và tài liệu bổ trợ khác. Bà đang xem xét các quy chuẩn tài chính được nêu trong Thông tư 100 để xác định cách thức phân bổ ngân sách một cách tối ưu cho hoạt động đào tạo này. Bà cần tìm hiểu cụ thể về những quy định chi tiết liên quan đến việc này là gì?",
+    "answers": "A. Đầu tư B. Giáo dục C. Thủ tục tố tụng D. Bộ máy hành chính E. Xây dựng - đô thị F. Lĩnh vực khác",
+    "ground_truth": "D"
+  },
+  {
+    "index": 627,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Anh B vừa nghe thông tin rằng tỉnh Lâm Đồng đã tổ chức đợt 1 của cuộc thi liên quan đến Chuyển đổi số năm 2025. Anh ta rất quan tâm và muốn so sánh kiến thức của mình với đáp án chính thức để chuẩn bị cho các đợt tiếp theo. Vì vậy, anh B cần tìm cách tiếp cận nguồn thông tin nào để biết được nội dung và đáp án chi tiết của đợt 1 cuộc thi này?",
+    "answers": "A. Lĩnh vực khác B. Lao động - tiền lương C. Xuất nhập khẩu D. Sở hữu trí tuệ E. Bảo hiểm F. Thuế - phí - lệ phí",
+    "ground_truth": "A"
+  },
+  {
+    "index": 631,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một công dân sau khi đã hoàn thành xong các điều kiện cần thiết để xin ân xá tìm hiểu về quy trình pháp lý có liên quan. Anh ta muốn cập nhật thông tin mới nhất về các quy định chi tiết trong văn bản dưới luật do chính phủ ban hành để biết rõ hơn về quyền lợi của mình. Vậy, nghị định nào của chính phủ hiện tại đang hướng dẫn cụ thể cho Luật Đặc xá mà anh ta cần lưu ý?",
+    "answers": "A. Trách nhiệm hình sự B. Tài chính nhà nước C. Thủ tục tố tụng D. Bất động sản E. Dịch vụ pháp lý F. Tiền tệ ngân hàng",
+    "ground_truth": "C"
+  },
+  {
+    "index": 643,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Giả sử bà B, người đang điều hành một tổ chức phi chính phủ chuyên hỗ trợ các cá nhân có hoàn cảnh khó khăn, đang có kế hoạch mở rộng hoạt động thông qua việc thiết lập một cơ sở trợ giúp xã hội mới. Để đảm bảo tuân thủ đúng quy định pháp lý, bà B cần nắm rõ theo quy định hiện hành, cụ thể trong Nghị định 147/2025/NĐ-CP, những bên nào có thẩm quyền đưa ra quyết định liên quan đến việc cấp mới, gia hạn, điều chỉnh hay chấm dứt hiệu lực giấy phép cho cơ sở này. Ai sẽ là những người hoặc cơ quan chịu trách nhiệm trong quá trình này?",
+    "answers": "A. Tài chính nhà nước B. Tài nguyên - môi trường C. Kế toán - kiểm toán D. Giáo dục E. Thể thao - y tế F. Bất động sản",
+    "ground_truth": "E"
+  },
+  {
+    "index": 653,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Anh B đang chuẩn bị ký kết hợp đồng với một công ty cung cấp dịch vụ chăm sóc công nghệ thông tin cho doanh nghiệp mình. Để đảm bảo quyền lợi và tránh rủi ro pháp lý, anh quyết định tìm kiếm mẫu hợp đồng dịch vụ mới nhất áp dụng cho năm 2025. Trong bối cảnh này, anh cần nắm bắt các điểm pháp lý quan trọng và tiêu chuẩn nào nên được lưu ý trong hợp đồng dịch vụ hiện hành?",
+    "answers": "A. Quyền dân sự B. Doanh nghiệp C. Tiền tệ ngân hàng D. Giáo dục E. Văn hóa - xã hội F. Tài chính nhà nước",
+    "ground_truth": "A"
+  },
+  {
+    "index": 657,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Để chuẩn bị cho một cuộc họp quan trọng về hoạt động mua sắm vật tư y tế, bà B, một quản lý tại bệnh viện công, đang làm việc với đội ngũ của mình để thu thập các văn bản pháp lý cần thiết. Trong số đó, Thông tư 40/2025/TT-BYT có vai trò quan trọng trong việc hướng dẫn cách thức tiến hành đấu thầu thuốc tại các cơ sở y tế công lập. Bà B cần biết những nguồn đáng tin cậy và chính xác để có thể tiếp cận và tải về các tài liệu cần thiết phục vụ cho công việc này. Vậy, bà B có thể tìm kiếm và thu thập những thông tin này từ đâu một cách hiệu quả nhất?",
+    "answers": "A. Xây dựng - đô thị B. Đầu tư C. Dịch vụ pháp lý D. Quyền dân sự E. Công nghệ thông tin F. Thể thao - y tế",
+    "ground_truth": "B"
+  },
+  {
+    "index": 661,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B là giám đốc tài chính của một công ty đang thực hiện dự án có nguồn vốn lớn từ nhà nước. Trong quá trình theo dõi dự án, ông cần thu thập thông tin chi tiết về tình hình tài chính, đặc biệt là các khoản phải thu và phải trả. Để làm điều này, ông B muốn tìm mẫu báo cáo phù hợp, cụ thể là Mẫu 07/QTDA theo Thông tư 91. Vì vậy, làm thế nào ông B có thể tiếp cận được tài liệu này cũng như đánh giá chính xác tình hình công nợ của dự án thông qua việc sử dụng mẫu báo cáo này?",
+    "answers": "A. Công nghệ thông tin B. Tài nguyên - môi trường C. Sở hữu trí tuệ D. Kế toán - kiểm toán E. Tài chính nhà nước F. Doanh nghiệp",
+    "ground_truth": "E"
+  },
+  {
+    "index": 665,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Bà B là một chuyên gia pháp lý quốc tế và đang chuẩn bị một báo cáo về sự tham gia của các quốc gia vào các hiệp ước quốc tế. Khi nghiên cứu về Công ước Hà Nội 2025, bà cần thu thập thông tin chi tiết về việc nước nào đã ký tham gia, trong đó có nội dung quan trọng liên quan đến trách nhiệm pháp lý mà các nước này cam kết. Báo cáo cần liệt kê cụ thể những quốc gia này và các điểm chính của nội dung ký kết ra sao?",
+    "answers": "A. Giao thông vận tải B. Thể thao - y tế C. Thuế - phí - lệ phí D. Trách nhiệm hình sự E. Tài nguyên - môi trường F. Quyền dân sự",
+    "ground_truth": "D"
+  },
+  {
+    "index": 669,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang có kế hoạch mở rộng cơ sở kinh doanh vàng trang sức của mình và dự định hoàn tất các thủ tục cấp, sửa đổi, bổ sung Giấy chứng nhận cần thiết. Để đảm bảo mọi thứ suôn sẻ, ông muốn tìm hiểu rõ hơn về quy trình và yêu cầu pháp lý mới áp dụng từ ngày 10/10/2025 mà doanh nghiệp của ông phải tuân thủ. Vậy những bước cần thiết trong quá trình này là gì?",
+    "answers": "A. Thuế - phí - lệ phí B. Tiền tệ ngân hàng C. Bộ máy hành chính D. Văn hóa - xã hội E. Thủ tục tố tụng F. Bảo hiểm",
+    "ground_truth": "B"
+  },
+  {
+    "index": 671,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Ông B đang dự định tham gia một dự án đấu thầu quốc gia và đã nộp hồ sơ mời quan tâm qua hệ thống điện tử. Tuy nhiên, ông nhận thấy một số thông tin chưa rõ ràng và dự định gửi yêu cầu làm rõ. Ông B cần biết thời hạn mà bên mời thầu phải tuân theo để phản hồi các thắc mắc của ông nhằm đảm bảo tiến trình chuẩn bị tài liệu dự thầu diễn ra thuận lợi. Thời gian phản hồi của bên mời thầu là bao lâu?",
+    "answers": "A. Lao động - tiền lương B. Tài nguyên - môi trường C. Đầu tư D. Lĩnh vực khác E. Giao thông vận tải F. Chứng khoán",
+    "ground_truth": "C"
+  },
+  {
+    "index": 679,
+    "instruction": "Đọc câu hỏi sau và cho biết nó thuộc lĩnh vực nào, chỉ cần chọn đáp án và không cần giải thích gì thêm.",
+    "question": "Một doanh nghiệp phát hiện có dấu hiệu gian lận tài chính và đề nghị cơ quan chức năng điều tra. Cơ quan điều tra đã yêu cầu thực hiện việc giám định các tài liệu liên quan để đưa ra kết luận chính xác. Trong bối cảnh này, lãnh đạo doanh nghiệp muốn biết rõ các quy định cụ thể về thời gian thực hiện quá trình giám định đó theo pháp luật hiện hành là như thế nào?",
+    "answers": "A. Bộ máy hành chính B. Trách nhiệm hình sự C. Bảo hiểm D. Xuất nhập khẩu E. Thủ tục tố tụng F. Thể thao - y tế",
+    "ground_truth": "B"
+  }
+]
