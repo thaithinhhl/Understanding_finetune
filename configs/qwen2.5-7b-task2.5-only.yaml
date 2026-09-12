@@ -1,0 +1,53 @@
+# Thử nghiệm: fine-tune CHỈ trên task 2.5 (nhóm V3) với dữ liệu đã sửa bias.
+# Mục đích là kiểm chứng nhanh xem bộ data mới có dạy được model trả multi-label
+# hay không, trước khi tốn công train đủ 7 nhóm.
+#
+# Adapter ra thư mục RIÊNG để không ghi đè adapters/7b/qwen2.5-7b-legal đang dùng.
+# Siêu tham số LoRA lấy theo adapter hiện hành (r=32, alpha=64, 3 epoch, lr 1e-4)
+# để kết quả so sánh được; batch nhỏ + grad accum để vừa GPU 24GB.
+model:
+  name_or_path: models/7b/Qwen2.5-7B-Instruct
+  trust_remote_code: false
+  use_4bit: true
+  bnb_4bit_quant_type: nf4
+  bnb_4bit_use_double_quant: true
+  bnb_4bit_compute_dtype: bfloat16
+
+data:
+  train_file: data_train/task_2_5_fix_bias_train.jsonl
+  validation_file: data_train/task_2_5_fix_bias_dev.jsonl
+  max_seq_length: 2048
+  num_proc: 4
+  packing: false
+  default_system_prompt: >-
+    Bạn là trợ lý pháp lý Việt Nam. Trả lời chính xác, nêu rõ căn cứ khi có đủ
+    thông tin và không tự tạo điều luật hoặc văn bản pháp luật.
+
+lora:
+  r: 32
+  alpha: 64
+  dropout: 0.05
+  target_modules: all-linear
+
+training:
+  output_dir: checkpoints/7b/task2.5-only
+  final_adapter_dir: adapters/7b/qwen2.5-7b-task2.5-only
+  num_train_epochs: 3
+  learning_rate: 0.0001
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 16
+  gradient_checkpointing: true
+  optim: paged_adamw_8bit
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.03
+  weight_decay: 0.0
+  max_grad_norm: 0.3
+  logging_steps: 10
+  eval_strategy: epoch
+  save_strategy: epoch
+  save_total_limit: 1
+  seed: 42
+  bf16: true
+  tf32: true
+  report_to: none

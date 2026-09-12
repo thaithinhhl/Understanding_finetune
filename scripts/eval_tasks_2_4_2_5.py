@@ -19,6 +19,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--task", choices=("2.4", "2.5"), required=True)
     parser.add_argument("--model", type=Path, required=True)
     parser.add_argument("--adapter", type=Path, default=None, help="LoRA adapter tùy chọn để nạp lên trên --model.")
+    parser.add_argument(
+        "--system-prompt",
+        default=None,
+        help="System prompt tùy chọn (mặc định không có, chỉ dùng nguyên văn field trong file test).",
+    )
     parser.add_argument("--data", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--limit", type=int, default=None)
@@ -55,7 +60,7 @@ def parse_task_2_5(text: str) -> list[str] | None:
     return labels or None
 
 
-def build_messages(task: str, row: dict[str, Any]) -> list[dict[str, str]]:
+def build_messages(task: str, row: dict[str, Any], system_prompt: str | None) -> list[dict[str, str]]:
     if task == "2.4":
         prompt = "\n\n".join(
             [row["instruction"], row["description"], row["court_judgement"]]
@@ -64,7 +69,11 @@ def build_messages(task: str, row: dict[str, Any]) -> list[dict[str, str]]:
         prompt = "\n\n".join(
             [row["instruction"], row["question"], row["answers"]]
         )
-    return [{"role": "user", "content": prompt}]
+    messages = []
+    if system_prompt:
+        messages.append({"role": "system", "content": system_prompt})
+    messages.append({"role": "user", "content": prompt})
+    return messages
 
 
 def main() -> None:
@@ -106,7 +115,7 @@ def main() -> None:
     results = []
     for number, row in enumerate(selected, 1):
         encoded = tokenizer.apply_chat_template(
-            build_messages(args.task, row),
+            build_messages(args.task, row, args.system_prompt),
             tokenize=True,
             add_generation_prompt=True,
             return_tensors="pt",
@@ -152,6 +161,7 @@ def main() -> None:
         "task": args.task,
         "model": str(args.model),
         "adapter": str(args.adapter) if args.adapter else None,
+        "system_prompt": args.system_prompt,
         "precision": args.precision,
         "data": str(args.data),
         "num_examples": len(selected),

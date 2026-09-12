@@ -27,6 +27,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model", type=Path, required=True)
     parser.add_argument("--adapter", type=Path, default=None, help="LoRA adapter tùy chọn để nạp lên trên --model.")
     parser.add_argument("--data", type=Path, required=True)
+    parser.add_argument(
+        "--group",
+        choices=sorted(UNDERSTANDING_GROUPS),
+        default=None,
+        help="Chỉ chạy 1 nhóm task (C1/U1/U2/U3). Mặc định chạy cả 4.",
+    )
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--offset", type=int, default=0)
@@ -36,14 +42,15 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def load_rows(path: Path) -> list[dict[str, Any]]:
+def load_rows(path: Path, group: str | None = None) -> list[dict[str, Any]]:
+    wanted = {group} if group else UNDERSTANDING_GROUPS
     rows = []
     with path.open(encoding="utf-8") as handle:
         for line in handle:
             if not line.strip():
                 continue
             row = json.loads(line)
-            if row.get("group") in UNDERSTANDING_GROUPS:
+            if row.get("group") in wanted:
                 rows.append(row)
     return rows
 
@@ -68,7 +75,7 @@ def main() -> None:
     if not torch.cuda.is_available():
         raise RuntimeError("PyTorch không nhìn thấy CUDA GPU.")
 
-    rows = load_rows(args.data)
+    rows = load_rows(args.data, args.group)
     selected = rows[args.offset:] if args.limit is None else rows[args.offset:args.offset + args.limit]
     if not selected:
         raise ValueError("Không có mẫu nào trong khoảng offset/limit đã chọn (kiểm tra group C1/U1/U2/U3).")
