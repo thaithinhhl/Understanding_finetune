@@ -1,3 +1,7 @@
+- đây là repo có data1.2 new, đã sửa benchmark,
+- có report file task understanding để chạy code trên các model 32B và 72B
+
+
 # Vietnamese Legal LLM fine-tuning
 
 Bộ khung SFT bằng QLoRA 4-bit cho Qwen2.5 7B/32B. Model, data, checkpoint và
