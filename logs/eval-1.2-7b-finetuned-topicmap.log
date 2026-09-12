@@ -1,0 +1,689 @@
+Sliding Window Attention is enabled but not implemented for `eager`; unexpected results may be encountered.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.78s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:06,  3.06s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.14s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.79s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.88s/it]
+[001/683] topic='vi phạm hành chính' pred=E truth=E correct=True
+[002/683] topic='xuất nhập khẩu' pred=F truth=F correct=True
+[003/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=E correct=False
+[004/683] topic='đầu tư' pred=UNMAPPED truth=C correct=False
+[005/683] topic='văn hóa - xã hội' pred=D truth=D correct=True
+[006/683] topic='giao thông vận tải' pred=A truth=A correct=True
+[007/683] topic='giao thông vận tải' pred=D truth=D correct=True
+[008/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=D correct=False
+[009/683] topic='lĩnh vực khác' pred=UNMAPPED truth=A correct=False
+[010/683] topic='vi phạm hành chính' pred=UNMAPPED truth=D correct=False
+[011/683] topic='xuất nhập khẩu' pred=UNMAPPED truth=D correct=False
+[012/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=D correct=False
+[013/683] topic='công nghệ thông tin' pred=E truth=E correct=True
+[014/683] topic='trách nhiệm hình sự' pred=A truth=A correct=True
+[015/683] topic='bất động sản' pred=UNMAPPED truth=E correct=False
+[016/683] topic='giáo dục' pred=A truth=A correct=True
+[017/683] topic='dịch vụ pháp lý' pred=A truth=A correct=True
+[018/683] topic='thủ tục tố tụng' pred=A truth=A correct=True
+[019/683] topic='công nghệ thông tin' pred=D truth=D correct=True
+[020/683] topic='kế toán - kiểm toán' pred=F truth=F correct=True
+[021/683] topic='thuế - phí - lệ phí' pred=A truth=A correct=True
+[022/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=B correct=False
+[023/683] topic='giáo dục' pred=C truth=C correct=True
+[024/683] topic='thuế - phí - lệ phí' pred=UNMAPPED truth=D correct=False
+[025/683] topic='kế toán - kiểm toán' pred=E truth=E correct=True
+[026/683] topic='công nghệ thông tin' pred=UNMAPPED truth=E correct=False
+[027/683] topic='vi phạm hành chính' pred=UNMAPPED truth=F correct=False
+[028/683] topic='kế toán - kiểm toán' pred=B truth=B correct=True
+[029/683] topic='kế toán - kiểm toán' pred=A truth=A correct=True
+[030/683] topic='bộ máy hành chính' pred=A truth=E correct=False
+[031/683] topic='{"topic":"do user cảm ơn bạn đã giúp tôi hiểu rõ hơn về việc xác định các công việc cần thiết cho đơn vị sự nghiệp công lập. tuy nhiên' pred=UNMAPPED truth=C correct=False
+[032/683] topic='{"topic":"do user công ty tôi vừa mới thành lập được vài tháng và đang tìm kiếm nguồn vốn để mở rộng sản xuất. hôm qua, tôi nhận được một cuộc gọi' pred=UNMAPPED truth=E correct=False
+[033/683] topic='lao động - tiền lương' pred=E truth=E correct=True
+[034/683] topic='trách nhiệm hình sự' pred=E truth=E correct=True
+[035/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=D correct=False
+[036/683] topic='lao động - tiền lương' pred=C truth=C correct=True
+[037/683] topic='công nghệ thông tin' pred=UNMAPPED truth=B correct=False
+[038/683] topic='xây dựng - đô thị' pred=UNMAPPED truth=A correct=False
+[039/683] topic='kế toán - kiểm toán' pred=F truth=F correct=True
+[040/683] topic='bộ máy hành chính' pred=F truth=F correct=True
+[041/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=B correct=False
+[042/683] topic='bất động sản' pred=UNMAPPED truth=B correct=False
+[043/683] topic='giáo dục' pred=D truth=D correct=True
+[044/683] topic='bất động sản' pred=A truth=B correct=False
+[045/683] topic='xuất nhập khẩu' pred=D truth=D correct=True
+[046/683] topic='công nghệ thông tin' pred=B truth=B correct=True
+[047/683] topic='đầu tư' pred=E truth=E correct=True
+[048/683] topic='tải xuất - đô thị' pred=UNMAPPED truth=B correct=False
+[049/683] topic='giao thông vận tải' pred=E truth=E correct=True
+[050/683] topic='thủ tục tố tụng' pred=UNMAPPED truth=E correct=False
+[051/683] topic='thể thao - y tế' pred=A truth=A correct=True
+[052/683] topic='chứng khoán' pred=D truth=D correct=True
+[053/683] topic='lĩnh vực khác' pred=B truth=A correct=False
+[054/683] topic='thủ tục tố tụng' pred=UNMAPPED truth=E correct=False
+[055/683] topic='thương mại' pred=UNMAPPED truth=C correct=False
+[056/683] topic='{"topic":"do user công ty tôi mới thành lập được vài tháng và đang gặp khó khăn trong việc kê khai thuế. hôm qua, chúng tôi nhận được thông báo' pred=UNMAPPED truth=B correct=False
+[057/683] topic='đầu tư' pred=UNMAPPED truth=D correct=False
+[058/683] topic='xuất nhập khẩu' pred=UNMAPPED truth=E correct=False
+[059/683] topic='kế toán - kiểm toán' pred=D truth=D correct=True
+[060/683] topic='bộ máy hành chính' pred=UNMAPPED truth=E correct=False
+[061/683] topic='đầu tư' pred=UNMAPPED truth=B correct=False
+[062/683] topic='{"topic":"do user cảm ơn bạn đã giúp tôi hiểu rõ hơn về việc đăng ký doanh nghiệp. nhưng tôi vẫn băn khoăn không biết liệu có quy' pred=UNMAPPED truth=F correct=False
+[063/683] topic='vi phạm hành chính' pred=UNMAPPED truth=D correct=False
+[064/683] topic='bất động sản' pred=UNMAPPED truth=E correct=False
+[065/683] topic='vi phạm hành chính' pred=B truth=B correct=True
+[066/683] topic='sở hữu trí tuệ' pred=A truth=A correct=True
+[067/683] topic='lĩnh vực khác' pred=UNMAPPED truth=A correct=False
+[068/683] topic='bảo hiểm' pred=C truth=C correct=True
+[069/683] topic='quyền dân sự' pred=UNMAPPED truth=B correct=False
+[070/683] topic='công nghệ thông tin' pred=UNMAPPED truth=A correct=False
+[071/683] topic='thủ tục tố tụng' pred=UNMAPPED truth=F correct=False
+[072/683] topic='đầu tư' pred=F truth=F correct=True
+[073/683] topic='xây dựng - đô thị' pred=F truth=F correct=True
+[074/683] topic='xây dựng - đô thị' pred=B truth=A correct=False
+[075/683] topic='lĩnh vực khác' pred=B truth=E correct=False
+[076/683] topic='lĩnh vực khác' pred=UNMAPPED truth=E correct=False
+[077/683] topic='công nghệ thông tin' pred=UNMAPPED truth=A correct=False
+[078/683] topic='dịch vụ pháp lý' pred=B truth=B correct=True
+[079/683] topic='dịch vụ pháp lý' pred=A truth=A correct=True
+[080/683] topic='công nghệ thông tin' pred=UNMAPPED truth=E correct=False
+[081/683] topic='thủ tục tố tụng' pred=F truth=F correct=True
+[082/683] topic='bảo hiểm' pred=B truth=B correct=True
+[083/683] topic='trách nhiệm hình sự' pred=F truth=F correct=True
+[084/683] topic='dịch vụ pháp lý' pred=E truth=E correct=True
+[085/683] topic='sở hữu trí tuệ' pred=A truth=A correct=True
+[086/683] topic='thuế - phí - lệ phí' pred=E truth=E correct=True
+[087/683] topic='vi phạm hành chính' pred=E truth=E correct=True
+[088/683] topic='dịch vụ pháp lý' pred=UNMAPPED truth=C correct=False
+[089/683] topic='tài nguyên - môi trường' pred=B truth=B correct=True
+[090/683] topic='bất động sản' pred=B truth=B correct=True
+[091/683] topic='xuất nhập khẩu' pred=UNMAPPED truth=E correct=False
+[092/683] topic='tiền tệ ngân hàng' pred=C truth=C correct=True
+[093/683] topic='tiền tệ ngân hàng' pred=A truth=A correct=True
+[094/683] topic='đầu tư' pred=B truth=B correct=True
+[095/683] topic='vi phạm hành chính' pred=UNMAPPED truth=C correct=False
+[096/683] topic='xây dựng - đô thị' pred=C truth=C correct=True
+[097/683] topic='tiền tệ ngân hàng' pred=A truth=A correct=True
+[098/683] topic='việc làm' pred=UNMAPPED truth=F correct=False
+[099/683] topic='{"topic":"do user công ty tôi mới thành lập được vài tháng và đang tìm hiểu về các quy định liên quan đến việc sử dụng đất. gần đây, chúng' pred=UNMAPPED truth=B correct=False
+[100/683] topic='bất động sản' pred=B truth=B correct=True
+[101/683] topic='xuất nhập khẩu' pred=F truth=F correct=True
+[102/683] topic='bộ máy hành chính' pred=UNMAPPED truth=C correct=False
+[103/683] topic='{"topic":"do user công ty tôi vừa mới thành lập chuyên cung cấp dịch vụ sửa chữa điện lạnh. hôm qua, chúng tôi nhận được một đơn hàng từ một khách' pred=UNMAPPED truth=D correct=False
+[104/683] topic='xuất nhập khẩu' pred=C truth=C correct=True
+[105/683] topic='bất động sản' pred=UNMAPPED truth=D correct=False
+[106/683] topic='t tài chính nhà nước' pred=C truth=C correct=True
+[107/683] topic='thương mại' pred=UNMAPPED truth=A correct=False
+[108/683] topic='thể thao - y tế' pred=F truth=F correct=True
+[109/683] topic='dịch vụ pháp lý' pred=C truth=C correct=True
+[110/683] topic='đầu tư' pred=UNMAPPED truth=F correct=False
+[111/683] topic='chứng khoán' pred=D truth=D correct=True
+[112/683] topic='công nghệ thông tin' pred=UNMAPPED truth=E correct=False
+[113/683] topic='thể thao - y tế' pred=B truth=B correct=True
+[114/683] topic='t tài chính nhà nước' pred=UNMAPPED truth=B correct=False
+[115/683] topic='sở hữu trí tuệ' pred=D truth=D correct=True
+[116/683] topic='bảo hiểm' pred=A truth=E correct=False
+[117/683] topic='kôiểm tạ́p' pred=UNMAPPED truth=D correct=False
+[118/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=A correct=False
+[119/683] topic='sở hữu trí tuệ' pred=F truth=F correct=True
+[120/683] topic='sở hữu trí tuệ' pred=D truth=D correct=True
+[121/683] topic='{"topic":"t user thời tiết gần đây rất khắc nghiệt, khiến cho bà b lo lắng cho tài sản của mình. bà nghe nói rằng có những đợt' pred=UNMAPPED truth=A correct=False
+[122/683] topic='bộ máy hành chính' pred=D truth=D correct=True
+[123/683] topic='xuất nhập khẩu' pred=B truth=B correct=True
+[124/683] topic='trách nhiệm hình sự' pred=B truth=B correct=True
+[125/683] topic='táo - kiểm toán' pred=UNMAPPED truth=C correct=False
+[126/683] topic='vi phạm hành chính' pred=B truth=B correct=True
+[127/683] topic='trách nhiệm hình sự' pred=UNMAPPED truth=C correct=False
+[128/683] topic='thuế - phí - lệ phí' pred=F truth=F correct=True
+[129/683] topic='bảo hiểm' pred=A truth=A correct=True
+[130/683] topic='xuất nhập khẩu' pred=A truth=A correct=True
+[131/683] topic='trách nhiệm hình sự' pred=F truth=F correct=True
+[132/683] topic='trách nhiệm hình sự' pred=C truth=B correct=False
+[133/683] topic='xuất nhập khẩu' pred=B truth=B correct=True
+[134/683] topic='công nghệ thông tin' pred=D truth=D correct=True
+[135/683] topic='sở hữu trí tuệ' pred=F truth=F correct=True
+[136/683] topic='bộ máy hành chính' pred=A truth=A correct=True
+[137/683] topic='vi phạm hành chính' pred=F truth=F correct=True
+[138/683] topic='giáo dục' pred=F truth=F correct=True
+[139/683] topic='dự án' pred=UNMAPPED truth=A correct=False
+[140/683] topic='công nghệ thông tin' pred=E truth=E correct=True
+[141/683] topic='bộ máy hành chính' pred=D truth=B correct=False
+[142/683] topic='bảo hiểm' pred=C truth=C correct=True
+[143/683] topic='thể thao - y tế' pred=C truth=C correct=True
+[144/683] topic='bất động sản' pred=D truth=D correct=True
+[145/683] topic='lĩnh vực khác' pred=UNMAPPED truth=F correct=False
+[146/683] topic='quyền dân sự' pred=D truth=D correct=True
+[147/683] topic='{"topic":"t user công ty tôi vừa mới thành lập được vài tháng và đang trong quá trình hoàn thiện các thủ tục pháp lý cần thiết. hôm qua, tôi nhận' pred=UNMAPPED truth=D correct=False
+[148/683] topic='giao thông vận tải' pred=UNMAPPED truth=D correct=False
+[149/683] topic='bộ máy hành chính' pred=C truth=C correct=True
+[150/683] topic='giáo dục' pred=B truth=B correct=True
+[151/683] topic='bất động sản' pred=UNMAPPED truth=B correct=False
+[152/683] topic='trách nhiệm hình sự' pred=E truth=E correct=True
+[153/683] topic='thuế - phí - lệ phí' pred=A truth=A correct=True
+[154/683] topic='kế toán - kiểm toán' pred=B truth=B correct=True
+[155/683] topic='{"topic":"do user bà b đang điều hành một công ty sản xuất vàng trang sức. gần đây, bà lo lắng vì có thông tin về sự thay' pred=UNMAPPED truth=C correct=False
+[156/683] topic='trách nhiệm hình sự' pred=B truth=B correct=True
+[157/683] topic='bộ máy hành chính' pred=UNMAPPED truth=E correct=False
+[158/683] topic='{"topic":"t user tiếp tục với câu hỏi trước, ngoài việc thu hút đầu tư từ doanh nghiệp và ngân sách địa phương, thành phố cũng cần xem xét các' pred=F truth=F correct=True
+[159/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=B correct=False
+[160/683] topic='vi phạm hành chính' pred=D truth=D correct=True
+[161/683] topic='thuế - phí - lệ phí' pred=UNMAPPED truth=C correct=False
+[162/683] topic='lao động - tiền lương' pred=UNMAPPED truth=A correct=False
+[163/683] topic='trách nhiệm hình sự' pred=E truth=E correct=True
+[164/683] topic='thể thao - y tế' pred=C truth=C correct=True
+[165/683] topic='giao thông vận tải' pred=F truth=F correct=True
+[166/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=C correct=False
+[167/683] topic='y tế - y tế' pred=UNMAPPED truth=C correct=False
+[168/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=D correct=False
+[169/683] topic='xuất nhập khẩu' pred=UNMAPPED truth=D correct=False
+[170/683] topic='thuế - phí - lệ phí' pred=UNMAPPED truth=E correct=False
+[171/683] topic='bất động sản' pred=D truth=D correct=True
+[172/683] topic='quyền dân sự' pred=F truth=C correct=False
+[173/683] topic='thuế - phí - lệ phí' pred=B truth=B correct=True
+[174/683] topic='vi phạm hành chính' pred=C truth=A correct=False
+[175/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=E correct=False
+[176/683] topic='thể thao - y tế' pred=B truth=C correct=False
+[177/683] topic='{"topic":"do user cảm ơn bạn đã giúp tôi hiểu rõ hơn về việc cho thuê lại doanh nghiệp. nhưng giờ tôi lại băn khoăn, nếu tôi muốn' pred=UNMAPPED truth=C correct=False
+[178/683] topic='xuất nhập khẩu' pred=UNMAPPED truth=F correct=False
+[179/683] topic='thương mại' pred=UNMAPPED truth=E correct=False
+[180/683] topic='{"topic":"do user chuyện là, tôi có một cửa hàng bán đồ handmade ở làng, nhưng gần đây, có một người khác bắt ché tôi sao ch' pred=UNMAPPED truth=D correct=False
+[181/683] topic='công nghệ thông tin' pred=A truth=B correct=False
+[182/683] topic='giao thông vận tải' pred=E truth=E correct=True
+[183/683] topic='t tài nguyên - môi trường' pred=E truth=E correct=True
+[184/683] topic='công nghệ thông tin' pred=A truth=A correct=True
+[185/683] topic='{"topic":"t user cảm ơn bạn đã giúp tôi hiểu rõ hơn về việc nuôi con nuôi ở việt nam. nhưng tôi vẫn băn khoăn không biết nếu tôi' pred=UNMAPPED truth=E correct=False
+[186/683] topic='công nghệ thông tin' pred=UNMAPPED truth=A correct=False
+[187/683] topic='doược học' pred=UNMAPPED truth=C correct=False
+[188/683] topic='đầu tư' pred=UNMAPPED truth=E correct=False
+[189/683] topic='văn hóa - xã hội' pred=B truth=D correct=False
+[190/683] topic='{"topic":"do user vi phạm hành chính"}' pred=UNMAPPED truth=E correct=False
+[191/683] topic='bộ máy hành chính' pred=UNMAPPED truth=A correct=False
+[192/683] topic='văn hóa - xã hội' pred=F truth=B correct=False
+[193/683] topic='trách nhiệm hình sự' pred=C truth=C correct=True
+[194/683] topic='thuế - phí - lệ phí' pred=A truth=A correct=True
+[195/683] topic='văn hóa - xã hội' pred=D truth=D correct=True
+[196/683] topic='tài nguyên - môi trường' pred=UNMAPPED truth=C correct=False
+[197/683] topic='giao thông vận tải' pred=UNMAPPED truth=E correct=False
+[198/683] topic='bộ máy hành chính' pred=UNMAPPED truth=D correct=False
+[199/683] topic='công nghệ thông tin' pred=F truth=F correct=True
+[200/683] topic='xây dựng - đô thị' pred=UNMAPPED truth=A correct=False
+[201/683] topic='chứng khoán' pred=A truth=A correct=True
+[202/683] topic='lĩnh vực khác' pred=UNMAPPED truth=B correct=False
+[203/683] topic='sở hữu trí tuệ' pred=B truth=B correct=True
+[204/683] topic='thuế - phí - lệ phí' pred=D truth=D correct=True
+[205/683] topic='xuất nhập khẩu' pred=C truth=C correct=True
+[206/683] topic='sở hữu trí tuệ' pred=F truth=F correct=True
+[207/683] topic='vi phạm hành chính' pred=F truth=F correct=True
+[208/683] topic='bất động sản' pred=F truth=F correct=True
+[209/683] topic='văn hóa - xã hội' pred=F truth=F correct=True
+[210/683] topic='lĩnh vực khác' pred=UNMAPPED truth=D correct=False
+[211/683] topic='lao động - tiền lương' pred=UNMAPPED truth=A correct=False
+[212/683] topic='bảo hiểm' pred=A truth=A correct=True
+[213/683] topic='thể thao - y tế' pred=UNMAPPED truth=C correct=False
+[214/683] topic='chứng khoán' pred=B truth=B correct=True
+[215/683] topic='đầu tư' pred=D truth=F correct=False
+[216/683] topic='bộ máy hành chính' pred=E truth=E correct=True
+[217/683] topic='thủ tục tố tụng' pred=F truth=F correct=True
+[218/683] topic='trách nhiệm hình sự' pred=B truth=B correct=True
+[219/683] topic='tiền tệ ngân hàng' pred=A truth=A correct=True
+[220/683] topic='quyền dân sự' pred=D truth=A correct=False
+[221/683] topic='xây dựng - đô thị' pred=UNMAPPED truth=F correct=False
+[222/683] topic='giáo dục' pred=E truth=E correct=True
+[223/683] topic='vi phạm hành chính' pred=B truth=B correct=True
+[224/683] topic='chứng khoán' pred=F truth=F correct=True
+[225/683] topic='lao động - tiền lương' pred=A truth=A correct=True
+[226/683] topic='thuế - phí - lệ phí' pred=UNMAPPED truth=C correct=False
+[227/683] topic='công nghệ thông tin' pred=UNMAPPED truth=A correct=False
+[228/683] topic='chứng khoán' pred=A truth=A correct=True
+[229/683] topic='công nghệ thông tin' pred=UNMAPPED truth=D correct=False
+[230/683] topic='dịch vụ pháp lý' pred=E truth=E correct=True
+[231/683] topic='bộ máy hành chính' pred=UNMAPPED truth=B correct=False
+[232/683] topic='xây dựng - đô thị' pred=A truth=A correct=True
+[233/683] topic='tinh_tệ_ngân_hàng' pred=UNMAPPED truth=E correct=False
+[234/683] topic='chứng khoán' pred=D truth=D correct=True
+[235/683] topic='{"topic":"do user công ty tôi mới thành lập được vài tháng và đang tìm hiểu về các quy định liên quan đến việc sử dụng đất. gần đây,' pred=UNMAPPED truth=F correct=False
+[236/683] topic='trách nhiệm hình sự' pred=F truth=F correct=True
+[237/683] topic='thể thao - y tế' pred=C truth=C correct=True
+[238/683] topic='vi phạm hành chính' pred=F truth=F correct=True
+[239/683] topic='chứng khoán' pred=F truth=F correct=True
+[240/683] topic='xuất nhập khẩu' pred=B truth=A correct=False
+[241/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=D correct=False
+[242/683] topic='bộ máy hành chính' pred=D truth=D correct=True
+[243/683] topic='trách nhiệm hình sự' pred=D truth=D correct=True
+[244/683] topic='xuất nhập khẩu' pred=UNMAPPED truth=F correct=False
+[245/683] topic='xây dựng - đô thị' pred=A truth=A correct=True
+[246/683] topic='tíên tệ ngân hàng' pred=UNMAPPED truth=B correct=False
+[247/683] topic='bảo hiểm' pred=C truth=C correct=True
+[248/683] topic='giao thông vận tải' pred=C truth=C correct=True
+[249/683] topic='bộ máy hành chính' pred=B truth=B correct=True
+[250/683] topic='lĩnh vực khác' pred=A truth=C correct=False
+[251/683] topic='kế toán - kiểm toán' pred=D truth=C correct=False
+[252/683] topic='trách nhiệm hình sự' pred=B truth=D correct=False
+[253/683] topic='bộ máy hành chính' pred=UNMAPPED truth=F correct=False
+[254/683] topic='thể thao - y tế' pred=C truth=C correct=True
+[255/683] topic='thuế - phí - lệ phí' pred=UNMAPPED truth=D correct=False
+[256/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=B correct=False
+[257/683] topic='công nghệ thông tin' pred=UNMAPPED truth=B correct=False
+[258/683] topic='vi phạm hành chính' pred=UNMAPPED truth=B correct=False
+[259/683] topic='xuất nhập khẩu' pred=A truth=B correct=False
+[260/683] topic='giáo dục' pred=A truth=A correct=True
+[261/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=D correct=False
+[262/683] topic='tinh việt ngân hàng' pred=UNMAPPED truth=A correct=False
+[263/683] topic='bảo hiểm' pred=C truth=C correct=True
+[264/683] topic='xuất nhập khẩu' pred=D truth=D correct=True
+[265/683] topic='xây dựng - đô thị' pred=F truth=F correct=True
+[266/683] topic='giao thông vận tải' pred=A truth=A correct=True
+[267/683] topic='xây dựng - đô thị' pred=A truth=A correct=True
+[268/683] topic='thể thao - y tế' pred=F truth=F correct=True
+[269/683] topic='tiền tệ ngân hàng' pred=F truth=F correct=True
+[270/683] topic='sở hữu trí tuệ' pred=C truth=C correct=True
+[271/683] topic='bộ máy hành chính' pred=UNMAPPED truth=E correct=False
+[272/683] topic='{"topic":"do user có vẻ như mình đã làm việc quá sức trong tháng vừa qua, giờ lại bị ốm nặng. mình đã nộp đơn xin nghỉ bệnh' pred=UNMAPPED truth=E correct=False
+[273/683] topic='bộ máy hành chính' pred=UNMAPPED truth=C correct=False
+[274/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=C correct=False
+[275/683] topic='công nghệ thông tin' pred=UNMAPPED truth=E correct=False
+[276/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=C correct=False
+[277/683] topic='giao thông vận tải' pred=UNMAPPED truth=A correct=False
+[278/683] topic='xuất nhập khẩu' pred=E truth=E correct=True
+[279/683] topic='vi phạm hành chính' pred=A truth=A correct=True
+[280/683] topic='thủ tục tố tụng' pred=UNMAPPED truth=B correct=False
+[281/683] topic='lĩnh vực khác' pred=D truth=D correct=True
+[282/683] topic='công nghệ thông tin' pred=UNMAPPED truth=C correct=False
+[283/683] topic='văn hóa - xã hội' pred=B truth=B correct=True
+[284/683] topic='bất động sản' pred=D truth=D correct=True
+[285/683] topic='công nghệ thông tin' pred=UNMAPPED truth=D correct=False
+[286/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=D correct=False
+[287/683] topic='t tài chính nhà nước' pred=UNMAPPED truth=A correct=False
+[288/683] topic='thương mại' pred=UNMAPPED truth=F correct=False
+[289/683] topic='{"topic":"do user công ty tôi mới thành lập được vài tháng và đang trong quá trình mở rộng sản xuất. gần đây, chúng tôi đã ký hợp đồng với' pred=UNMAPPED truth=E correct=False
+[290/683] topic='lĩnh vực khác' pred=C truth=A correct=False
+[291/683] topic='chứng khoán' pred=B truth=B correct=True
+[292/683] topic='sở hữu trí tuệ' pred=B truth=B correct=True
+[293/683] topic='trách nhiệm hình sự' pred=D truth=D correct=True
+[294/683] topic='vi phạm hành chính' pred=E truth=E correct=True
+[295/683] topic='xây dựng - đô thị' pred=A truth=D correct=False
+[296/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=B correct=False
+[297/683] topic='công nghệ thông tin' pred=C truth=C correct=True
+[298/683] topic='t tài chính nhà nước' pred=D truth=D correct=True
+[299/683] topic='xây dựng - đô thị' pred=B truth=B correct=True
+[300/683] topic='văn hóa - xã hội' pred=B truth=B correct=True
+[301/683] topic='thuế - phí - lệ phí' pred=UNMAPPED truth=B correct=False
+[302/683] topic='giáo dục' pred=D truth=D correct=True
+[303/683] topic='xuất nhập khẩu' pred=C truth=E correct=False
+[304/683] topic='công nghệ thông tin' pred=B truth=B correct=True
+[305/683] topic='thuế - phí - lệ phí' pred=A truth=A correct=True
+[306/683] topic='tinediting' pred=UNMAPPED truth=D correct=False
+[307/683] topic='{"topic":"do assistant"}' pred=UNMAPPED truth=F correct=False
+[308/683] topic='dịch vụ pháp lý' pred=B truth=B correct=True
+[309/683] topic='trách nhiệm hình sự' pred=C truth=C correct=True
+[310/683] topic='đầu tư' pred=UNMAPPED truth=D correct=False
+[311/683] topic='dịch vụ pháp lý' pred=D truth=A correct=False
+[312/683] topic='bảo hiểm' pred=E truth=E correct=True
+[313/683] topic='kế toán - kiểm toán' pred=B truth=B correct=True
+[314/683] topic='xây dựng - đô thị' pred=B truth=B correct=True
+[315/683] topic='lĩnh vực khác' pred=UNMAPPED truth=B correct=False
+[316/683] topic='công nghệ thông tin' pred=E truth=E correct=True
+[317/683] topic='bộ máy hành chính' pred=UNMAPPED truth=C correct=False
+[318/683] topic='t tài chính nhà nước' pred=UNMAPPED truth=B correct=False
+[319/683] topic='đầu tư' pred=C truth=C correct=True
+[320/683] topic='vi phạm hành chính' pred=A truth=A correct=True
+[321/683] topic='{"topic":"t user ông b vừa hoàn thành một dự án xây dựng cơ sở hạ tầng quan trọng và đang trong giai đoạn chuẩn bị các tài liệu cần thiết để' pred=UNMAPPED truth=F correct=False
+[322/683] topic='{"topic":"do user công ty tôi mới thành lập được vài tháng và đang tìm kiếm nguồn vốn để mở rộng quy mô sản xuất. chúng tôi đã chuẩn bị đầy đủ' pred=UNMAPPED truth=A correct=False
+[323/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=E correct=False
+[324/683] topic='kế toán - kiểm toán' pred=D truth=D correct=True
+[325/683] topic='xây dựng - đô thị' pred=C truth=C correct=True
+[326/683] topic='lĩnh vực khác' pred=C truth=A correct=False
+[327/683] topic='thể thao - y tế' pred=UNMAPPED truth=E correct=False
+[328/683] topic='giao thông vận tải' pred=D truth=D correct=True
+[329/683] topic='giáo dục' pred=D truth=D correct=True
+[330/683] topic='giao thông vận tải' pred=UNMAPPED truth=D correct=False
+[331/683] topic='thuế - phí - lệ phí' pred=UNMAPPED truth=E correct=False
+[332/683] topic='tfügianh' pred=UNMAPPED truth=A correct=False
+[333/683] topic='dịch vụ pháp lý' pred=D truth=D correct=True
+[334/683] topic='thể thao - y tế' pred=A truth=A correct=True
+[335/683] topic='luật tố cáo' pred=UNMAPPED truth=C correct=False
+[336/683] topic='tữ liệu cá nhân' pred=UNMAPPED truth=D correct=False
+[337/683] topic='văn hóa - xã hội' pred=A truth=A correct=True
+[338/683] topic='giao thông vận tải' pred=A truth=A correct=True
+[339/683] topic='quyền dân sự' pred=UNMAPPED truth=F correct=False
+[340/683] topic='{"topic":"t user tài chính nhà nước"}' pred=A truth=A correct=True
+[341/683] topic='{"topic":"do user công ty tôi mới thành lập được vài tháng, nhưng đã gặp phải một vấn đề lớn. một đối tác đã tự ý sử dụng tên thương hiệu của' pred=UNMAPPED truth=C correct=False
+[342/683] topic='sở hữu trí tuệ' pred=B truth=B correct=True
+[343/683] topic='vi phạm hành chính' pred=UNMAPPED truth=E correct=False
+[344/683] topic='công nghệ thông tin' pred=A truth=A correct=True
+[345/683] topic='bất động sản' pred=B truth=B correct=True
+[346/683] topic='lĩnh vực khác' pred=F truth=D correct=False
+[347/683] topic='bộ máy hành chính' pred=UNMAPPED truth=E correct=False
+[348/683] topic='bảo hiểm' pred=UNMAPPED truth=E correct=False
+[349/683] topic='kế toán - kiểm toán' pred=F truth=F correct=True
+[350/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=A correct=False
+[351/683] topic='tọi' pred=UNMAPPED truth=E correct=False
+[352/683] topic='bộ máy hành chính' pred=A truth=E correct=False
+[353/683] topic='bộ máy hành chính' pred=A truth=A correct=True
+[354/683] topic='kế toán - kiểm toán' pred=A truth=A correct=True
+[355/683] topic='kế toán - kiểm toán' pred=D truth=D correct=True
+[356/683] topic='xuất nhập khẩu' pred=UNMAPPED truth=F correct=False
+[357/683] topic='thương mại' pred=UNMAPPED truth=A correct=False
+[358/683] topic='vi phạm hành chính' pred=UNMAPPED truth=E correct=False
+[359/683] topic='lĩnh vực khác' pred=UNMAPPED truth=C correct=False
+[360/683] topic='túi khí tượng' pred=UNMAPPED truth=B correct=False
+[361/683] topic='công nghệ thông tin' pred=C truth=C correct=True
+[362/683] topic='đầu tư' pred=UNMAPPED truth=C correct=False
+[363/683] topic='kế toán - kiểm toán' pred=E truth=E correct=True
+[364/683] topic='bộ máy hành chính' pred=UNMAPPED truth=E correct=False
+[365/683] topic='đầu tư' pred=UNMAPPED truth=F correct=False
+[366/683] topic='công nghệ thông tin' pred=UNMAPPED truth=C correct=False
+[367/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=E correct=False
+[368/683] topic='công nghệ thông tin' pred=UNMAPPED truth=A correct=False
+[369/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=D correct=False
+[370/683] topic='thương mại' pred=C truth=C correct=True
+[371/683] topic='chứng khoán' pred=E truth=E correct=True
+[372/683] topic='trách nhiệm hình sự' pred=B truth=B correct=True
+[373/683] topic='vi phạm hành chính' pred=UNMAPPED truth=B correct=False
+[374/683] topic='xuất nhập khẩu' pred=E truth=E correct=True
+[375/683] topic='đầu tư' pred=B truth=B correct=True
+[376/683] topic='{"topic":"do user công ty tôi mới thành lập được vài tháng và đang tìm hiểu về các loại thuế mà chúng tôi phải nộp. hôm qua, tôi nhận được thông báo' pred=UNMAPPED truth=B correct=False
+[377/683] topic='kế toán - kiểm toán' pred=F truth=F correct=True
+[378/683] topic='xuất nhập khẩu' pred=F truth=F correct=True
+[379/683] topic='bộ máy hành chính' pred=UNMAPPED truth=D correct=False
+[380/683] topic='tiền tệ ngân hàng' pred=A truth=E correct=False
+[381/683] topic='giao thông vận tải' pred=UNMAPPED truth=B correct=False
+[382/683] topic='thuế - phí - lệ phí' pred=C truth=C correct=True
+[383/683] topic='xây dựng - đô thị' pred=A truth=A correct=True
+[384/683] topic='giao thông vận tải' pred=A truth=A correct=True
+[385/683] topic='công nghệ thông tin' pred=F truth=F correct=True
+[386/683] topic='bảo hiểm' pred=A truth=A correct=True
+[387/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=E correct=False
+[388/683] topic='thuế - phí - lệ phí' pred=B truth=B correct=True
+[389/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=E correct=False
+[390/683] topic='kế toán - kiểm toán' pred=D truth=D correct=True
+[391/683] topic='xây dựng - đô thị' pred=UNMAPPED truth=A correct=False
+[392/683] topic='tinance nhà nước' pred=UNMAPPED truth=D correct=False
+[393/683] topic='văn hóa - xã hội' pred=E truth=E correct=True
+[394/683] topic='xuất nhập khẩu' pred=UNMAPPED truth=C correct=False
+[395/683] topic='giáo dục' pred=C truth=C correct=True
+[396/683] topic='{"topic":"việc làm"},{"topic":"lĩnh vực khác"}' pred=UNMAPPED truth=A correct=False
+[397/683] topic='thể thao - y tế' pred=E truth=E correct=True
+[398/683] topic='thương mại' pred=D truth=D correct=True
+[399/683] topic='quyền dân sự' pred=D truth=D correct=True
+[400/683] topic='{"topic":"do user theo quy định hiện hành, thời điểm cuối cùng để nộp báo cáo tổng kết nhân sự cho các tổ chức nước ngoài tại việt nam thường là tháng' pred=UNMAPPED truth=F correct=False
+[401/683] topic='giáo dục' pred=A truth=A correct=True
+[402/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=C correct=False
+[403/683] topic='giao thông vận tải' pred=D truth=D correct=True
+[404/683] topic='trách nhiệm hình sự' pred=D truth=D correct=True
+[405/683] topic='sở hữu trí tuệ' pred=C truth=C correct=True
+[406/683] topic='lao động - tiền lương' pred=F truth=F correct=True
+[407/683] topic='xây dựng - đô thị' pred=C truth=C correct=True
+[408/683] topic='giáo dục' pred=UNMAPPED truth=D correct=False
+[409/683] topic='trách nhiệm hình sự' pred=UNMAPPED truth=B correct=False
+[410/683] topic='{"topic":"t user tài nguyên - môi trường"}' pred=F truth=F correct=True
+[411/683] topic='thủ tục tố tụng' pred=A truth=A correct=True
+[412/683] topic='lĩnh vực khác' pred=UNMAPPED truth=E correct=False
+[413/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=E correct=False
+[414/683] topic='{"topic":"do user công ty tôi mới thành lập được vài tháng và đang trong quá trình mở rộng quy mô sản xuất. gần đây, chúng tôi đã ký hợp đồng' pred=UNMAPPED truth=B correct=False
+[415/683] topic='bộ máy hành chính' pred=UNMAPPED truth=E correct=False
+[416/683] topic='bất động sản' pred=F truth=F correct=True
+[417/683] topic='bất động sản' pred=D truth=D correct=True
+[418/683] topic='lĩnh vực khác' pred=UNMAPPED truth=F correct=False
+[419/683] topic='bất động sản' pred=D truth=D correct=True
+[420/683] topic='công nghệ thông tin' pred=A truth=A correct=True
+[421/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=C correct=False
+[422/683] topic='kế toán - kiểm toán' pred=F truth=F correct=True
+[423/683] topic='đầu tư' pred=C truth=C correct=True
+[424/683] topic='thương mại' pred=UNMAPPED truth=E correct=False
+[425/683] topic='văn hóa - xã hội' pred=B truth=A correct=False
+[426/683] topic='thủ tục tố tụng' pred=UNMAPPED truth=F correct=False
+[427/683] topic='thuốc và vật tư y tế' pred=UNMAPPED truth=D correct=False
+[428/683] topic='giao thông vận tải' pred=C truth=C correct=True
+[429/683] topic='kế toán - kiểm toán' pred=E truth=E correct=True
+[430/683] topic='xây dựng - đô thị' pred=B truth=B correct=True
+[431/683] topic='kế toán - kiểm toán' pred=F truth=F correct=True
+[432/683] topic='xây dựng - đô thị' pred=B truth=B correct=True
+[433/683] topic='bộ máy hành chính' pred=E truth=E correct=True
+[434/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=E correct=False
+[435/683] topic='thuế - phí - lệ phí' pred=UNMAPPED truth=B correct=False
+[436/683] topic='bộ máy hành chính' pred=F truth=F correct=True
+[437/683] topic='đầu tư' pred=UNMAPPED truth=E correct=False
+[438/683] topic='thể thao - y tế' pred=B truth=B correct=True
+[439/683] topic='{"topic":"do assistant"}' pred=UNMAPPED truth=F correct=False
+[440/683] topic='lĩnh vực khác' pred=UNMAPPED truth=C correct=False
+[441/683] topic='{"topic":"t user tài nguyên - môi trường"}' pred=C truth=C correct=True
+[442/683] topic='công nghệ thông tin' pred=C truth=B correct=False
+[443/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=E correct=False
+[444/683] topic='xây dựng - đô thị' pred=D truth=A correct=False
+[445/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=B correct=False
+[446/683] topic='công nghệ thông tin' pred=B truth=B correct=True
+[447/683] topic='giáo dục' pred=A truth=A correct=True
+[448/683] topic='thuế - phí - lệ phí' pred=C truth=C correct=True
+[449/683] topic='xây dựng - đô thị' pred=UNMAPPED truth=D correct=False
+[450/683] topic='tài chính nhà nước' pred=C truth=C correct=True
+[451/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=B correct=False
+[452/683] topic='thuế - phí - lệ phí' pred=F truth=F correct=True
+[453/683] topic='tinh_tien_nghiep' pred=UNMAPPED truth=A correct=False
+[454/683] topic='dịch vụ pháp lý' pred=UNMAPPED truth=A correct=False
+[455/683] topic='lao động - tiền lương' pred=UNMAPPED truth=D correct=False
+[456/683] topic='chứng khoán' pred=E truth=E correct=True
+[457/683] topic='đầu tư' pred=UNMAPPED truth=A correct=False
+[458/683] topic='văn hóa - xã hội' pred=B truth=B correct=True
+[459/683] topic='sở hữu trí tuệ' pred=E truth=E correct=True
+[460/683] topic='giao thông vận tải' pred=UNMAPPED truth=D correct=False
+[461/683] topic='thuê - phí - lệ phí' pred=UNMAPPED truth=A correct=False
+[462/683] topic='tiền tệ ngân hàng' pred=E truth=E correct=True
+[463/683] topic='công nghệ thông tin' pred=E truth=B correct=False
+[464/683] topic='lĩnh vực khác' pred=UNMAPPED truth=D correct=False
+[465/683] topic='{"topic":"do user công ty tôi mới thành lập được vài tháng và đang tìm hiểu về các loại thuế mà chúng tôi phải nộp. gần đây, tôi nghe nói' pred=UNMAPPED truth=C correct=False
+[466/683] topic='thủ tục tố tụng' pred=E truth=C correct=False
+[467/683] topic='lao động - tiền lương' pred=A truth=A correct=True
+[468/683] topic='đầu tư' pred=UNMAPPED truth=B correct=False
+[469/683] topic='đầu tư' pred=UNMAPPED truth=C correct=False
+[470/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=B correct=False
+[471/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=D correct=False
+[472/683] topic='chứng khoán' pred=E truth=E correct=True
+[473/683] topic='thuế - phí - lệ phí' pred=UNMAPPED truth=E correct=False
+[474/683] topic='công nghệ thông tin' pred=F truth=F correct=True
+[475/683] topic='kế toán - kiểm toán' pred=D truth=D correct=True
+[476/683] topic='bộ máy hành chính' pred=UNMAPPED truth=E correct=False
+[477/683] topic='bộ máy hành chính' pred=UNMAPPED truth=C correct=False
+[478/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=F correct=False
+[479/683] topic='bộ máy hành chính' pred=B truth=B correct=True
+[480/683] topic='lao động - tiền lương' pred=E truth=E correct=True
+[481/683] topic='dịch vụ pháp lý' pred=UNMAPPED truth=A correct=False
+[482/683] topic='tiền tệ ngân hàng' pred=UNMAPPED truth=D correct=False
+[483/683] topic='chứng khoán' pred=E truth=E correct=True
+[484/683] topic='xây dựng - đô thị' pred=D truth=C correct=False
+[485/683] topic='chứng khoán' pred=UNMAPPED truth=E correct=False
+[486/683] topic='đầu tư' pred=UNMAPPED truth=E correct=False
+[487/683] topic='lĩnh vực khác' pred=C truth=C correct=True
+[488/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=A correct=False
+[489/683] topic='giao thông vận tải' pred=F truth=F correct=True
+[490/683] topic='đầu tư' pred=E truth=E correct=True
+[491/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=D correct=False
+[492/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=E correct=False
+[493/683] topic='bộ máy hành chính' pred=E truth=E correct=True
+[494/683] topic='xuất nhập khẩu' pred=UNMAPPED truth=E correct=False
+[495/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=D correct=False
+[496/683] topic='công nghệ thông tin' pred=UNMAPPED truth=C correct=False
+[497/683] topic='t tài chính nhà nước' pred=C truth=C correct=True
+[498/683] topic='tài chính nhà nước' pred=B truth=B correct=True
+[499/683] topic='giáo dục' pred=E truth=E correct=True
+[500/683] topic='{"topic":"do user} xây dựng - đô thị' pred=UNMAPPED truth=E correct=False
+[501/683] topic='xuất nhập khẩu' pred=B truth=B correct=True
+[502/683] topic='t tài chính nhà nước' pred=E truth=E correct=True
+[503/683] topic='xuất nhập khẩu' pred=C truth=C correct=True
+[504/683] topic='công nghệ thông tin' pred=E truth=E correct=True
+[505/683] topic='{"topic":"do user công ty tôi mới thành lập được vài tháng và đang tìm hiểu về các loại thuế mà chúng tôi phải nộp. hôm qua, tôi nhận được thông báo' pred=UNMAPPED truth=D correct=False
+[506/683] topic='sở hữu trí tuệ' pred=E truth=E correct=True
+[507/683] topic='giao thông vận tải' pred=A truth=A correct=True
+[508/683] topic='thương mại' pred=UNMAPPED truth=E correct=False
+[509/683] topic='trách nhiệm hình sự' pred=D truth=D correct=True
+[510/683] topic='thủy sản' pred=UNMAPPED truth=D correct=False
+[511/683] topic='t taxeinh' pred=UNMAPPED truth=A correct=False
+[512/683] topic='trách nhiệm hình sự' pred=UNMAPPED truth=D correct=False
+[513/683] topic='đầu tư' pred=UNMAPPED truth=D correct=False
+[514/683] topic='lĩnh vực khác' pred=UNMAPPED truth=E correct=False
+[515/683] topic='bảo hiểm' pred=D truth=D correct=True
+[516/683] topic='đầu tư' pred=UNMAPPED truth=B correct=False
+[517/683] topic='kế toán - kiểm toán' pred=F truth=F correct=True
+[518/683] topic='sở hữu trí tuệ' pred=C truth=C correct=True
+[519/683] topic='chứng khoán' pred=F truth=F correct=True
+[520/683] topic='công nghệ thông tin' pred=D truth=D correct=True
+[521/683] topic='tiền tệ ngân hàng' pred=B truth=B correct=True
+[522/683] topic='bộ máy hành chính' pred=UNMAPPED truth=F correct=False
+[523/683] topic='viện kiểm sát' pred=UNMAPPED truth=B correct=False
+[524/683] topic='công nghệ thông tin' pred=UNMAPPED truth=B correct=False
+[525/683] topic='văn hóa - xã hội' pred=F truth=F correct=True
+[526/683] topic='thủ tục tố tụng' pred=E truth=E correct=True
+[527/683] topic='bất động sản' pred=F truth=F correct=True
+[528/683] topic='thể thao - y tế' pred=D truth=D correct=True
+[529/683] topic='bảo hiểm' pred=D truth=D correct=True
+[530/683] topic='xây dựng - đô thị' pred=F truth=F correct=True
+[531/683] topic='bất động sản' pred=UNMAPPED truth=A correct=False
+[532/683] topic='bảo hiểm' pred=A truth=A correct=True
+[533/683] topic='vi phạm hành chính' pred=E truth=E correct=True
+[534/683] topic='bộ máy hành chính' pred=UNMAPPED truth=C correct=False
+[535/683] topic='{"topic":"do user công ty tôi mới thành lập được vài tháng và đang tìm hiểu về các loại thuế mà chúng tôi phải nộp. hôm qua, tôi nghe nói' pred=UNMAPPED truth=A correct=False
+[536/683] topic='kế toán - kiểm toán' pred=F truth=F correct=True
+[537/683] topic='công nghệ thông tin' pred=UNMAPPED truth=B correct=False
+[538/683] topic='quyền dân sự' pred=UNMAPPED truth=A correct=False
+[539/683] topic='bộ máy hành chính' pred=A truth=A correct=True
+[540/683] topic='công nghệ thông tin' pred=UNMAPPED truth=E correct=False
+[541/683] topic='đầu tư' pred=B truth=B correct=True
+[542/683] topic='công nghệ thông tin' pred=UNMAPPED truth=D correct=False
+[543/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=A correct=False
+[544/683] topic='{"topic":"do user cảm ơn bạn đã giúp tôi hiểu rõ hơn về việc chuẩn bị lịch trình nộp báo cáo. tuy nhiên, tôi vẫn băn khoăn' pred=UNMAPPED truth=D correct=False
+[545/683] topic='thương mại' pred=UNMAPPED truth=C correct=False
+[546/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=D correct=False
+[547/683] topic='chứng khoán' pred=B truth=B correct=True
+[548/683] topic='đầu tư' pred=B truth=B correct=True
+[549/683] topic='giáo dục' pred=A truth=A correct=True
+[550/683] topic='xây dựng - đô thị' pred=B truth=B correct=True
+[551/683] topic='thủ tục tố tụng' pred=F truth=F correct=True
+[552/683] topic='bộ máy hành chính' pred=UNMAPPED truth=B correct=False
+[553/683] topic='bộ máy hành chính' pred=E truth=E correct=True
+[554/683] topic='đầu tư' pred=C truth=E correct=False
+[555/683] topic='bảo hiểm' pred=E truth=E correct=True
+[556/683] topic='giáo dục' pred=UNMAPPED truth=F correct=False
+[557/683] topic='thể thao - y tế' pred=F truth=F correct=True
+[558/683] topic='đầu tư' pred=C truth=B correct=False
+[559/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=E correct=False
+[560/683] topic='giao thông vận tải' pred=A truth=A correct=True
+[561/683] topic='quyền dân sự' pred=B truth=C correct=False
+[562/683] topic='{"topic":"do` assistant đầu tư"}' pred=UNMAPPED truth=F correct=False
+[563/683] topic='xây dựng - đô thị' pred=F truth=F correct=True
+[564/683] topic='bảo hiểm' pred=C truth=C correct=True
+[565/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=D correct=False
+[566/683] topic='bất động sản' pred=B truth=B correct=True
+[567/683] topic='tiền tệ ngân hàng' pred=UNMAPPED truth=E correct=False
+[568/683] topic='tainen tài chính nhà nước' pred=UNMAPPED truth=A correct=False
+[569/683] topic='công nghệ thông tin' pred=B truth=B correct=True
+[570/683] topic='lao động - tiền lương' pred=E truth=E correct=True
+[571/683] topic='bảo hiểm' pred=B truth=B correct=True
+[572/683] topic='xuất nhập khẩu' pred=UNMAPPED truth=C correct=False
+[573/683] topic='bộ máy hành chính' pred=UNMAPPED truth=D correct=False
+[574/683] topic='{"topic":"do user công ty tôi vừa mới thành lập được vài tháng và đang tìm hiểu về các loại bảo hiểm phù hợp cho doanh nghiệp nhỏ. chúng tôi đã quyết' pred=D truth=D correct=True
+[575/683] topic='{"topic":"t assistant"}' pred=UNMAPPED truth=A correct=False
+[576/683] topic='{"topic":"do user công ty tôi vừa mới thành lập được vài tháng và đang tìm hiểu về các loại bảo hiểm cần thiết cho nhân viên. gần đây, một trong' pred=UNMAPPED truth=E correct=False
+[577/683] topic='bất động sản' pred=C truth=C correct=True
+[578/683] topic='giáo dục' pred=C truth=C correct=True
+[579/683] topic='giáo dục' pred=D truth=D correct=True
+[580/683] topic='xây dựng - đô thị' pred=D truth=D correct=True
+[581/683] topic='sở hữu trí tuệ' pred=E truth=E correct=True
+[582/683] topic='t tài chính nhà nước' pred=UNMAPPED truth=E correct=False
+[583/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=D correct=False
+[584/683] topic='vi phạm hành chính' pred=A truth=A correct=True
+[585/683] topic='bất động sản' pred=E truth=E correct=True
+[586/683] topic='do' pred=B truth=B correct=True
+[587/683] topic='trách nhiệm hình sự' pred=E truth=E correct=True
+[588/683] topic='trách nhiệm hình sự' pred=C truth=C correct=True
+[589/683] topic='bất động sản' pred=UNMAPPED truth=E correct=False
+[590/683] topic='chứng khoán' pred=D truth=D correct=True
+[591/683] topic='bảo hiểm' pred=F truth=F correct=True
+[592/683] topic='thủ tục tố tụng' pred=C truth=C correct=True
+[593/683] topic='thuế - phí - lệ phí' pred=E truth=E correct=True
+[594/683] topic='{"topic":"do user việc này có ảnh hưởng như thế nào đến quyền lợi của tôi theo quy định hiện hành?' pred=UNMAPPED truth=F correct=False
+[595/683] topic='sở hữu trí tuệ' pred=E truth=E correct=True
+[596/683] topic='công nghệ thông tin' pred=UNMAPPED truth=A correct=False
+[597/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=E correct=False
+[598/683] topic='thủ tục tố tụng' pred=D truth=A correct=False
+[599/683] topic='chứng khoán' pred=F truth=F correct=True
+[600/683] topic='{"topic":"t user cảm ơn bạn đã giúp tôi hiểu rõ hơn về việc chuẩn bị hồ sơ tạm ứng vốn đầu tư công!' pred=UNMAPPED truth=A correct=False
+[601/683] topic='xuất nhập khẩu' pred=A truth=A correct=True
+[602/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=D correct=False
+[603/683] topic='{"topic":"do user" điều chỉnh đối tượng hàng hóa, dịch vụ được dùng cho mục đích khuyến mại"}' pred=UNMAPPED truth=A correct=False
+[604/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=D correct=False
+[605/683] topic='bộ máy hành chính' pred=UNMAPPED truth=B correct=False
+[606/683] topic='tiền tệ ngân hàng' pred=E truth=E correct=True
+[607/683] topic='{"topic":"do user công ty tôi mới thành lập được vài tháng và đang tìm hiểu về các quy định liên quan đến việc sử dụng đất đai. hôm qua,' pred=UNMAPPED truth=B correct=False
+[608/683] topic='đầu tư' pred=UNMAPPED truth=B correct=False
+[609/683] topic='bộ máy hành chính' pred=E truth=E correct=True
+[610/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=F correct=False
+[611/683] topic='giáo dục' pred=UNMAPPED truth=C correct=False
+[612/683] topic='thuế - phí - lệ phí' pred=B truth=B correct=True
+[613/683] topic='kế toán - kiểm toán' pred=B truth=B correct=True
+[614/683] topic='luật phá sản 214' pred=UNMAPPED truth=E correct=False
+[615/683] topic='đầu tư' pred=D truth=E correct=False
+[616/683] topic='công nghệ thông tin' pred=B truth=D correct=False
+[617/683] topic='xuất nhập khẩu' pred=A truth=A correct=True
+[618/683] topic='văn hóa - xã hội' pred=E truth=E correct=True
+[619/683] topic='kế toán - kiểm toán' pred=E truth=E correct=True
+[620/683] topic='lĩnh vực khác' pred=UNMAPPED truth=C correct=False
+[621/683] topic='{"topic":"t user bà b là trưởng phòng đào tạo tại một cơ quan nhà nước, đang phụ trách tổ chức khóa bồi dưỡng cho công chức địa phương.' pred=UNMAPPED truth=B correct=False
+[622/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=B correct=False
+[623/683] topic='thuế - phí - lệ phí' pred=A truth=A correct=True
+[624/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=E correct=False
+[625/683] topic='thể thao - y tế' pred=UNMAPPED truth=F correct=False
+[626/683] topic='xây dựng - đô thị' pred=UNMAPPED truth=A correct=False
+[627/683] topic='nghị định hướng dẫn luật thú y' pred=UNMAPPED truth=F correct=False
+[628/683] topic='công nghệ thông tin' pred=UNMAPPED truth=A correct=False
+[629/683] topic='đầu tư' pred=UNMAPPED truth=A correct=False
+[630/683] topic='văn hóa - xã hội' pred=F truth=F correct=True
+[631/683] topic='tài nguyên - môi trường' pred=B truth=B correct=True
+[632/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=A correct=False
+[633/683] topic='thuế - phí - lệ phí' pred=B truth=B correct=True
+[634/683] topic='thủ tục tố tụng' pred=D truth=D correct=True
+[635/683] topic='giáo dục' pred=B truth=B correct=True
+[636/683] topic='công nghệ thông tin' pred=C truth=C correct=True
+[637/683] topic='thể thao - y tế' pred=D truth=D correct=True
+[638/683] topic='xuất nhập khẩu' pred=A truth=A correct=True
+[639/683] topic='thủ tục tố tụng' pred=D truth=D correct=True
+[640/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=F correct=False
+[641/683] topic='{"topic":"do user thông tư 33/21/tt-nhnn có sửa đổi hoặc bổ sung gì so với thông tư 17/221' pred=UNMAPPED truth=B correct=False
+[642/683] topic='công nghệ thông tin' pred=B truth=B correct=True
+[643/683] topic='công nghệ thông tin' pred=F truth=E correct=False
+[644/683] topic='bộ máy hành chính' pred=UNMAPPED truth=E correct=False
+[645/683] topic='doainen_kế_toàn' pred=UNMAPPED truth=C correct=False
+[646/683] topic='bảo hiểm' pred=E truth=E correct=True
+[647/683] topic='thuế - phí - lệ phí' pred=UNMAPPED truth=E correct=False
+[648/683] topic='xây dựng - đô thị' pred=UNMAPPED truth=D correct=False
+[649/683] topic='lịch và văn hóa' pred=UNMAPPED truth=C correct=False
+[650/683] topic='bất động sản' pred=F truth=F correct=True
+[651/683] topic='bảo hiểm' pred=D truth=D correct=True
+[652/683] topic='xây dựng - đô thị' pred=UNMAPPED truth=D correct=False
+[653/683] topic='quyền dân sự' pred=F truth=F correct=True
+[654/683] topic='công nghệ thông tin' pred=UNMAPPED truth=A correct=False
+[655/683] topic='thủ tục tố tụng' pred=UNMAPPED truth=D correct=False
+[656/683] topic='xuất nhập khẩu' pred=C truth=C correct=True
+[657/683] topic='dịch vụ pháp lý' pred=E truth=F correct=False
+[658/683] topic='thương mại' pred=UNMAPPED truth=B correct=False
+[659/683] topic='lĩnh vực khác' pred=UNMAPPED truth=C correct=False
+[660/683] topic='bộ máy hành chính' pred=UNMAPPED truth=A correct=False
+[661/683] topic='lĩnh vực khác' pred=UNMAPPED truth=D correct=False
+[662/683] topic='kế toán - kiểm toán' pred=D truth=E correct=False
+[663/683] topic='tiền tệ ngân hàng' pred=F truth=F correct=True
+[664/683] topic='{"topic":"do user theo quy định hiện hành, để mở rộng hoạt động nuôi trồng thủy sản, ông b cần tuân thủ nhiều quy định pháp lý. ông đã tìm' pred=UNMAPPED truth=A correct=False
+[665/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=F correct=False
+[666/683] topic='lĩnh vực khác' pred=UNMAPPED truth=D correct=False
+[667/683] topic='công nghệ thông tin' pred=B truth=B correct=True
+[668/683] topic='văn hóa - xã hội' pred=UNMAPPED truth=C correct=False
+[669/683] topic='luật quản lý, sử dụng tài sản công' pred=UNMAPPED truth=E correct=False
+[670/683] topic='{"topic":"do user việc sửa đổi, bổ sung giấy chứng nhận cho doanh nghiệp của ông b sẽ bao gồm những nội dung gì theo quy định hiện hành' pred=UNMAPPED truth=B correct=False
+[671/683] topic='thuế - phí - lệ phí' pred=UNMAPPED truth=F correct=False
+[672/683] topic='công nghệ thông tin' pred=UNMAPPED truth=C correct=False
+[673/683] topic='vi phạm hành chính' pred=C truth=C correct=True
+[674/683] topic='văn hóa - xã hội' pred=A truth=A correct=True
+[675/683] topic='xuất nhập khẩu' pred=F truth=F correct=True
+[676/683] topic='thuế - phí - lệ phí' pred=A truth=A correct=True
+[677/683] topic='{"topic":"do user theo quy định hiện hành, việc xác định mã ngành kinh doanh của một hộ kinh doanh nhỏ như tôi rất quan trọng để' pred=UNMAPPED truth=C correct=False
+[678/683] topic='chứng khoán' pred=C truth=C correct=True
+[679/683] topic='công nghệ thông tin' pred=C truth=C correct=True
+[680/683] topic='kế toán - kiểm toán' pred=UNMAPPED truth=E correct=False
+[681/683] topic='bộ máy hành chính' pred=A truth=E correct=False
+[682/683] topic='tiền tệ ngân hàng' pred=UNMAPPED truth=C correct=False
+[683/683] topic='bộ máy hành chính' pred=UNMAPPED truth=C correct=False
+
+Accuracy: 338/683 = 49.49%
+Unmapped (topic không khớp lựa chọn nào): 300/683
+Results: predict/qwen2.5-7b-finetuned-v2-task-1.2-topicmap.json

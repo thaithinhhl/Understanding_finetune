@@ -1,0 +1,35 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:08,  2.73s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.94s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:09<00:03,  3.06s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.71s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:11<00:00,  2.80s/it]
+[0001/0720] group=U1 json_ok=True
+[0002/0720] group=U1 json_ok=True
+[0003/0720] group=U3 json_ok=True
+[0004/0720] group=U2 json_ok=True
+[0005/0720] group=U3 json_ok=True
+[0006/0720] group=C1 json_ok=True
+[0007/0720] group=U2 json_ok=True
+[0008/0720] group=C1 json_ok=True
+[0009/0720] group=U1 json_ok=True
+[0010/0720] group=U3 json_ok=True
+[0011/0720] group=U1 json_ok=True
+[0012/0720] group=U3 json_ok=True
+[0013/0720] group=C1 json_ok=True
+[0014/0720] group=U1 json_ok=True
+[0015/0720] group=U2 json_ok=True
+[0016/0720] group=C1 json_ok=True
+[0017/0720] group=C1 json_ok=True
+[0018/0720] group=U1 json_ok=True
+[0019/0720] group=U2 json_ok=True
+[0020/0720] group=C1 json_ok=True
+[0021/0720] group=U1 json_ok=True
+[0022/0720] group=U3 json_ok=True
+[0023/0720] group=U3 json_ok=True
+[0024/0720] group=U2 json_ok=True
+[0025/0720] group=U1 json_ok=True
+[0026/0720] group=U3 json_ok=True
+[0027/0720] group=C1 json_ok=True
+[0028/0720] group=C1 json_ok=True
+[0029/0720] group=U2 json_ok=True
+[0030/0720] group=C1 json_ok=True
+[0031/0720] group=C1 json_ok=True
+[0032/0720] group=U3 json_ok=True
+[0033/0720] group=C1 json_ok=True

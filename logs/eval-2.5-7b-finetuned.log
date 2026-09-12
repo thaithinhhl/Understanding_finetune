@@ -1,0 +1,187 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:09,  3.30s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.71s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:11<00:03,  3.91s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:14<00:00,  3.48s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:14<00:00,  3.57s/it]
+[0001/0180] pred=['chitchat', 'document_retrieval', 'external_analysis'] gold=['chitchat', 'document_retrieval', 'external_analysis'] correct=True
+[0002/0180] pred=['comparative_analysis', 'document_relationship', 'legal_query', 'stats_summary'] gold=['comparative_analysis', 'document_relationship', 'legal_query', 'stats_summary'] correct=True
+[0003/0180] pred=['document_retrieval', 'general', 'legal_query'] gold=['chitchat', 'document_retrieval', 'general', 'legal_query'] correct=False
+[0004/0180] pred=['chitchat', 'comparative_analysis', 'legal_query', 'stats_summary'] gold=['chitchat', 'comparative_analysis', 'legal_query', 'stats_summary'] correct=True
+[0005/0180] pred=['chitchat', 'document_retrieval', 'external_analysis', 'legal_query'] gold=['chitchat', 'document_retrieval', 'external_analysis', 'legal_query'] correct=True
+[0006/0180] pred=['chitchat', 'external_analysis'] gold=['chitchat', 'external_analysis'] correct=True
+[0007/0180] pred=['general'] gold=['general'] correct=True
+[0008/0180] pred=['chitchat', 'document_relationship'] gold=['chitchat', 'document_relationship'] correct=True
+[0009/0180] pred=['chitchat', 'comparative_analysis'] gold=['chitchat', 'comparative_analysis'] correct=True
+[0010/0180] pred=['document_relationship', 'document_retrieval', 'legal_query'] gold=['document_relationship', 'document_retrieval', 'legal_query'] correct=True
+[0011/0180] pred=['document_retrieval', 'external_analysis', 'general'] gold=['document_retrieval', 'external_analysis', 'general'] correct=True
+[0012/0180] pred=['document_relationship', 'external_analysis', 'general', 'stats_summary'] gold=['document_relationship', 'external_analysis', 'general', 'stats_summary'] correct=True
+[0013/0180] pred=['comparative_analysis', 'document_retrieval', 'legal_query', 'stats_summary'] gold=['comparative_analysis', 'document_retrieval', 'legal_query', 'stats_summary'] correct=True
+[0014/0180] pred=['chitchat', 'general'] gold=['chitchat', 'general'] correct=True
+[0015/0180] pred=['document_retrieval', 'general'] gold=['document_retrieval', 'general'] correct=True
+[0016/0180] pred=['comparative_analysis', 'general', 'stats_summary'] gold=['comparative_analysis', 'general', 'stats_summary'] correct=True
+[0017/0180] pred=['general'] gold=['general'] correct=True
+[0018/0180] pred=['external_analysis', 'general'] gold=['external_analysis', 'general'] correct=True
+[0019/0180] pred=['document_relationship', 'external_analysis'] gold=['document_relationship', 'external_analysis'] correct=True
+[0020/0180] pred=['document_relationship', 'document_retrieval', 'external_analysis', 'legal_query'] gold=['document_relationship', 'document_retrieval', 'external_analysis', 'legal_query'] correct=True
+[0021/0180] pred=['comparative_analysis', 'document_retrieval', 'legal_query'] gold=['comparative_analysis', 'document_retrieval', 'legal_query'] correct=True
+[0022/0180] pred=['external_analysis'] gold=['external_analysis'] correct=True
+[0023/0180] pred=['comparative_analysis', 'legal_query', 'stats_summary'] gold=['comparative_analysis', 'legal_query', 'stats_summary'] correct=True
+[0024/0180] pred=['document_retrieval'] gold=['document_retrieval'] correct=True
+[0025/0180] pred=['chitchat', 'comparative_analysis', 'external_analysis', 'general'] gold=['chitchat', 'comparative_analysis', 'external_analysis', 'general'] correct=True
+[0026/0180] pred=['comparative_analysis', 'general'] gold=['comparative_analysis', 'general'] correct=True
+[0027/0180] pred=['legal_query'] gold=['legal_query'] correct=True
+[0028/0180] pred=['general'] gold=['general'] correct=True
+[0029/0180] pred=['document_relationship', 'general', 'stats_summary'] gold=['document_relationship', 'general', 'stats_summary'] correct=True
+[0030/0180] pred=['comparative_analysis'] gold=['comparative_analysis'] correct=True
+[0031/0180] pred=['chitchat'] gold=['chitchat'] correct=True
+[0032/0180] pred=['chitchat', 'comparative_analysis', 'general'] gold=['chitchat', 'comparative_analysis', 'general'] correct=True
+[0033/0180] pred=['legal_query'] gold=['legal_query'] correct=True
+[0034/0180] pred=['comparative_analysis', 'document_retrieval'] gold=['comparative_analysis', 'document_retrieval'] correct=True
+[0035/0180] pred=['general', 'legal_query'] gold=['general', 'legal_query'] correct=True
+[0036/0180] pred=['chitchat', 'document_relationship', 'document_retrieval'] gold=['chitchat', 'document_relationship', 'document_retrieval'] correct=True
+[0037/0180] pred=['chitchat', 'general', 'legal_query', 'stats_summary'] gold=['chitchat', 'general', 'legal_query', 'stats_summary'] correct=True
+[0038/0180] pred=['chitchat', 'general', 'legal_query', 'stats_summary'] gold=['chitchat', 'general', 'legal_query', 'stats_summary'] correct=True
+[0039/0180] pred=['document_relationship', 'external_analysis'] gold=['document_relationship', 'external_analysis'] correct=True
+[0040/0180] pred=['chitchat', 'document_retrieval'] gold=['chitchat', 'document_retrieval'] correct=True
+[0041/0180] pred=['legal_query'] gold=['legal_query'] correct=True
+[0042/0180] pred=['chitchat', 'document_relationship', 'general', 'stats_summary'] gold=['chitchat', 'document_relationship', 'general', 'stats_summary'] correct=True
+[0043/0180] pred=['comparative_analysis'] gold=['comparative_analysis'] correct=True
+[0044/0180] pred=['comparative_analysis', 'external_analysis', 'general', 'legal_query'] gold=['comparative_analysis', 'external_analysis', 'general', 'legal_query'] correct=True
+[0045/0180] pred=['document_retrieval', 'general', 'legal_query', 'stats_summary'] gold=['document_retrieval', 'legal_query', 'stats_summary'] correct=False
+[0046/0180] pred=['stats_summary'] gold=['stats_summary'] correct=True
+[0047/0180] pred=['chitchat', 'comparative_analysis', 'external_analysis'] gold=['chitchat', 'comparative_analysis', 'external_analysis'] correct=True
+[0048/0180] pred=['document_relationship', 'document_retrieval', 'external_analysis'] gold=['document_relationship', 'document_retrieval', 'external_analysis'] correct=True
+[0049/0180] pred=['chitchat', 'document_retrieval', 'stats_summary'] gold=['chitchat', 'document_retrieval', 'stats_summary'] correct=True
+[0050/0180] pred=['document_relationship', 'external_analysis'] gold=['document_relationship', 'external_analysis'] correct=True
+[0051/0180] pred=['stats_summary'] gold=['stats_summary'] correct=True
+[0052/0180] pred=['document_relationship', 'general'] gold=['document_relationship', 'general'] correct=True
+[0053/0180] pred=['stats_summary'] gold=['stats_summary'] correct=True
+[0054/0180] pred=['document_relationship', 'document_retrieval', 'stats_summary'] gold=['document_relationship', 'document_retrieval', 'stats_summary'] correct=True
+[0055/0180] pred=['general'] gold=['general'] correct=True
+[0056/0180] pred=['external_analysis', 'general'] gold=['external_analysis', 'general'] correct=True
+[0057/0180] pred=['chitchat', 'comparative_analysis', 'document_relationship', 'stats_summary'] gold=['chitchat', 'comparative_analysis', 'document_relationship', 'stats_summary'] correct=True
+[0058/0180] pred=['document_relationship', 'legal_query'] gold=['document_relationship', 'legal_query'] correct=True
+[0059/0180] pred=['document_relationship', 'general'] gold=['document_relationship', 'general'] correct=True
+[0060/0180] pred=['chitchat', 'external_analysis', 'legal_query', 'stats_summary'] gold=['chitchat', 'external_analysis', 'legal_query', 'stats_summary'] correct=True
+[0061/0180] pred=['comparative_analysis', 'document_relationship', 'general', 'legal_query'] gold=['comparative_analysis', 'document_relationship', 'general', 'legal_query'] correct=True
+[0062/0180] pred=['comparative_analysis', 'document_retrieval', 'legal_query'] gold=['comparative_analysis', 'document_retrieval', 'external_analysis', 'legal_query'] correct=False
+[0063/0180] pred=['chitchat', 'document_relationship', 'document_retrieval', 'general'] gold=['chitchat', 'document_relationship', 'document_retrieval', 'general'] correct=True
+[0064/0180] pred=['general'] gold=['general'] correct=True
+[0065/0180] pred=['comparative_analysis', 'document_relationship'] gold=['chitchat', 'comparative_analysis', 'document_relationship'] correct=False
+[0066/0180] pred=['stats_summary'] gold=['stats_summary'] correct=True
+[0067/0180] pred=['document_relationship', 'document_retrieval', 'external_analysis', 'stats_summary'] gold=['document_relationship', 'document_retrieval', 'external_analysis', 'stats_summary'] correct=True
+[0068/0180] pred=['document_relationship', 'document_retrieval', 'legal_query', 'stats_summary'] gold=['document_relationship', 'document_retrieval', 'legal_query', 'stats_summary'] correct=True
+[0069/0180] pred=['document_retrieval', 'general', 'stats_summary'] gold=['document_retrieval', 'general', 'stats_summary'] correct=True
+[0070/0180] pred=['document_relationship', 'external_analysis', 'general'] gold=['document_relationship', 'external_analysis', 'general'] correct=True
+[0071/0180] pred=['document_retrieval', 'external_analysis', 'stats_summary'] gold=['document_retrieval', 'external_analysis', 'stats_summary'] correct=True
+[0072/0180] pred=['chitchat', 'document_relationship', 'general'] gold=['chitchat', 'document_relationship', 'general'] correct=True
+[0073/0180] pred=['document_relationship', 'document_retrieval'] gold=['document_relationship', 'document_retrieval'] correct=True
+[0074/0180] pred=['document_relationship', 'document_retrieval', 'general', 'legal_query'] gold=['document_relationship', 'document_retrieval', 'general', 'legal_query'] correct=True
+[0075/0180] pred=['external_analysis'] gold=['external_analysis'] correct=True
+[0076/0180] pred=['stats_summary'] gold=['stats_summary'] correct=True
+[0077/0180] pred=['chitchat', 'document_relationship', 'document_retrieval', 'general'] gold=['chitchat', 'document_relationship', 'document_retrieval', 'general'] correct=True
+[0078/0180] pred=['document_relationship', 'document_retrieval'] gold=['document_relationship', 'document_retrieval'] correct=True
+[0079/0180] pred=['chitchat', 'document_relationship'] gold=['chitchat', 'document_relationship'] correct=True
+[0080/0180] pred=['chitchat', 'document_retrieval'] gold=['chitchat', 'document_retrieval'] correct=True
+[0081/0180] pred=['chitchat', 'document_retrieval', 'legal_query'] gold=['chitchat', 'document_retrieval', 'legal_query'] correct=True
+[0082/0180] pred=['comparative_analysis', 'external_analysis', 'stats_summary'] gold=['comparative_analysis', 'external_analysis', 'stats_summary'] correct=True
+[0083/0180] pred=['comparative_analysis', 'legal_query'] gold=['comparative_analysis', 'legal_query'] correct=True
+[0084/0180] pred=['external_analysis', 'general', 'stats_summary'] gold=['external_analysis', 'general', 'stats_summary'] correct=True
+[0085/0180] pred=['comparative_analysis', 'document_relationship', 'external_analysis', 'legal_query'] gold=['comparative_analysis', 'document_relationship', 'external_analysis', 'legal_query'] correct=True
+[0086/0180] pred=['general'] gold=['general'] correct=True
+[0087/0180] pred=['chitchat', 'document_retrieval', 'external_analysis', 'general'] gold=['chitchat', 'document_retrieval', 'external_analysis', 'general'] correct=True
+[0088/0180] pred=['comparative_analysis', 'external_analysis', 'legal_query'] gold=['comparative_analysis', 'external_analysis', 'legal_query'] correct=True
+[0089/0180] pred=['comparative_analysis'] gold=['comparative_analysis'] correct=True
+[0090/0180] pred=['general'] gold=['general'] correct=True
+[0091/0180] pred=['external_analysis', 'stats_summary'] gold=['external_analysis', 'stats_summary'] correct=True
+[0092/0180] pred=['chitchat', 'document_relationship', 'external_analysis', 'general'] gold=['chitchat', 'document_relationship', 'external_analysis', 'general'] correct=True
+[0093/0180] pred=['comparative_analysis', 'general'] gold=['comparative_analysis', 'general'] correct=True
+[0094/0180] pred=['chitchat', 'document_relationship', 'document_retrieval'] gold=['chitchat', 'document_relationship', 'document_retrieval'] correct=True
+[0095/0180] pred=['document_retrieval'] gold=['document_retrieval'] correct=True
+[0096/0180] pred=['document_relationship', 'general', 'stats_summary'] gold=['chitchat', 'document_relationship', 'general', 'stats_summary'] correct=False
+[0097/0180] pred=['legal_query'] gold=['legal_query'] correct=True
+[0098/0180] pred=['chitchat', 'document_relationship'] gold=['chitchat', 'document_relationship'] correct=True
+[0099/0180] pred=['chitchat', 'document_relationship', 'document_retrieval'] gold=['chitchat', 'document_relationship', 'document_retrieval'] correct=True
+[0100/0180] pred=['chitchat', 'general'] gold=['chitchat', 'general'] correct=True
+[0101/0180] pred=['comparative_analysis', 'document_relationship'] gold=['comparative_analysis', 'document_relationship'] correct=True
+[0102/0180] pred=['chitchat', 'stats_summary'] gold=['chitchat', 'stats_summary'] correct=True
+[0103/0180] pred=['document_retrieval', 'external_analysis', 'stats_summary'] gold=['document_retrieval', 'external_analysis', 'stats_summary'] correct=True
+[0104/0180] pred=['legal_query'] gold=['legal_query'] correct=True
+[0105/0180] pred=['chitchat', 'comparative_analysis', 'external_analysis', 'stats_summary'] gold=['chitchat', 'comparative_analysis', 'external_analysis', 'stats_summary'] correct=True
+[0106/0180] pred=['comparative_analysis', 'external_analysis'] gold=['comparative_analysis', 'external_analysis'] correct=True
+[0107/0180] pred=['external_analysis'] gold=['external_analysis'] correct=True
+[0108/0180] pred=['comparative_analysis'] gold=['comparative_analysis'] correct=True
+[0109/0180] pred=['general', 'stats_summary'] gold=['general', 'stats_summary'] correct=True
+[0110/0180] pred=['comparative_analysis', 'external_analysis'] gold=['comparative_analysis', 'external_analysis'] correct=True
+[0111/0180] pred=['chitchat', 'legal_query'] gold=['chitchat', 'legal_query'] correct=True
+[0112/0180] pred=['comparative_analysis', 'document_relationship', 'stats_summary'] gold=['comparative_analysis', 'document_relationship', 'stats_summary'] correct=True
+[0113/0180] pred=['comparative_analysis', 'document_relationship', 'general', 'stats_summary'] gold=['comparative_analysis', 'document_relationship', 'general', 'stats_summary'] correct=True
+[0114/0180] pred=['chitchat', 'document_relationship', 'document_retrieval', 'external_analysis'] gold=['chitchat', 'document_relationship', 'document_retrieval', 'external_analysis'] correct=True
+[0115/0180] pred=['comparative_analysis', 'document_retrieval', 'external_analysis'] gold=['comparative_analysis', 'document_retrieval', 'external_analysis'] correct=True
+[0116/0180] pred=['comparative_analysis', 'document_retrieval', 'stats_summary'] gold=['comparative_analysis', 'document_retrieval', 'stats_summary'] correct=True
+[0117/0180] pred=['document_relationship'] gold=['document_relationship'] correct=True
+[0118/0180] pred=['stats_summary'] gold=['stats_summary'] correct=True
+[0119/0180] pred=['chitchat', 'comparative_analysis', 'document_retrieval', 'external_analysis'] gold=['chitchat', 'comparative_analysis', 'document_retrieval', 'external_analysis'] correct=True
+[0120/0180] pred=['document_retrieval', 'external_analysis', 'legal_query'] gold=['document_retrieval', 'external_analysis', 'legal_query'] correct=True
+[0121/0180] pred=['document_relationship'] gold=['document_relationship'] correct=True
+[0122/0180] pred=['chitchat', 'document_relationship'] gold=['chitchat', 'document_relationship'] correct=True
+[0123/0180] pred=['chitchat', 'document_retrieval', 'general', 'stats_summary'] gold=['chitchat', 'document_retrieval', 'general', 'stats_summary'] correct=True
+[0124/0180] pred=['external_analysis'] gold=['external_analysis'] correct=True
+[0125/0180] pred=['document_relationship', 'document_retrieval'] gold=['document_relationship', 'document_retrieval'] correct=True
+[0126/0180] pred=['comparative_analysis', 'document_retrieval'] gold=['comparative_analysis', 'document_retrieval'] correct=True
+[0127/0180] pred=['comparative_analysis', 'external_analysis', 'general'] gold=['comparative_analysis', 'external_analysis', 'general'] correct=True
+[0128/0180] pred=['comparative_analysis', 'document_retrieval', 'legal_query', 'stats_summary'] gold=['comparative_analysis', 'document_retrieval', 'legal_query', 'stats_summary'] correct=True
+[0129/0180] pred=['comparative_analysis', 'document_relationship', 'stats_summary'] gold=['comparative_analysis', 'document_relationship', 'stats_summary'] correct=True
+[0130/0180] pred=['comparative_analysis'] gold=['comparative_analysis'] correct=True
+[0131/0180] pred=['legal_query'] gold=['legal_query'] correct=True
+[0132/0180] pred=['chitchat', 'stats_summary'] gold=['chitchat', 'stats_summary'] correct=True
+[0133/0180] pred=['comparative_analysis', 'external_analysis'] gold=['comparative_analysis', 'external_analysis'] correct=True
+[0134/0180] pred=['external_analysis'] gold=['external_analysis'] correct=True
+[0135/0180] pred=['stats_summary'] gold=['stats_summary'] correct=True
+[0136/0180] pred=['comparative_analysis', 'document_relationship', 'external_analysis', 'stats_summary'] gold=['comparative_analysis', 'document_relationship', 'external_analysis', 'stats_summary'] correct=True
+[0137/0180] pred=['external_analysis'] gold=['external_analysis'] correct=True
+[0138/0180] pred=['external_analysis'] gold=['external_analysis'] correct=True
+[0139/0180] pred=['document_relationship', 'document_retrieval', 'legal_query'] gold=['document_relationship', 'document_retrieval', 'legal_query'] correct=True
+[0140/0180] pred=['external_analysis', 'general', 'stats_summary'] gold=['external_analysis', 'general', 'stats_summary'] correct=True
+[0141/0180] pred=['external_analysis'] gold=['external_analysis'] correct=True
+[0142/0180] pred=['document_relationship', 'external_analysis', 'general'] gold=['document_relationship', 'external_analysis', 'general'] correct=True
+[0143/0180] pred=['legal_query'] gold=['legal_query'] correct=True
+[0144/0180] pred=['comparative_analysis', 'document_relationship'] gold=['comparative_analysis', 'document_relationship'] correct=True
+[0145/0180] pred=['comparative_analysis', 'document_retrieval', 'general', 'legal_query'] gold=['comparative_analysis', 'document_retrieval', 'general', 'legal_query'] correct=True
+[0146/0180] pred=['comparative_analysis', 'legal_query'] gold=['comparative_analysis', 'legal_query'] correct=True
+[0147/0180] pred=['document_relationship', 'document_retrieval', 'stats_summary'] gold=['document_relationship', 'document_retrieval', 'stats_summary'] correct=True
+[0148/0180] pred=['comparative_analysis', 'document_relationship', 'document_retrieval', 'general'] gold=['comparative_analysis', 'document_relationship', 'document_retrieval', 'general'] correct=True
+[0149/0180] pred=['document_retrieval', 'general', 'legal_query'] gold=['document_retrieval', 'general', 'legal_query'] correct=True
+[0150/0180] pred=['comparative_analysis', 'stats_summary'] gold=['chitchat', 'comparative_analysis', 'stats_summary'] correct=False
+[0151/0180] pred=['external_analysis', 'general', 'legal_query', 'stats_summary'] gold=['external_analysis', 'general', 'legal_query', 'stats_summary'] correct=True
+[0152/0180] pred=['document_relationship', 'document_retrieval', 'general', 'legal_query'] gold=['document_relationship', 'document_retrieval', 'general', 'legal_query'] correct=True
+[0153/0180] pred=['comparative_analysis', 'external_analysis', 'legal_query', 'stats_summary'] gold=['comparative_analysis', 'external_analysis', 'legal_query', 'stats_summary'] correct=True
+[0154/0180] pred=['document_relationship'] gold=['chitchat', 'document_relationship'] correct=False
+[0155/0180] pred=['chitchat', 'comparative_analysis', 'document_relationship', 'document_retrieval'] gold=['chitchat', 'comparative_analysis', 'document_relationship', 'document_retrieval'] correct=True
+[0156/0180] pred=['comparative_analysis', 'document_retrieval', 'legal_query'] gold=['comparative_analysis', 'document_retrieval', 'legal_query'] correct=True
+[0157/0180] pred=['chitchat', 'comparative_analysis', 'general', 'legal_query'] gold=['chitchat', 'comparative_analysis', 'general', 'legal_query'] correct=True
+[0158/0180] pred=['comparative_analysis', 'legal_query'] gold=['comparative_analysis', 'legal_query'] correct=True
+[0159/0180] pred=['general'] gold=['general'] correct=True
+[0160/0180] pred=['comparative_analysis'] gold=['comparative_analysis'] correct=True
+[0161/0180] pred=['legal_query'] gold=['legal_query'] correct=True
+[0162/0180] pred=['comparative_analysis'] gold=['comparative_analysis'] correct=True
+[0163/0180] pred=['document_relationship', 'general', 'legal_query', 'stats_summary'] gold=['document_relationship', 'general', 'legal_query', 'stats_summary'] correct=True
+[0164/0180] pred=['document_retrieval', 'external_analysis'] gold=['document_retrieval', 'external_analysis'] correct=True
+[0165/0180] pred=['comparative_analysis', 'document_relationship'] gold=['comparative_analysis', 'document_relationship'] correct=True
+[0166/0180] pred=['document_retrieval', 'general', 'legal_query', 'stats_summary'] gold=['document_retrieval', 'general', 'legal_query', 'stats_summary'] correct=True
+[0167/0180] pred=['general', 'legal_query', 'stats_summary'] gold=['general', 'legal_query', 'stats_summary'] correct=True
+[0168/0180] pred=['document_relationship', 'external_analysis', 'stats_summary'] gold=['document_relationship', 'external_analysis', 'stats_summary'] correct=True
+[0169/0180] pred=['general', 'stats_summary'] gold=['general', 'stats_summary'] correct=True
+[0170/0180] pred=['stats_summary'] gold=['stats_summary'] correct=True
+[0171/0180] pred=['comparative_analysis', 'document_relationship', 'stats_summary'] gold=['comparative_analysis', 'document_relationship', 'stats_summary'] correct=True
+[0172/0180] pred=['external_analysis', 'general', 'legal_query', 'stats_summary'] gold=['external_analysis', 'general', 'legal_query', 'stats_summary'] correct=True
+[0173/0180] pred=['comparative_analysis', 'document_retrieval', 'general', 'legal_query'] gold=['comparative_analysis', 'document_retrieval', 'general', 'legal_query'] correct=True
+[0174/0180] pred=['chitchat', 'general', 'stats_summary'] gold=['chitchat', 'general', 'stats_summary'] correct=True
+[0175/0180] pred=['document_retrieval', 'legal_query', 'stats_summary'] gold=['document_retrieval', 'legal_query', 'stats_summary'] correct=True
+[0176/0180] pred=['document_relationship', 'legal_query'] gold=['document_relationship', 'legal_query'] correct=True
+[0177/0180] pred=['document_relationship', 'document_retrieval', 'legal_query'] gold=['document_relationship', 'document_retrieval', 'legal_query'] correct=True
+[0178/0180] pred=['chitchat', 'document_relationship', 'document_retrieval', 'legal_query'] gold=['chitchat', 'document_relationship', 'document_retrieval', 'legal_query'] correct=True
+[0179/0180] pred=['comparative_analysis', 'external_analysis', 'general', 'legal_query'] gold=['comparative_analysis', 'external_analysis', 'general', 'legal_query'] correct=True
+[0180/0180] pred=['document_retrieval'] gold=['document_retrieval'] correct=True
+
+Exact Match: 173/180 = 96.11%
+Micro P=99.8% R=98.7% F1=99.2%  | avg_pred=2.47 avg_gold=2.50
+Invalid: 0/180
+Results: predict/qwen2.5-7b-finetuned-v2-task-2.5.json

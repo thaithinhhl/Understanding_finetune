@@ -1,0 +1,24 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/ubuntu/Understanding_finetune/scripts/eval_understanding.py", line 181, in <module>
+    main()
+  File "/home/ubuntu/Understanding_finetune/scripts/eval_understanding.py", line 111, in main
+    model = AutoModelForCausalLM.from_pretrained(args.model, **model_kwargs)
+  File "/home/ubuntu/Understanding_finetune/.venv/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/ubuntu/Understanding_finetune/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/ubuntu/Understanding_finetune/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4399, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/ubuntu/Understanding_finetune/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4793, in _load_pretrained_model
+    caching_allocator_warmup(model_to_load, expanded_device_map, factor=2 if hf_quantizer is None else 4)
+  File "/home/ubuntu/Understanding_finetune/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 5799, in caching_allocator_warmup
+    device_memory = torch.cuda.mem_get_info(index)[0]
+  File "/home/ubuntu/Understanding_finetune/.venv/lib/python3.10/site-packages/torch/cuda/memory.py", line 738, in mem_get_info
+    return torch.cuda.cudart().cudaMemGetInfo(device)
+RuntimeError: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]

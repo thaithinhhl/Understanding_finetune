@@ -1,0 +1,2545 @@
+{
+  "model": "models/7b/Qwen2.5-7B-Instruct",
+  "adapter": "adapters/7b/qwen2.5-7b-task2.5-v4",
+  "precision": "4bit",
+  "data": "data-finetune-v2/data_2_5_v4_test.jsonl",
+  "num_examples": 180,
+  "exact_match": 0.5055555555555555,
+  "invalid": 0,
+  "micro_precision": 0.7973333333333333,
+  "micro_recall": 0.8470254957507082,
+  "micro_f1": 0.8214285714285714,
+  "avg_pred_labels": 2.0833333333333335,
+  "avg_gold_labels": 1.961111111111111,
+  "generated_at": "2026-09-12T17:41:50.133025+00:00",
+  "results": [
+    {
+      "index": 0,
+      "id": "V3G-TE-0001",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"legal_query\"]}"
+    },
+    {
+      "index": 1,
+      "id": "V3G-TE-0002",
+      "ground_truth": [
+        "document_relationship",
+        "general"
+      ],
+      "prediction": [
+        "document_relationship",
+        "general",
+        "legal_query"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"general\",\"legal_query\"]}"
+    },
+    {
+      "index": 2,
+      "id": "V3G-TE-0003",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"legal_query\"]}"
+    },
+    {
+      "index": 3,
+      "id": "V3G-TE-0004",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 4,
+      "id": "V3G-TE-0005",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 5,
+      "id": "V3G-TE-0006",
+      "ground_truth": [
+        "external_analysis",
+        "general"
+      ],
+      "prediction": [
+        "external_analysis",
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 6,
+      "id": "V3G-TE-0007",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 7,
+      "id": "V3G-TE-0008",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_relationship",
+        "general"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 8,
+      "id": "V3G-TE-0009",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 9,
+      "id": "V3G-TE-0010",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 10,
+      "id": "V3G-TE-0011",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 11,
+      "id": "V3G-TE-0012",
+      "ground_truth": [
+        "external_analysis",
+        "stats_summary"
+      ],
+      "prediction": [
+        "external_analysis",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 12,
+      "id": "V3G-TE-0013",
+      "ground_truth": [
+        "comparative_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"general\"]}"
+    },
+    {
+      "index": 13,
+      "id": "V3G-TE-0014",
+      "ground_truth": [
+        "document_relationship",
+        "stats_summary"
+      ],
+      "prediction": [
+        "document_relationship",
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"stats_summary\"]}"
+    },
+    {
+      "index": 14,
+      "id": "V3G-TE-0015",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 15,
+      "id": "V3G-TE-0016",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 16,
+      "id": "V3G-TE-0017",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_relationship"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\"]}"
+    },
+    {
+      "index": 17,
+      "id": "V3G-TE-0018",
+      "ground_truth": [
+        "comparative_analysis",
+        "external_analysis",
+        "legal_query"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "external_analysis",
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"external_analysis\",\"legal_query\"]}"
+    },
+    {
+      "index": 18,
+      "id": "V3G-TE-0019",
+      "ground_truth": [
+        "document_retrieval",
+        "general"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 19,
+      "id": "V3G-TE-0020",
+      "ground_truth": [
+        "general",
+        "legal_query",
+        "stats_summary"
+      ],
+      "prediction": [
+        "general",
+        "legal_query",
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\",\"legal_query\",\"stats_summary\"]}"
+    },
+    {
+      "index": 20,
+      "id": "V3G-TE-0021",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 21,
+      "id": "V3G-TE-0022",
+      "ground_truth": [
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 22,
+      "id": "V3G-TE-0023",
+      "ground_truth": [
+        "chitchat",
+        "document_retrieval",
+        "legal_query"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 23,
+      "id": "V3G-TE-0024",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 24,
+      "id": "V3G-TE-0025",
+      "ground_truth": [
+        "stats_summary"
+      ],
+      "prediction": [
+        "chitchat",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"chitchat\",\"stats_summary\"]}"
+    },
+    {
+      "index": 25,
+      "id": "V3G-TE-0026",
+      "ground_truth": [
+        "general",
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 26,
+      "id": "V3G-TE-0027",
+      "ground_truth": [
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"external_analysis\"]}"
+    },
+    {
+      "index": 27,
+      "id": "V3G-TE-0028",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"legal_query\"]}"
+    },
+    {
+      "index": 28,
+      "id": "V3G-TE-0029",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 29,
+      "id": "V3G-TE-0030",
+      "ground_truth": [
+        "general",
+        "legal_query"
+      ],
+      "prediction": [
+        "legal_query"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"legal_query\"]}"
+    },
+    {
+      "index": 30,
+      "id": "V3G-TE-0031",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 31,
+      "id": "V3G-TE-0032",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 32,
+      "id": "V3G-TE-0033",
+      "ground_truth": [
+        "general",
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 33,
+      "id": "V3G-TE-0034",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 34,
+      "id": "V3G-TE-0035",
+      "ground_truth": [
+        "document_retrieval",
+        "general"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 35,
+      "id": "V3G-TE-0036",
+      "ground_truth": [
+        "document_relationship",
+        "external_analysis",
+        "legal_query",
+        "stats_summary"
+      ],
+      "prediction": [
+        "external_analysis",
+        "general",
+        "legal_query",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"general\",\"legal_query\",\"stats_summary\"]}"
+    },
+    {
+      "index": 36,
+      "id": "V3G-TE-0037",
+      "ground_truth": [
+        "document_relationship",
+        "external_analysis"
+      ],
+      "prediction": [
+        "document_relationship",
+        "external_analysis",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"external_analysis\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 37,
+      "id": "V3G-TE-0038",
+      "ground_truth": [
+        "document_relationship",
+        "document_retrieval",
+        "external_analysis",
+        "legal_query"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "document_retrieval",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"document_retrieval\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 38,
+      "id": "V3G-TE-0039",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "document_relationship",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"general\"]}"
+    },
+    {
+      "index": 39,
+      "id": "V3G-TE-0040",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 40,
+      "id": "V3G-TE-0041",
+      "ground_truth": [
+        "external_analysis",
+        "general",
+        "legal_query"
+      ],
+      "prediction": [
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 41,
+      "id": "V3G-TE-0042",
+      "ground_truth": [
+        "document_retrieval",
+        "legal_query"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"legal_query\"]}"
+    },
+    {
+      "index": 42,
+      "id": "V3G-TE-0043",
+      "ground_truth": [
+        "document_retrieval",
+        "external_analysis",
+        "legal_query",
+        "stats_summary"
+      ],
+      "prediction": [
+        "external_analysis",
+        "general",
+        "legal_query",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"general\",\"legal_query\",\"stats_summary\"]}"
+    },
+    {
+      "index": 43,
+      "id": "V3G-TE-0044",
+      "ground_truth": [
+        "document_relationship",
+        "general",
+        "legal_query"
+      ],
+      "prediction": [
+        "document_relationship",
+        "legal_query"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"legal_query\"]}"
+    },
+    {
+      "index": 44,
+      "id": "V3G-TE-0045",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "legal_query"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"legal_query\"]}"
+    },
+    {
+      "index": 45,
+      "id": "V3G-TE-0046",
+      "ground_truth": [
+        "chitchat",
+        "document_retrieval",
+        "legal_query"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "legal_query"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"legal_query\"]}"
+    },
+    {
+      "index": 46,
+      "id": "V3G-TE-0047",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_relationship",
+        "document_retrieval",
+        "general"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "document_retrieval",
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 47,
+      "id": "V3G-TE-0048",
+      "ground_truth": [
+        "document_relationship",
+        "general"
+      ],
+      "prediction": [
+        "document_relationship",
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"general\"]}"
+    },
+    {
+      "index": 48,
+      "id": "V3G-TE-0049",
+      "ground_truth": [
+        "external_analysis"
+      ],
+      "prediction": [
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 49,
+      "id": "V3G-TE-0050",
+      "ground_truth": [
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 50,
+      "id": "V3G-TE-0051",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 51,
+      "id": "V3G-TE-0052",
+      "ground_truth": [
+        "external_analysis",
+        "legal_query"
+      ],
+      "prediction": [
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 52,
+      "id": "V3G-TE-0053",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval",
+        "stats_summary"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval",
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\",\"stats_summary\"]}"
+    },
+    {
+      "index": 53,
+      "id": "V3G-TE-0054",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 54,
+      "id": "V3G-TE-0055",
+      "ground_truth": [
+        "document_relationship",
+        "external_analysis",
+        "general"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 55,
+      "id": "V3G-TE-0056",
+      "ground_truth": [
+        "general",
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 56,
+      "id": "V3G-TE-0057",
+      "ground_truth": [
+        "document_relationship",
+        "legal_query"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "legal_query"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"legal_query\"]}"
+    },
+    {
+      "index": 57,
+      "id": "V3G-TE-0058",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"legal_query\"]}"
+    },
+    {
+      "index": 58,
+      "id": "V3G-TE-0059",
+      "ground_truth": [
+        "document_relationship",
+        "document_retrieval",
+        "external_analysis",
+        "general"
+      ],
+      "prediction": [
+        "document_relationship",
+        "document_retrieval",
+        "external_analysis",
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"document_retrieval\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 59,
+      "id": "V3G-TE-0060",
+      "ground_truth": [
+        "chitchat",
+        "external_analysis",
+        "stats_summary"
+      ],
+      "prediction": [
+        "external_analysis",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 60,
+      "id": "V3G-TE-0061",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 61,
+      "id": "V3G-TE-0062",
+      "ground_truth": [
+        "comparative_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\"]}"
+    },
+    {
+      "index": 62,
+      "id": "V3G-TE-0063",
+      "ground_truth": [
+        "document_retrieval",
+        "general",
+        "legal_query"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 63,
+      "id": "V3G-TE-0064",
+      "ground_truth": [
+        "comparative_analysis",
+        "legal_query"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"general\"]}"
+    },
+    {
+      "index": 64,
+      "id": "V3G-TE-0065",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 65,
+      "id": "V3G-TE-0066",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"legal_query\"]}"
+    },
+    {
+      "index": 66,
+      "id": "V3G-TE-0067",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"external_analysis\"]}"
+    },
+    {
+      "index": 67,
+      "id": "V3G-TE-0068",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 68,
+      "id": "V3G-TE-0069",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"legal_query\"]}"
+    },
+    {
+      "index": 69,
+      "id": "V3G-TE-0070",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_relationship",
+        "legal_query"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"general\"]}"
+    },
+    {
+      "index": 70,
+      "id": "V3G-TE-0071",
+      "ground_truth": [
+        "comparative_analysis",
+        "legal_query"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"legal_query\"]}"
+    },
+    {
+      "index": 71,
+      "id": "V3G-TE-0072",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 72,
+      "id": "V3G-TE-0073",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval",
+        "stats_summary"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval",
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\",\"stats_summary\"]}"
+    },
+    {
+      "index": 73,
+      "id": "V3G-TE-0074",
+      "ground_truth": [
+        "document_relationship",
+        "external_analysis",
+        "legal_query"
+      ],
+      "prediction": [
+        "document_relationship",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 74,
+      "id": "V3G-TE-0075",
+      "ground_truth": [
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 75,
+      "id": "V3G-TE-0076",
+      "ground_truth": [
+        "document_relationship",
+        "stats_summary"
+      ],
+      "prediction": [
+        "document_relationship",
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"stats_summary\"]}"
+    },
+    {
+      "index": 76,
+      "id": "V3G-TE-0077",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 77,
+      "id": "V3G-TE-0078",
+      "ground_truth": [
+        "comparative_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"general\"]}"
+    },
+    {
+      "index": 78,
+      "id": "V3G-TE-0079",
+      "ground_truth": [
+        "document_retrieval",
+        "stats_summary"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 79,
+      "id": "V3G-TE-0080",
+      "ground_truth": [
+        "general",
+        "stats_summary"
+      ],
+      "prediction": [
+        "general",
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 80,
+      "id": "V3G-TE-0081",
+      "ground_truth": [
+        "comparative_analysis",
+        "external_analysis",
+        "legal_query"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 81,
+      "id": "V3G-TE-0082",
+      "ground_truth": [
+        "document_retrieval"
+      ],
+      "prediction": [
+        "document_retrieval"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_retrieval\"]}"
+    },
+    {
+      "index": 82,
+      "id": "V3G-TE-0083",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 83,
+      "id": "V3G-TE-0084",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 84,
+      "id": "V3G-TE-0085",
+      "ground_truth": [
+        "comparative_analysis",
+        "stats_summary"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\",\"stats_summary\"]}"
+    },
+    {
+      "index": 85,
+      "id": "V3G-TE-0086",
+      "ground_truth": [
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 86,
+      "id": "V3G-TE-0087",
+      "ground_truth": [
+        "document_retrieval",
+        "general",
+        "legal_query",
+        "stats_summary"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 87,
+      "id": "V3G-TE-0088",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 88,
+      "id": "V3G-TE-0089",
+      "ground_truth": [
+        "document_relationship",
+        "general",
+        "legal_query",
+        "stats_summary"
+      ],
+      "prediction": [
+        "document_relationship",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 89,
+      "id": "V3G-TE-0090",
+      "ground_truth": [
+        "document_relationship",
+        "document_retrieval",
+        "legal_query",
+        "stats_summary"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"stats_summary\"]}"
+    },
+    {
+      "index": 90,
+      "id": "V3G-TE-0091",
+      "ground_truth": [
+        "comparative_analysis",
+        "external_analysis",
+        "general",
+        "stats_summary"
+      ],
+      "prediction": [
+        "external_analysis",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"stats_summary\"]}"
+    },
+    {
+      "index": 91,
+      "id": "V3G-TE-0092",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 92,
+      "id": "V3G-TE-0093",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 93,
+      "id": "V3G-TE-0094",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 94,
+      "id": "V3G-TE-0095",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 95,
+      "id": "V3G-TE-0096",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval",
+        "stats_summary"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval",
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\",\"stats_summary\"]}"
+    },
+    {
+      "index": 96,
+      "id": "V3G-TE-0097",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\"]}"
+    },
+    {
+      "index": 97,
+      "id": "V3G-TE-0098",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval",
+        "general",
+        "stats_summary"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval",
+        "external_analysis",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\",\"external_analysis\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 98,
+      "id": "V3G-TE-0099",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 99,
+      "id": "V3G-TE-0100",
+      "ground_truth": [
+        "external_analysis"
+      ],
+      "prediction": [
+        "external_analysis"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"external_analysis\"]}"
+    },
+    {
+      "index": 100,
+      "id": "V3G-TE-0101",
+      "ground_truth": [
+        "document_relationship",
+        "external_analysis",
+        "general",
+        "stats_summary"
+      ],
+      "prediction": [
+        "document_relationship",
+        "external_analysis"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"external_analysis\"]}"
+    },
+    {
+      "index": 101,
+      "id": "V3G-TE-0102",
+      "ground_truth": [
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "prediction": [
+        "document_relationship",
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"document_retrieval\",\"external_analysis\"]}"
+    },
+    {
+      "index": 102,
+      "id": "V3G-TE-0103",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "chitchat",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"chitchat\",\"general\"]}"
+    },
+    {
+      "index": 103,
+      "id": "V3G-TE-0104",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval",
+        "stats_summary"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 104,
+      "id": "V3G-TE-0105",
+      "ground_truth": [
+        "document_retrieval"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "legal_query"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"legal_query\"]}"
+    },
+    {
+      "index": 105,
+      "id": "V3G-TE-0106",
+      "ground_truth": [
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 106,
+      "id": "V3G-TE-0107",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 107,
+      "id": "V3G-TE-0108",
+      "ground_truth": [
+        "document_relationship",
+        "external_analysis"
+      ],
+      "prediction": [
+        "document_relationship",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 108,
+      "id": "V3G-TE-0109",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval",
+        "general"
+      ],
+      "prediction": [
+        "document_relationship",
+        "document_retrieval",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 109,
+      "id": "V3G-TE-0110",
+      "ground_truth": [
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 110,
+      "id": "V3G-TE-0111",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 111,
+      "id": "V3G-TE-0112",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 112,
+      "id": "V3G-TE-0113",
+      "ground_truth": [
+        "document_relationship",
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 113,
+      "id": "V3G-TE-0114",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 114,
+      "id": "V3G-TE-0115",
+      "ground_truth": [
+        "comparative_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "legal_query"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"legal_query\"]}"
+    },
+    {
+      "index": 115,
+      "id": "V3G-TE-0116",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval",
+        "general",
+        "stats_summary"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "document_retrieval",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"document_retrieval\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 116,
+      "id": "V3G-TE-0117",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 117,
+      "id": "V3G-TE-0118",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 118,
+      "id": "V3G-TE-0119",
+      "ground_truth": [
+        "document_retrieval",
+        "external_analysis",
+        "stats_summary"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "external_analysis",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"external_analysis\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 119,
+      "id": "V3G-TE-0120",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"legal_query\"]}"
+    },
+    {
+      "index": 120,
+      "id": "V3G-TE-0121",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"legal_query\"]}"
+    },
+    {
+      "index": 121,
+      "id": "V3G-TE-0122",
+      "ground_truth": [
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 122,
+      "id": "V3G-TE-0123",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis",
+        "legal_query"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis",
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"external_analysis\",\"legal_query\"]}"
+    },
+    {
+      "index": 123,
+      "id": "V3G-TE-0124",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"legal_query\"]}"
+    },
+    {
+      "index": 124,
+      "id": "V3G-TE-0125",
+      "ground_truth": [
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 125,
+      "id": "V3G-TE-0126",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 126,
+      "id": "V3G-TE-0127",
+      "ground_truth": [
+        "external_analysis",
+        "general"
+      ],
+      "prediction": [
+        "external_analysis",
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 127,
+      "id": "V3G-TE-0128",
+      "ground_truth": [
+        "external_analysis"
+      ],
+      "prediction": [
+        "external_analysis"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"external_analysis\"]}"
+    },
+    {
+      "index": 128,
+      "id": "V3G-TE-0129",
+      "ground_truth": [
+        "document_retrieval",
+        "general"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 129,
+      "id": "V3G-TE-0130",
+      "ground_truth": [
+        "comparative_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\"]}"
+    },
+    {
+      "index": 130,
+      "id": "V3G-TE-0131",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"legal_query\"]}"
+    },
+    {
+      "index": 131,
+      "id": "V3G-TE-0132",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 132,
+      "id": "V3G-TE-0133",
+      "ground_truth": [
+        "stats_summary"
+      ],
+      "prediction": [
+        "chitchat",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"chitchat\",\"stats_summary\"]}"
+    },
+    {
+      "index": 133,
+      "id": "V3G-TE-0134",
+      "ground_truth": [
+        "document_relationship",
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "document_retrieval",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"document_retrieval\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 134,
+      "id": "V3G-TE-0135",
+      "ground_truth": [
+        "document_retrieval",
+        "external_analysis",
+        "legal_query",
+        "stats_summary"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "external_analysis",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"external_analysis\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 135,
+      "id": "V3G-TE-0136",
+      "ground_truth": [
+        "document_relationship",
+        "external_analysis",
+        "legal_query"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 136,
+      "id": "V3G-TE-0137",
+      "ground_truth": [
+        "comparative_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\"]}"
+    },
+    {
+      "index": 137,
+      "id": "V3G-TE-0138",
+      "ground_truth": [
+        "legal_query",
+        "stats_summary"
+      ],
+      "prediction": [
+        "general",
+        "legal_query",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"general\",\"legal_query\",\"stats_summary\"]}"
+    },
+    {
+      "index": 138,
+      "id": "V3G-TE-0139",
+      "ground_truth": [
+        "document_relationship",
+        "stats_summary"
+      ],
+      "prediction": [
+        "document_relationship",
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"stats_summary\"]}"
+    },
+    {
+      "index": 139,
+      "id": "V3G-TE-0140",
+      "ground_truth": [
+        "comparative_analysis",
+        "external_analysis",
+        "legal_query"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 140,
+      "id": "V3G-TE-0141",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 141,
+      "id": "V3G-TE-0142",
+      "ground_truth": [
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 142,
+      "id": "V3G-TE-0143",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 143,
+      "id": "V3G-TE-0144",
+      "ground_truth": [
+        "document_relationship",
+        "general"
+      ],
+      "prediction": [
+        "document_relationship",
+        "general",
+        "legal_query"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"general\",\"legal_query\"]}"
+    },
+    {
+      "index": 144,
+      "id": "V3G-TE-0145",
+      "ground_truth": [
+        "document_retrieval",
+        "general",
+        "legal_query"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "legal_query"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"legal_query\"]}"
+    },
+    {
+      "index": 145,
+      "id": "V3G-TE-0146",
+      "ground_truth": [
+        "comparative_analysis",
+        "legal_query"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"legal_query\"]}"
+    },
+    {
+      "index": 146,
+      "id": "V3G-TE-0147",
+      "ground_truth": [
+        "legal_query"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 147,
+      "id": "V3G-TE-0148",
+      "ground_truth": [
+        "external_analysis",
+        "stats_summary"
+      ],
+      "prediction": [
+        "external_analysis",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 148,
+      "id": "V3G-TE-0149",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "external_analysis"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"external_analysis\"]}"
+    },
+    {
+      "index": 149,
+      "id": "V3G-TE-0150",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 150,
+      "id": "V3G-TE-0151",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 151,
+      "id": "V3G-TE-0152",
+      "ground_truth": [
+        "document_relationship"
+      ],
+      "prediction": [
+        "document_relationship",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"general\"]}"
+    },
+    {
+      "index": 152,
+      "id": "V3G-TE-0153",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\",\"stats_summary\"]}"
+    },
+    {
+      "index": 153,
+      "id": "V3G-TE-0154",
+      "ground_truth": [
+        "document_relationship",
+        "document_retrieval",
+        "external_analysis",
+        "general"
+      ],
+      "prediction": [
+        "document_relationship",
+        "document_retrieval",
+        "external_analysis",
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"document_retrieval\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 154,
+      "id": "V3G-TE-0155",
+      "ground_truth": [
+        "external_analysis",
+        "general",
+        "stats_summary"
+      ],
+      "prediction": [
+        "external_analysis",
+        "general",
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 155,
+      "id": "V3G-TE-0156",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "external_analysis"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"external_analysis\"]}"
+    },
+    {
+      "index": 156,
+      "id": "V3G-TE-0157",
+      "ground_truth": [
+        "document_retrieval",
+        "general",
+        "legal_query"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 157,
+      "id": "V3G-TE-0158",
+      "ground_truth": [
+        "comparative_analysis",
+        "legal_query"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"general\"]}"
+    },
+    {
+      "index": 158,
+      "id": "V3G-TE-0159",
+      "ground_truth": [
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"external_analysis\"]}"
+    },
+    {
+      "index": 159,
+      "id": "V3G-TE-0160",
+      "ground_truth": [
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 160,
+      "id": "V3G-TE-0161",
+      "ground_truth": [
+        "stats_summary"
+      ],
+      "prediction": [
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"stats_summary\"]}"
+    },
+    {
+      "index": 161,
+      "id": "V3G-TE-0162",
+      "ground_truth": [
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"external_analysis\"]}"
+    },
+    {
+      "index": 162,
+      "id": "V3G-TE-0163",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "document_retrieval",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 163,
+      "id": "V3G-TE-0164",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval",
+        "external_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "document_retrieval",
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"document_retrieval\",\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 164,
+      "id": "V3G-TE-0165",
+      "ground_truth": [
+        "comparative_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"general\"]}"
+    },
+    {
+      "index": 165,
+      "id": "V3G-TE-0166",
+      "ground_truth": [
+        "comparative_analysis",
+        "legal_query",
+        "stats_summary"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"stats_summary\"]}"
+    },
+    {
+      "index": 166,
+      "id": "V3G-TE-0167",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 167,
+      "id": "V3G-TE-0168",
+      "ground_truth": [
+        "general",
+        "legal_query",
+        "stats_summary"
+      ],
+      "prediction": [
+        "general",
+        "legal_query",
+        "stats_summary"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"general\",\"legal_query\",\"stats_summary\"]}"
+    },
+    {
+      "index": 168,
+      "id": "V3G-TE-0169",
+      "ground_truth": [
+        "external_analysis",
+        "general",
+        "legal_query"
+      ],
+      "prediction": [
+        "external_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"external_analysis\",\"general\"]}"
+    },
+    {
+      "index": 169,
+      "id": "V3G-TE-0170",
+      "ground_truth": [
+        "chitchat",
+        "comparative_analysis",
+        "legal_query",
+        "stats_summary"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "general",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"general\",\"stats_summary\"]}"
+    },
+    {
+      "index": 170,
+      "id": "V3G-TE-0171",
+      "ground_truth": [
+        "comparative_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"general\"]}"
+    },
+    {
+      "index": 171,
+      "id": "V3G-TE-0172",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_relationship",
+        "external_analysis"
+      ],
+      "prediction": [
+        "document_relationship",
+        "external_analysis"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"document_relationship\",\"external_analysis\"]}"
+    },
+    {
+      "index": 172,
+      "id": "V3G-TE-0173",
+      "ground_truth": [
+        "chitchat"
+      ],
+      "prediction": [
+        "chitchat"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"chitchat\"]}"
+    },
+    {
+      "index": 173,
+      "id": "V3G-TE-0174",
+      "ground_truth": [
+        "general"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"general\"]}"
+    },
+    {
+      "index": 174,
+      "id": "V3G-TE-0175",
+      "ground_truth": [
+        "general",
+        "legal_query"
+      ],
+      "prediction": [
+        "general"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"general\"]}"
+    },
+    {
+      "index": 175,
+      "id": "V3G-TE-0176",
+      "ground_truth": [
+        "document_retrieval",
+        "legal_query"
+      ],
+      "prediction": [
+        "document_retrieval",
+        "legal_query"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"document_retrieval\",\"legal_query\"]}"
+    },
+    {
+      "index": 176,
+      "id": "V3G-TE-0177",
+      "ground_truth": [
+        "comparative_analysis",
+        "legal_query",
+        "stats_summary"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_relationship",
+        "stats_summary"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_relationship\",\"stats_summary\"]}"
+    },
+    {
+      "index": 177,
+      "id": "V3G-TE-0178",
+      "ground_truth": [
+        "comparative_analysis"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "legal_query"
+      ],
+      "correct": false,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"legal_query\"]}"
+    },
+    {
+      "index": 178,
+      "id": "V3G-TE-0179",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval",
+        "general"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval",
+        "general"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\",\"general\"]}"
+    },
+    {
+      "index": 179,
+      "id": "V3G-TE-0180",
+      "ground_truth": [
+        "comparative_analysis",
+        "document_retrieval"
+      ],
+      "prediction": [
+        "comparative_analysis",
+        "document_retrieval"
+      ],
+      "correct": true,
+      "raw_output": "{\"intents\":[\"comparative_analysis\",\"document_retrieval\"]}"
+    }
+  ]
+}

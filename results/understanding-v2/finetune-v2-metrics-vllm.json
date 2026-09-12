@@ -1,0 +1,296 @@
+{
+  "label": "Qwen2.5-7B-legal-v2 (fine-tune, vLLM bf16)",
+  "model": "models/7b/Qwen2.5-7B-Instruct",
+  "adapter": "adapters/7b/qwen2.5-7b-legal-v2",
+  "precision": "bf16",
+  "predictions_file": "results/understanding-v2/finetune-v2-predictions-vllm.json",
+  "groups": {
+    "C1": {
+      "n": 180,
+      "format": {
+        "json_valid_rate": 1.0,
+        "schema_valid_rate": 1.0
+      },
+      "primary": {
+        "name": "Question Semantic Accuracy",
+        "value": null,
+        "note": "Cần LLM judge riêng theo mục 5.2, chưa chấm trong bước này."
+      },
+      "supplementary": {
+        "question_exact_match": {
+          "value": 0.7,
+          "baseline": {
+            "strategy": "chép nguyên câu hỏi lượt hiện tại",
+            "value": 0.45
+          }
+        }
+      },
+      "by_slice": {
+        "anaphora": {
+          "n": 62,
+          "value": 0.4032258064516129
+        },
+        "continuation": {
+          "n": 18,
+          "value": 0.8888888888888888
+        },
+        "document_copy": {
+          "n": 10,
+          "value": 1.0
+        },
+        "null_discipline": {
+          "n": 18,
+          "value": 1.0
+        },
+        "single_turn": {
+          "n": 41,
+          "value": 1.0
+        },
+        "title_only": {
+          "n": 12,
+          "value": 1.0
+        },
+        "topic_switch": {
+          "n": 19,
+          "value": 0.21052631578947367
+        }
+      }
+    },
+    "U1": {
+      "n": 180,
+      "format": {
+        "json_valid_rate": 1.0,
+        "schema_valid_rate": 1.0
+      },
+      "primary": {
+        "name": "Intent Accuracy",
+        "value": 0.9722222222222222,
+        "baseline": {
+          "strategy": "luôn trả 'rule_detail'",
+          "value": 0.23333333333333334
+        }
+      },
+      "supplementary": {
+        "intent_macro_f1": {
+          "macro_f1": 0.9748962823900246,
+          "per_label": {
+            "ambiguous": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 8
+            },
+            "applicability": {
+              "f1": 0.9787234042553191,
+              "precision": 1.0,
+              "recall": 0.9583333333333334,
+              "support": 24
+            },
+            "definition": {
+              "f1": 0.9166666666666666,
+              "precision": 0.8461538461538461,
+              "recall": 1.0,
+              "support": 11
+            },
+            "document_relation": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 12
+            },
+            "out_of_scope": {
+              "f1": 0.9375,
+              "precision": 1.0,
+              "recall": 0.8823529411764706,
+              "support": 17
+            },
+            "provision_content": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 18
+            },
+            "provision_locate": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 26
+            },
+            "rule_detail": {
+              "f1": 0.9411764705882352,
+              "precision": 0.9302325581395349,
+              "recall": 0.9523809523809523,
+              "support": 42
+            },
+            "validity": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 22
+            }
+          }
+        }
+      },
+      "by_slice": {
+        "boundary": {
+          "n": 56,
+          "value": 0.9464285714285714
+        },
+        "clean": {
+          "n": 124,
+          "value": 0.9838709677419355
+        }
+      }
+    },
+    "U2": {
+      "n": 180,
+      "format": {
+        "json_valid_rate": 1.0,
+        "schema_valid_rate": 1.0
+      },
+      "primary": {
+        "name": "Concept Exact Match Accuracy",
+        "value": 0.7444444444444445,
+        "baseline": {
+          "strategy": "luôn trả []",
+          "value": 0.09444444444444444
+        }
+      },
+      "supplementary": {
+        "concept_micro": {
+          "tp": 126,
+          "fp": 45,
+          "fn": 48,
+          "n_samples": 180,
+          "precision": 0.7368421052631579,
+          "recall": 0.7241379310344828,
+          "f1": 0.7304347826086957,
+          "note": null
+        },
+        "concept_restraint_rate": {
+          "rate": 1.0,
+          "n": 17,
+          "correct": 17
+        }
+      },
+      "by_slice": {
+        "canonical": {
+          "n": 70,
+          "value": 0.9714285714285714
+        },
+        "concept_vs_context": {
+          "n": 12,
+          "value": 0.9166666666666666
+        },
+        "document_vs_concept": {
+          "n": 11,
+          "value": 1.0
+        },
+        "multiple_concepts": {
+          "n": 11,
+          "value": 0.7272727272727273
+        },
+        "no_concept": {
+          "n": 6,
+          "value": 1.0
+        },
+        "paraphrase": {
+          "n": 36,
+          "value": 0.6111111111111112
+        },
+        "subject_vs_concept": {
+          "n": 11,
+          "value": 0.6363636363636364
+        },
+        "synonym": {
+          "n": 23,
+          "value": 0.043478260869565216
+        }
+      }
+    },
+    "U3": {
+      "n": 180,
+      "format": {
+        "json_valid_rate": 0.9833333333333333,
+        "schema_valid_rate": 0.9833333333333333
+      },
+      "primary": {
+        "structured_em_overall": {
+          "value": 0.8611111111111112,
+          "n": 180,
+          "baseline": {
+            "strategy": "luôn trả scope=[], user_facts=[], asserts_premise=false",
+            "value": 0.34444444444444444
+          }
+        },
+        "structured_em_extraction": {
+          "value": 0.788135593220339,
+          "n": 118
+        },
+        "structured_restraint_rate": {
+          "value": 1.0,
+          "n": 62
+        }
+      },
+      "supplementary": {
+        "scope_micro": {
+          "tp": 190,
+          "fp": 1,
+          "fn": 15,
+          "n_samples": 180,
+          "precision": 0.9947643979057592,
+          "recall": 0.926829268292683,
+          "f1": 0.9595959595959597,
+          "note": null
+        },
+        "scope_restraint_rate": {
+          "rate": 0.9901960784313726,
+          "n": 102,
+          "correct": 101
+        },
+        "user_facts_micro": {
+          "tp": 10,
+          "fp": 21,
+          "fn": 21,
+          "n_samples": 180,
+          "precision": 0.3225806451612903,
+          "recall": 0.3225806451612903,
+          "f1": 0.3225806451612903,
+          "note": null
+        },
+        "premise": {
+          "f1": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 17,
+          "fp": 0,
+          "fn": 0,
+          "accuracy": 0.9833333333333333,
+          "baseline_always_false": 0.9055555555555556
+        }
+      },
+      "by_slice": {
+        "asserts_premise": {
+          "n": 17,
+          "value": 0.9411764705882353
+        },
+        "empty_state": {
+          "n": 62,
+          "value": 1.0
+        },
+        "multi_scope": {
+          "n": 25,
+          "value": 0.88
+        },
+        "single_scope": {
+          "n": 45,
+          "value": 1.0
+        },
+        "user_facts": {
+          "n": 31,
+          "value": 0.3225806451612903
+        }
+      }
+    }
+  }
+}

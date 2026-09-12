@@ -6,8 +6,8 @@ prompt cùng lúc (continuous batching + kernel AWQ tối ưu hơn autoawq), tha
 gọi model.generate() từng mẫu một như bản HF Transformers.
 
 Output cùng schema với eval_understanding.py để scripts/score_understanding.py
-dùng lại được không cần sửa. Không hỗ trợ LoRA adapter — dùng
-eval_understanding.py nếu cần load adapter PEFT.
+dùng lại được không cần sửa. Hỗ trợ LoRA adapter qua --adapter (dùng
+vllm.LoRARequest, không cần merge adapter vào base model).
 """
 
 import argparse
@@ -19,6 +19,7 @@ from typing import Any
 
 from transformers import AutoTokenizer
 from vllm import LLM, SamplingParams
+from vllm.lora.request import LoRARequest
 
 UNDERSTANDING_GROUPS = {"C1", "U1", "U2", "U3"}
 
@@ -26,6 +27,7 @@ UNDERSTANDING_GROUPS = {"C1", "U1", "U2", "U3"}
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=Path, required=True)
+    parser.add_argument("--adapter", type=Path, default=None, help="LoRA adapter tùy chọn để nạp lên trên --model.")
     parser.add_argument("--data", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--limit", type=int, default=None)
@@ -87,15 +89,24 @@ def main() -> None:
             tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
         )
 
+    lora_request = None
+    llm_kwargs: dict[str, Any] = {}
+    if args.adapter is not None:
+        adapter_config = json.loads((args.adapter / "adapter_config.json").read_text(encoding="utf-8"))
+        lora_rank = int(adapter_config.get("r", 16))
+        llm_kwargs.update(enable_lora=True, max_lora_rank=lora_rank, max_loras=1)
+        lora_request = LoRARequest("legal-adapter", 1, str(args.adapter))
+
     llm = LLM(
         model=str(args.model),
         dtype="float16" if quant_method == "awq" else "bfloat16",
         max_model_len=args.max_model_len,
         gpu_memory_utilization=args.gpu_memory_utilization,
+        **llm_kwargs,
     )
     sampling_params = SamplingParams(temperature=0.0, max_tokens=args.max_new_tokens)
 
-    outputs = llm.generate(prompts, sampling_params)
+    outputs = llm.generate(prompts, sampling_params, lora_request=lora_request)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     results = []
@@ -116,7 +127,7 @@ def main() -> None:
     payload = {
         "task_family": "understanding",
         "model": str(args.model),
-        "adapter": None,
+        "adapter": str(args.adapter) if args.adapter else None,
         "precision": quant_method or "bf16",
         "backend": "vllm",
         "data": str(args.data),

@@ -53,13 +53,25 @@ def main() -> None:
         rows = rows[:args.limit]
 
     tokenizer = AutoTokenizer.from_pretrained(args.model, local_files_only=True)
+
+    # Model đã lượng tử hoá sẵn (AWQ/GPTQ) mang theo quantization_config riêng trong
+    # config.json — không truyền thêm BitsAndBytesConfig, và kernel AWQ yêu cầu fp16.
+    config_path = args.model / "config.json"
+    is_prequantized = False
+    if config_path.exists():
+        model_config = json.loads(config_path.read_text(encoding="utf-8"))
+        quant_method = (model_config.get("quantization_config") or {}).get("quant_method")
+        is_prequantized = quant_method is not None
+        if quant_method == "awq":
+            print("Phát hiện model đã lượng tử hoá sẵn (AWQ) — dùng fp16 thay vì bf16.")
+
     model_kwargs: dict[str, Any] = {
         "local_files_only": True,
         "device_map": {"": 0},
-        "torch_dtype": torch.bfloat16,
+        "torch_dtype": torch.float16 if is_prequantized else torch.bfloat16,
         "attn_implementation": "sdpa",
     }
-    if args.precision == "4bit":
+    if args.precision == "4bit" and not is_prequantized:
         model_kwargs["quantization_config"] = BitsAndBytesConfig(
             load_in_4bit=True, bnb_4bit_quant_type="nf4",
             bnb_4bit_use_double_quant=True, bnb_4bit_compute_dtype=torch.bfloat16,
@@ -114,7 +126,7 @@ def main() -> None:
 
     summary = {
         "model": str(args.model), "adapter": str(args.adapter) if args.adapter else None,
-        "precision": args.precision, "data": str(args.data), "num_examples": len(rows),
+        "precision": quant_method if is_prequantized else args.precision, "data": str(args.data), "num_examples": len(rows),
         "exact_match": correct / len(rows), "invalid": invalid,
         "micro_precision": P, "micro_recall": R, "micro_f1": F1,
         "avg_pred_labels": avg_pred, "avg_gold_labels": avg_gold,

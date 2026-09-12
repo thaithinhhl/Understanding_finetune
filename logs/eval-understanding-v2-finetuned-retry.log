@@ -1,0 +1,8 @@
+/home/ubuntu/Understanding_finetune/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+Traceback (most recent call last):
+  File "/home/ubuntu/Understanding_finetune/scripts/eval_understanding.py", line 181, in <module>
+    main()
+  File "/home/ubuntu/Understanding_finetune/scripts/eval_understanding.py", line 76, in main
+    raise RuntimeError("PyTorch không nhìn thấy CUDA GPU.")
+RuntimeError: PyTorch không nhìn thấy CUDA GPU.

@@ -35,15 +35,22 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--adapter", type=Path, default=None, help="LoRA adapter tùy chọn để nạp lên trên --model.")
     parser.add_argument(
         "--system-prompt",
-        default=DEFAULT_SYSTEM_PROMPT,
-        help="System prompt ràng buộc định dạng đầu ra. Truyền chuỗi rỗng (\"\") để tắt hẳn.",
+        default=None,
+        help="System prompt ràng buộc định dạng đầu ra. Mặc định tự sinh theo --num-choices. "
+        "Truyền chuỗi rỗng (\"\") để tắt hẳn.",
     )
     parser.add_argument(
         "--unconstrained",
         action="store_false",
         dest="constrained",
         default=True,
-        help="Tắt constrained decoding (mặc định BẬT: ép token đầu ra chỉ được là 1 trong A-F, max-new-tokens=1).",
+        help="Tắt constrained decoding (mặc định BẬT: ép token đầu ra chỉ được là 1 trong các lựa chọn, max-new-tokens=1).",
+    )
+    parser.add_argument(
+        "--num-choices",
+        type=int,
+        default=6,
+        help="Số lượng lựa chọn A.. trong mỗi câu hỏi (6 cho task 1.2 A-F, 4 cho task 1.1 A-D).",
     )
     parser.add_argument("--data", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
@@ -92,6 +99,16 @@ def main() -> None:
     if not selected:
         raise ValueError("Không có mẫu nào trong khoảng offset/limit đã chọn.")
 
+    letters = ANSWER_LETTERS[: args.num_choices]
+    if args.system_prompt is None:
+        system_prompt = (
+            DEFAULT_SYSTEM_PROMPT
+            if args.num_choices == 6
+            else f"Chỉ trả lời duy nhất một chữ cái {', '.join(letters[:-1])} hoặc {letters[-1]}."
+        )
+    else:
+        system_prompt = args.system_prompt
+
     tokenizer = AutoTokenizer.from_pretrained(args.model, local_files_only=True)
 
     # Model đã lượng tử hoá sẵn (AWQ/GPTQ) mang theo quantization_config riêng trong
@@ -131,7 +148,7 @@ def main() -> None:
     logits_processor = None
     max_new_tokens = args.max_new_tokens
     if args.constrained:
-        allowed_ids = [tokenizer.encode(letter, add_special_tokens=False)[0] for letter in ANSWER_LETTERS]
+        allowed_ids = [tokenizer.encode(letter, add_special_tokens=False)[0] for letter in letters]
         logits_processor = LogitsProcessorList([AllowOnlyLogitsProcessor(allowed_ids)])
         max_new_tokens = 1
 
@@ -143,8 +160,8 @@ def main() -> None:
             [row["instruction"], row["question"], row["answers"]]
         )
         messages = []
-        if args.system_prompt:
-            messages.append({"role": "system", "content": args.system_prompt})
+        if system_prompt:
+            messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": user_prompt})
         encoded = tokenizer.apply_chat_template(
             messages,
@@ -185,10 +202,10 @@ def main() -> None:
 
     accuracy = correct / len(results)
     summary = {
-        "task": "1.2",
+        "task": "1.2" if args.num_choices == 6 else "1.1",
         "model": str(args.model),
         "adapter": str(args.adapter) if args.adapter else None,
-        "system_prompt": args.system_prompt,
+        "system_prompt": system_prompt,
         "precision": quant_method if is_prequantized else args.precision,
         "data": str(args.data),
         "num_examples": len(results),

@@ -1,0 +1,47 @@
+{
+  "model": {
+    "name_or_path": "models/7b/Qwen2.5-7B-Instruct",
+    "trust_remote_code": false,
+    "use_4bit": true,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "bfloat16"
+  },
+  "data": {
+    "train_file": "data-finetune-v2/data_2_5_v4_train.jsonl",
+    "validation_file": "data-finetune-v2/data_2_5_v4_dev.jsonl",
+    "max_seq_length": 2048,
+    "num_proc": 4,
+    "packing": false,
+    "default_system_prompt": "Bạn là trợ lý pháp lý Việt Nam. Trả lời chính xác, nêu rõ căn cứ khi có đủ thông tin và không tự tạo điều luật hoặc văn bản pháp luật."
+  },
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": "all-linear"
+  },
+  "training": {
+    "output_dir": "checkpoints/7b/task2.5-v4",
+    "final_adapter_dir": "adapters/7b/qwen2.5-7b-task2.5-v4",
+    "num_train_epochs": 3,
+    "learning_rate": 0.0002,
+    "per_device_train_batch_size": 4,
+    "per_device_eval_batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "gradient_checkpointing": false,
+    "optim": "paged_adamw_8bit",
+    "lr_scheduler_type": "cosine",
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.0,
+    "max_grad_norm": 0.3,
+    "logging_steps": 10,
+    "eval_steps": 50,
+    "save_steps": 50,
+    "save_total_limit": 2,
+    "seed": 42,
+    "bf16": true,
+    "tf32": true,
+    "report_to": "none"
+  }
+}

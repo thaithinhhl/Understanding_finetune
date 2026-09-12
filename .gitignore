@@ -22,3 +22,6 @@ wandb/
 data/*.json
 data/*.jsonl
 !data/example.jsonl
+
+# Rác macOS
+.DS_Store
