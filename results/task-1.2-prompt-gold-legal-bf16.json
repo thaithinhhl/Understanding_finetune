@@ -1,0 +1,5479 @@
+{
+  "task": "1.2-prompt-gold",
+  "model": "models/7b/Qwen2.5-7B-Instruct",
+  "adapter": "adapters/7b/qwen2.5-7b-legal",
+  "precision": "bf16",
+  "prompt_file": "prompt_gold_task1.2.json",
+  "data": "data-benchmark-v2/vlegal_task_1_2_test_v2.jsonl",
+  "num_examples": 683,
+  "correct": 584,
+  "unmapped": 7,
+  "accuracy": 0.8550512445095169,
+  "generated_at": "2026-09-13T13:44:55.153661+00:00",
+  "results": [
+    {
+      "index": 1,
+      "ground_truth": "E",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 2,
+      "ground_truth": "F",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 3,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 4,
+      "ground_truth": "C",
+      "predicted_topic": "thương mại",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 5,
+      "ground_truth": "D",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 6,
+      "ground_truth": "A",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 7,
+      "ground_truth": "D",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 8,
+      "ground_truth": "D",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 9,
+      "ground_truth": "A",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 10,
+      "ground_truth": "D",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "F",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 11,
+      "ground_truth": "D",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 12,
+      "ground_truth": "D",
+      "predicted_topic": "quyền dân sự",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Quyền dân sự\"}"
+    },
+    {
+      "index": 13,
+      "ground_truth": "E",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 14,
+      "ground_truth": "A",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 15,
+      "ground_truth": "E",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 16,
+      "ground_truth": "A",
+      "predicted_topic": "giáo dục",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 17,
+      "ground_truth": "A",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 18,
+      "ground_truth": "A",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 19,
+      "ground_truth": "D",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 20,
+      "ground_truth": "F",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 21,
+      "ground_truth": "A",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 22,
+      "ground_truth": "B",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 23,
+      "ground_truth": "C",
+      "predicted_topic": "giáo dục",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 24,
+      "ground_truth": "D",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 25,
+      "ground_truth": "E",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 26,
+      "ground_truth": "E",
+      "predicted_topic": "giáo dục",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 27,
+      "ground_truth": "F",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 28,
+      "ground_truth": "B",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 29,
+      "ground_truth": "A",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 30,
+      "ground_truth": "E",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "F",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 31,
+      "ground_truth": "C",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 32,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 33,
+      "ground_truth": "E",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 34,
+      "ground_truth": "E",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 35,
+      "ground_truth": "D",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 36,
+      "ground_truth": "C",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 37,
+      "ground_truth": "B",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 38,
+      "ground_truth": "A",
+      "predicted_topic": "đầu tư",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 39,
+      "ground_truth": "F",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 40,
+      "ground_truth": "F",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 41,
+      "ground_truth": "B",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "F",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 42,
+      "ground_truth": "B",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 43,
+      "ground_truth": "D",
+      "predicted_topic": "giáo dục",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 44,
+      "ground_truth": "B",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 45,
+      "ground_truth": "D",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 46,
+      "ground_truth": "B",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 47,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "F",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 48,
+      "ground_truth": "B",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 49,
+      "ground_truth": "E",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 50,
+      "ground_truth": "E",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 51,
+      "ground_truth": "A",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 52,
+      "ground_truth": "D",
+      "predicted_topic": "chứng khoán",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 53,
+      "ground_truth": "A",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 54,
+      "ground_truth": "E",
+      "predicted_topic": "chứng khoán",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 55,
+      "ground_truth": "C",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 56,
+      "ground_truth": "B",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 57,
+      "ground_truth": "D",
+      "predicted_topic": "thương mại",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 58,
+      "ground_truth": "E",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 59,
+      "ground_truth": "D",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 60,
+      "ground_truth": "E",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 61,
+      "ground_truth": "B",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 62,
+      "ground_truth": "F",
+      "predicted_topic": "giáo dục",
+      "prediction": null,
+      "correct": false,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 63,
+      "ground_truth": "D",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "F",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 64,
+      "ground_truth": "E",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 65,
+      "ground_truth": "B",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 66,
+      "ground_truth": "A",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 67,
+      "ground_truth": "A",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 68,
+      "ground_truth": "C",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 69,
+      "ground_truth": "B",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 70,
+      "ground_truth": "A",
+      "predicted_topic": "đầu tư",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 71,
+      "ground_truth": "F",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 72,
+      "ground_truth": "F",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 73,
+      "ground_truth": "F",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 74,
+      "ground_truth": "A",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 75,
+      "ground_truth": "E",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 76,
+      "ground_truth": "E",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 77,
+      "ground_truth": "A",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 78,
+      "ground_truth": "B",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 79,
+      "ground_truth": "A",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 80,
+      "ground_truth": "E",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 81,
+      "ground_truth": "F",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 82,
+      "ground_truth": "B",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 83,
+      "ground_truth": "F",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 84,
+      "ground_truth": "E",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 85,
+      "ground_truth": "A",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 86,
+      "ground_truth": "E",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 87,
+      "ground_truth": "E",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 88,
+      "ground_truth": "C",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 89,
+      "ground_truth": "B",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 90,
+      "ground_truth": "B",
+      "predicted_topic": "bất động sản",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 91,
+      "ground_truth": "E",
+      "predicted_topic": "thương mại",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 92,
+      "ground_truth": "C",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 93,
+      "ground_truth": "A",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 94,
+      "ground_truth": "B",
+      "predicted_topic": "đầu tư",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 95,
+      "ground_truth": "C",
+      "predicted_topic": "quân đội",
+      "prediction": null,
+      "correct": false,
+      "raw_output": "{\"topic\":\"Quân đội\"}"
+    },
+    {
+      "index": 96,
+      "ground_truth": "C",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 97,
+      "ground_truth": "A",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 98,
+      "ground_truth": "F",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "B",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 99,
+      "ground_truth": "B",
+      "predicted_topic": "thương mại",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 100,
+      "ground_truth": "B",
+      "predicted_topic": "bất động sản",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 101,
+      "ground_truth": "F",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 102,
+      "ground_truth": "C",
+      "predicted_topic": "nhà nước",
+      "prediction": null,
+      "correct": false,
+      "raw_output": "{\"topic\":\"Nhà nước\"}"
+    },
+    {
+      "index": 103,
+      "ground_truth": "D",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 104,
+      "ground_truth": "C",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 105,
+      "ground_truth": "D",
+      "predicted_topic": "quyền dân sự",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Quyền dân sự\"}"
+    },
+    {
+      "index": 106,
+      "ground_truth": "C",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 107,
+      "ground_truth": "A",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 108,
+      "ground_truth": "F",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 109,
+      "ground_truth": "C",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 110,
+      "ground_truth": "F",
+      "predicted_topic": "chứng khoán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 111,
+      "ground_truth": "D",
+      "predicted_topic": "chứng khoán",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 112,
+      "ground_truth": "E",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 113,
+      "ground_truth": "B",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 114,
+      "ground_truth": "B",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 115,
+      "ground_truth": "D",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 116,
+      "ground_truth": "E",
+      "predicted_topic": "chứng khoán",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 117,
+      "ground_truth": "D",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 118,
+      "ground_truth": "A",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 119,
+      "ground_truth": "F",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 120,
+      "ground_truth": "D",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 121,
+      "ground_truth": "A",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 122,
+      "ground_truth": "D",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 123,
+      "ground_truth": "B",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 124,
+      "ground_truth": "B",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 125,
+      "ground_truth": "C",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 126,
+      "ground_truth": "B",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 127,
+      "ground_truth": "C",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 128,
+      "ground_truth": "F",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 129,
+      "ground_truth": "A",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 130,
+      "ground_truth": "A",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 131,
+      "ground_truth": "F",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 132,
+      "ground_truth": "B",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 133,
+      "ground_truth": "B",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 134,
+      "ground_truth": "D",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 135,
+      "ground_truth": "F",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 136,
+      "ground_truth": "A",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "F",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 137,
+      "ground_truth": "F",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 138,
+      "ground_truth": "F",
+      "predicted_topic": "giáo dục",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 139,
+      "ground_truth": "A",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 140,
+      "ground_truth": "E",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 141,
+      "ground_truth": "B",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 142,
+      "ground_truth": "C",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 143,
+      "ground_truth": "C",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 144,
+      "ground_truth": "D",
+      "predicted_topic": "bất động sản",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 145,
+      "ground_truth": "F",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "B",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 146,
+      "ground_truth": "D",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 147,
+      "ground_truth": "D",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 148,
+      "ground_truth": "D",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 149,
+      "ground_truth": "C",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 150,
+      "ground_truth": "B",
+      "predicted_topic": "giáo dục",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 151,
+      "ground_truth": "B",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 152,
+      "ground_truth": "E",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 153,
+      "ground_truth": "A",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 154,
+      "ground_truth": "B",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 155,
+      "ground_truth": "C",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 156,
+      "ground_truth": "B",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 157,
+      "ground_truth": "E",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 158,
+      "ground_truth": "F",
+      "predicted_topic": "đầu tư",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 159,
+      "ground_truth": "B",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 160,
+      "ground_truth": "D",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 161,
+      "ground_truth": "C",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 162,
+      "ground_truth": "A",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 163,
+      "ground_truth": "E",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 164,
+      "ground_truth": "C",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 165,
+      "ground_truth": "F",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 166,
+      "ground_truth": "C",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "B",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 167,
+      "ground_truth": "C",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 168,
+      "ground_truth": "D",
+      "predicted_topic": "quyền dân sự",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Quyền dân sự\"}"
+    },
+    {
+      "index": 169,
+      "ground_truth": "D",
+      "predicted_topic": "thương mại",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 170,
+      "ground_truth": "E",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 171,
+      "ground_truth": "D",
+      "predicted_topic": "bất động sản",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 172,
+      "ground_truth": "C",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 173,
+      "ground_truth": "B",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 174,
+      "ground_truth": "A",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 175,
+      "ground_truth": "E",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 176,
+      "ground_truth": "C",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 177,
+      "ground_truth": "C",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 178,
+      "ground_truth": "F",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 179,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 180,
+      "ground_truth": "D",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 181,
+      "ground_truth": "B",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 182,
+      "ground_truth": "E",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 183,
+      "ground_truth": "E",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 184,
+      "ground_truth": "A",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 185,
+      "ground_truth": "E",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 186,
+      "ground_truth": "A",
+      "predicted_topic": "quyền dân sự",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Quyền dân sự\"}"
+    },
+    {
+      "index": 187,
+      "ground_truth": "C",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 188,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 189,
+      "ground_truth": "D",
+      "predicted_topic": "giáo dục",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 190,
+      "ground_truth": "E",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 191,
+      "ground_truth": "A",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 192,
+      "ground_truth": "B",
+      "predicted_topic": "giáo dục",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 193,
+      "ground_truth": "C",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 194,
+      "ground_truth": "A",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 195,
+      "ground_truth": "D",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 196,
+      "ground_truth": "C",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 197,
+      "ground_truth": "E",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 198,
+      "ground_truth": "D",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 199,
+      "ground_truth": "F",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 200,
+      "ground_truth": "A",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 201,
+      "ground_truth": "A",
+      "predicted_topic": "chứng khoán",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 202,
+      "ground_truth": "B",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 203,
+      "ground_truth": "B",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 204,
+      "ground_truth": "D",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 205,
+      "ground_truth": "C",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 206,
+      "ground_truth": "F",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 207,
+      "ground_truth": "F",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 208,
+      "ground_truth": "F",
+      "predicted_topic": "bất động sản",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 209,
+      "ground_truth": "F",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 210,
+      "ground_truth": "D",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 211,
+      "ground_truth": "A",
+      "predicted_topic": "giáo dục",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 212,
+      "ground_truth": "A",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 213,
+      "ground_truth": "C",
+      "predicted_topic": "giáo dục",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 214,
+      "ground_truth": "B",
+      "predicted_topic": "chứng khoán",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 215,
+      "ground_truth": "F",
+      "predicted_topic": "thương mại",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 216,
+      "ground_truth": "E",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 217,
+      "ground_truth": "F",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 218,
+      "ground_truth": "B",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 219,
+      "ground_truth": "A",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 220,
+      "ground_truth": "A",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 221,
+      "ground_truth": "F",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 222,
+      "ground_truth": "E",
+      "predicted_topic": "giáo dục",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 223,
+      "ground_truth": "B",
+      "predicted_topic": "thương mại",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 224,
+      "ground_truth": "F",
+      "predicted_topic": "chứng khoán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 225,
+      "ground_truth": "A",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 226,
+      "ground_truth": "C",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 227,
+      "ground_truth": "A",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 228,
+      "ground_truth": "A",
+      "predicted_topic": "chứng khoán",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 229,
+      "ground_truth": "D",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 230,
+      "ground_truth": "E",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 231,
+      "ground_truth": "B",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 232,
+      "ground_truth": "A",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 233,
+      "ground_truth": "E",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 234,
+      "ground_truth": "D",
+      "predicted_topic": "chứng khoán",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 235,
+      "ground_truth": "F",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 236,
+      "ground_truth": "F",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 237,
+      "ground_truth": "C",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 238,
+      "ground_truth": "F",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 239,
+      "ground_truth": "F",
+      "predicted_topic": "chứng khoán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 240,
+      "ground_truth": "A",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 241,
+      "ground_truth": "D",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 242,
+      "ground_truth": "D",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 243,
+      "ground_truth": "D",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 244,
+      "ground_truth": "F",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 245,
+      "ground_truth": "A",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 246,
+      "ground_truth": "B",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 247,
+      "ground_truth": "C",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 248,
+      "ground_truth": "C",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 249,
+      "ground_truth": "B",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 250,
+      "ground_truth": "C",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 251,
+      "ground_truth": "C",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 252,
+      "ground_truth": "D",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "B",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 253,
+      "ground_truth": "F",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 254,
+      "ground_truth": "C",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 255,
+      "ground_truth": "D",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 256,
+      "ground_truth": "B",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 257,
+      "ground_truth": "B",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 258,
+      "ground_truth": "B",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 259,
+      "ground_truth": "B",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 260,
+      "ground_truth": "A",
+      "predicted_topic": "giáo dục",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 261,
+      "ground_truth": "D",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 262,
+      "ground_truth": "A",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 263,
+      "ground_truth": "C",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 264,
+      "ground_truth": "D",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 265,
+      "ground_truth": "F",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 266,
+      "ground_truth": "A",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 267,
+      "ground_truth": "A",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 268,
+      "ground_truth": "F",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "B",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 269,
+      "ground_truth": "F",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 270,
+      "ground_truth": "C",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 271,
+      "ground_truth": "E",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 272,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 273,
+      "ground_truth": "C",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 274,
+      "ground_truth": "C",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 275,
+      "ground_truth": "E",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 276,
+      "ground_truth": "C",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 277,
+      "ground_truth": "A",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 278,
+      "ground_truth": "E",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 279,
+      "ground_truth": "A",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 280,
+      "ground_truth": "B",
+      "predicted_topic": "đấu thầu",
+      "prediction": null,
+      "correct": false,
+      "raw_output": "{\"topic\":\"Đấu thầu\"}"
+    },
+    {
+      "index": 281,
+      "ground_truth": "D",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 282,
+      "ground_truth": "C",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 283,
+      "ground_truth": "B",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 284,
+      "ground_truth": "D",
+      "predicted_topic": "bất động sản",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 285,
+      "ground_truth": "D",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 286,
+      "ground_truth": "D",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 287,
+      "ground_truth": "A",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 288,
+      "ground_truth": "F",
+      "predicted_topic": "đầu tư",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 289,
+      "ground_truth": "E",
+      "predicted_topic": "giáo dục",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 290,
+      "ground_truth": "A",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 291,
+      "ground_truth": "B",
+      "predicted_topic": "chứng khoán",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 292,
+      "ground_truth": "B",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 293,
+      "ground_truth": "D",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 294,
+      "ground_truth": "E",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 295,
+      "ground_truth": "D",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 296,
+      "ground_truth": "B",
+      "predicted_topic": "quyền dân sự",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Quyền dân sự\"}"
+    },
+    {
+      "index": 297,
+      "ground_truth": "C",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 298,
+      "ground_truth": "D",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 299,
+      "ground_truth": "B",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 300,
+      "ground_truth": "B",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 301,
+      "ground_truth": "B",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 302,
+      "ground_truth": "D",
+      "predicted_topic": "giáo dục",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 303,
+      "ground_truth": "E",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 304,
+      "ground_truth": "B",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 305,
+      "ground_truth": "A",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 306,
+      "ground_truth": "D",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 307,
+      "ground_truth": "F",
+      "predicted_topic": "thương mại",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 308,
+      "ground_truth": "B",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 309,
+      "ground_truth": "C",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 310,
+      "ground_truth": "D",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 311,
+      "ground_truth": "A",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 312,
+      "ground_truth": "E",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 313,
+      "ground_truth": "B",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 314,
+      "ground_truth": "B",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 315,
+      "ground_truth": "B",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 316,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "F",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 317,
+      "ground_truth": "C",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 318,
+      "ground_truth": "B",
+      "predicted_topic": "thương mại",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 319,
+      "ground_truth": "C",
+      "predicted_topic": "đầu tư",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 320,
+      "ground_truth": "A",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 321,
+      "ground_truth": "F",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 322,
+      "ground_truth": "A",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 323,
+      "ground_truth": "E",
+      "predicted_topic": "nghĩa vụ quân sự",
+      "prediction": null,
+      "correct": false,
+      "raw_output": "{\"topic\":\"Nghĩa vụ quân sự\"}"
+    },
+    {
+      "index": 324,
+      "ground_truth": "D",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 325,
+      "ground_truth": "C",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 326,
+      "ground_truth": "A",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 327,
+      "ground_truth": "E",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 328,
+      "ground_truth": "D",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 329,
+      "ground_truth": "D",
+      "predicted_topic": "giáo dục",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 330,
+      "ground_truth": "D",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 331,
+      "ground_truth": "E",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "B",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 332,
+      "ground_truth": "A",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 333,
+      "ground_truth": "D",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 334,
+      "ground_truth": "A",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 335,
+      "ground_truth": "C",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "B",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 336,
+      "ground_truth": "D",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 337,
+      "ground_truth": "A",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 338,
+      "ground_truth": "A",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 339,
+      "ground_truth": "F",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 340,
+      "ground_truth": "A",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 341,
+      "ground_truth": "C",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 342,
+      "ground_truth": "B",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 343,
+      "ground_truth": "E",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 344,
+      "ground_truth": "A",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 345,
+      "ground_truth": "B",
+      "predicted_topic": "bất động sản",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 346,
+      "ground_truth": "D",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 347,
+      "ground_truth": "E",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 348,
+      "ground_truth": "E",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 349,
+      "ground_truth": "F",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 350,
+      "ground_truth": "A",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 351,
+      "ground_truth": "E",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 352,
+      "ground_truth": "E",
+      "predicted_topic": "bất động sản",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 353,
+      "ground_truth": "A",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 354,
+      "ground_truth": "A",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 355,
+      "ground_truth": "D",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 356,
+      "ground_truth": "F",
+      "predicted_topic": "đầu tư",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 357,
+      "ground_truth": "A",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 358,
+      "ground_truth": "E",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 359,
+      "ground_truth": "C",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 360,
+      "ground_truth": "B",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 361,
+      "ground_truth": "C",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 362,
+      "ground_truth": "C",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 363,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 364,
+      "ground_truth": "E",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 365,
+      "ground_truth": "F",
+      "predicted_topic": "chứng khoán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 366,
+      "ground_truth": "C",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 367,
+      "ground_truth": "E",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 368,
+      "ground_truth": "A",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 369,
+      "ground_truth": "D",
+      "predicted_topic": "giáo dục",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 370,
+      "ground_truth": "C",
+      "predicted_topic": "thương mại",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 371,
+      "ground_truth": "E",
+      "predicted_topic": "chứng khoán",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 372,
+      "ground_truth": "B",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 373,
+      "ground_truth": "B",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 374,
+      "ground_truth": "E",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 375,
+      "ground_truth": "B",
+      "predicted_topic": "đầu tư",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 376,
+      "ground_truth": "B",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 377,
+      "ground_truth": "F",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 378,
+      "ground_truth": "F",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 379,
+      "ground_truth": "D",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 380,
+      "ground_truth": "E",
+      "predicted_topic": "chứng khoán",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 381,
+      "ground_truth": "B",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 382,
+      "ground_truth": "C",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 383,
+      "ground_truth": "A",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 384,
+      "ground_truth": "A",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 385,
+      "ground_truth": "F",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 386,
+      "ground_truth": "A",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 387,
+      "ground_truth": "E",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 388,
+      "ground_truth": "B",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 389,
+      "ground_truth": "E",
+      "predicted_topic": "quyền dân sự",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Quyền dân sự\"}"
+    },
+    {
+      "index": 390,
+      "ground_truth": "D",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 391,
+      "ground_truth": "A",
+      "predicted_topic": "đầu tư",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 392,
+      "ground_truth": "D",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 393,
+      "ground_truth": "E",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 394,
+      "ground_truth": "C",
+      "predicted_topic": "thương mại",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 395,
+      "ground_truth": "C",
+      "predicted_topic": "giáo dục",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 396,
+      "ground_truth": "A",
+      "predicted_topic": "quyền dân sự",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Quyền dân sự\"}"
+    },
+    {
+      "index": 397,
+      "ground_truth": "E",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 398,
+      "ground_truth": "D",
+      "predicted_topic": "thương mại",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 399,
+      "ground_truth": "D",
+      "predicted_topic": "quyền dân sự",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Quyền dân sự\"}"
+    },
+    {
+      "index": 400,
+      "ground_truth": "F",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 401,
+      "ground_truth": "A",
+      "predicted_topic": "giáo dục",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 402,
+      "ground_truth": "C",
+      "predicted_topic": "quyền dân sự",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Quyền dân sự\"}"
+    },
+    {
+      "index": 403,
+      "ground_truth": "D",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 404,
+      "ground_truth": "D",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 405,
+      "ground_truth": "C",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 406,
+      "ground_truth": "F",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 407,
+      "ground_truth": "C",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 408,
+      "ground_truth": "D",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 409,
+      "ground_truth": "B",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 410,
+      "ground_truth": "F",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 411,
+      "ground_truth": "A",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 412,
+      "ground_truth": "E",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 413,
+      "ground_truth": "E",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 414,
+      "ground_truth": "B",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 415,
+      "ground_truth": "E",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 416,
+      "ground_truth": "F",
+      "predicted_topic": "bất động sản",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 417,
+      "ground_truth": "D",
+      "predicted_topic": "bất động sản",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 418,
+      "ground_truth": "F",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 419,
+      "ground_truth": "D",
+      "predicted_topic": "bất động sản",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 420,
+      "ground_truth": "A",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 421,
+      "ground_truth": "C",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 422,
+      "ground_truth": "F",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 423,
+      "ground_truth": "C",
+      "predicted_topic": "đầu tư",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 424,
+      "ground_truth": "E",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 425,
+      "ground_truth": "A",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 426,
+      "ground_truth": "F",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 427,
+      "ground_truth": "D",
+      "predicted_topic": "đầu tư",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 428,
+      "ground_truth": "C",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 429,
+      "ground_truth": "E",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 430,
+      "ground_truth": "B",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 431,
+      "ground_truth": "F",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 432,
+      "ground_truth": "B",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 433,
+      "ground_truth": "E",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 434,
+      "ground_truth": "E",
+      "predicted_topic": "giáo dục",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 435,
+      "ground_truth": "B",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 436,
+      "ground_truth": "F",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 437,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 438,
+      "ground_truth": "B",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 439,
+      "ground_truth": "F",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 440,
+      "ground_truth": "C",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 441,
+      "ground_truth": "C",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 442,
+      "ground_truth": "B",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 443,
+      "ground_truth": "E",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 444,
+      "ground_truth": "A",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 445,
+      "ground_truth": "B",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 446,
+      "ground_truth": "B",
+      "predicted_topic": "viễn thông",
+      "prediction": null,
+      "correct": false,
+      "raw_output": "{\"topic\":\"Viễn thông\"}"
+    },
+    {
+      "index": 447,
+      "ground_truth": "A",
+      "predicted_topic": "giáo dục",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 448,
+      "ground_truth": "C",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 449,
+      "ground_truth": "D",
+      "predicted_topic": "đầu tư",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 450,
+      "ground_truth": "C",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 451,
+      "ground_truth": "B",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 452,
+      "ground_truth": "F",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 453,
+      "ground_truth": "A",
+      "predicted_topic": "đầu tư",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 454,
+      "ground_truth": "A",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 455,
+      "ground_truth": "D",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 456,
+      "ground_truth": "E",
+      "predicted_topic": "chứng khoán",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 457,
+      "ground_truth": "A",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 458,
+      "ground_truth": "B",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 459,
+      "ground_truth": "E",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 460,
+      "ground_truth": "D",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 461,
+      "ground_truth": "A",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 462,
+      "ground_truth": "E",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 463,
+      "ground_truth": "B",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 464,
+      "ground_truth": "D",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 465,
+      "ground_truth": "C",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 466,
+      "ground_truth": "C",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 467,
+      "ground_truth": "A",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 468,
+      "ground_truth": "B",
+      "predicted_topic": "thương mại",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 469,
+      "ground_truth": "C",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 470,
+      "ground_truth": "B",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 471,
+      "ground_truth": "D",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 472,
+      "ground_truth": "E",
+      "predicted_topic": "chứng khoán",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 473,
+      "ground_truth": "E",
+      "predicted_topic": "đầu tư",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 474,
+      "ground_truth": "F",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 475,
+      "ground_truth": "D",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 476,
+      "ground_truth": "E",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 477,
+      "ground_truth": "C",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 478,
+      "ground_truth": "F",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 479,
+      "ground_truth": "B",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 480,
+      "ground_truth": "E",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 481,
+      "ground_truth": "A",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 482,
+      "ground_truth": "D",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 483,
+      "ground_truth": "E",
+      "predicted_topic": "chứng khoán",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 484,
+      "ground_truth": "C",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 485,
+      "ground_truth": "E",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 486,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 487,
+      "ground_truth": "C",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 488,
+      "ground_truth": "A",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 489,
+      "ground_truth": "F",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 490,
+      "ground_truth": "E",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 491,
+      "ground_truth": "D",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 492,
+      "ground_truth": "E",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 493,
+      "ground_truth": "E",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 494,
+      "ground_truth": "E",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "F",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 495,
+      "ground_truth": "D",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 496,
+      "ground_truth": "C",
+      "predicted_topic": "đầu tư",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 497,
+      "ground_truth": "C",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 498,
+      "ground_truth": "B",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 499,
+      "ground_truth": "E",
+      "predicted_topic": "giáo dục",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 500,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 501,
+      "ground_truth": "B",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 502,
+      "ground_truth": "E",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 503,
+      "ground_truth": "C",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 504,
+      "ground_truth": "E",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 505,
+      "ground_truth": "D",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 506,
+      "ground_truth": "E",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 507,
+      "ground_truth": "A",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 508,
+      "ground_truth": "E",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 509,
+      "ground_truth": "D",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 510,
+      "ground_truth": "D",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 511,
+      "ground_truth": "A",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 512,
+      "ground_truth": "D",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 513,
+      "ground_truth": "D",
+      "predicted_topic": "bất động sản",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 514,
+      "ground_truth": "E",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 515,
+      "ground_truth": "D",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 516,
+      "ground_truth": "B",
+      "predicted_topic": "thương mại",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 517,
+      "ground_truth": "F",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 518,
+      "ground_truth": "C",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 519,
+      "ground_truth": "F",
+      "predicted_topic": "chứng khoán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 520,
+      "ground_truth": "D",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 521,
+      "ground_truth": "B",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 522,
+      "ground_truth": "F",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 523,
+      "ground_truth": "B",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 524,
+      "ground_truth": "B",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "F",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 525,
+      "ground_truth": "F",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 526,
+      "ground_truth": "E",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 527,
+      "ground_truth": "F",
+      "predicted_topic": "bất động sản",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 528,
+      "ground_truth": "D",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 529,
+      "ground_truth": "D",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 530,
+      "ground_truth": "F",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 531,
+      "ground_truth": "A",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 532,
+      "ground_truth": "A",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 533,
+      "ground_truth": "E",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 534,
+      "ground_truth": "C",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 535,
+      "ground_truth": "A",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 536,
+      "ground_truth": "F",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 537,
+      "ground_truth": "B",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 538,
+      "ground_truth": "A",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 539,
+      "ground_truth": "A",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 540,
+      "ground_truth": "E",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "B",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 541,
+      "ground_truth": "B",
+      "predicted_topic": "thương mại",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 542,
+      "ground_truth": "D",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 543,
+      "ground_truth": "A",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 544,
+      "ground_truth": "D",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 545,
+      "ground_truth": "C",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 546,
+      "ground_truth": "D",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 547,
+      "ground_truth": "B",
+      "predicted_topic": "chứng khoán",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 548,
+      "ground_truth": "B",
+      "predicted_topic": "đầu tư",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 549,
+      "ground_truth": "A",
+      "predicted_topic": "giáo dục",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 550,
+      "ground_truth": "B",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 551,
+      "ground_truth": "F",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 552,
+      "ground_truth": "B",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 553,
+      "ground_truth": "E",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "F",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 554,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 555,
+      "ground_truth": "E",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 556,
+      "ground_truth": "F",
+      "predicted_topic": "giáo dục",
+      "prediction": null,
+      "correct": false,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 557,
+      "ground_truth": "F",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 558,
+      "ground_truth": "B",
+      "predicted_topic": "bất động sản",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 559,
+      "ground_truth": "E",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 560,
+      "ground_truth": "A",
+      "predicted_topic": "giao thông vận tải",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giao thông vận tải\"}"
+    },
+    {
+      "index": 561,
+      "ground_truth": "C",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 562,
+      "ground_truth": "F",
+      "predicted_topic": "thương mại",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 563,
+      "ground_truth": "F",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 564,
+      "ground_truth": "C",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 565,
+      "ground_truth": "D",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 566,
+      "ground_truth": "B",
+      "predicted_topic": "bất động sản",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 567,
+      "ground_truth": "E",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 568,
+      "ground_truth": "A",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 569,
+      "ground_truth": "B",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 570,
+      "ground_truth": "E",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 571,
+      "ground_truth": "B",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 572,
+      "ground_truth": "C",
+      "predicted_topic": "thương mại",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 573,
+      "ground_truth": "D",
+      "predicted_topic": "bất động sản",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 574,
+      "ground_truth": "D",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 575,
+      "ground_truth": "A",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 576,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 577,
+      "ground_truth": "C",
+      "predicted_topic": "bất động sản",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 578,
+      "ground_truth": "C",
+      "predicted_topic": "giáo dục",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 579,
+      "ground_truth": "D",
+      "predicted_topic": "giáo dục",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 580,
+      "ground_truth": "D",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 581,
+      "ground_truth": "E",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 582,
+      "ground_truth": "E",
+      "predicted_topic": "thương mại",
+      "prediction": "B",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 583,
+      "ground_truth": "D",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 584,
+      "ground_truth": "A",
+      "predicted_topic": "vi phạm hành chính",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Vi phạm hành chính\"}"
+    },
+    {
+      "index": 585,
+      "ground_truth": "E",
+      "predicted_topic": "bất động sản",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 586,
+      "ground_truth": "B",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 587,
+      "ground_truth": "E",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 588,
+      "ground_truth": "C",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 589,
+      "ground_truth": "E",
+      "predicted_topic": "xây dựng - đô thị",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xây dựng - đô thị\"}"
+    },
+    {
+      "index": 590,
+      "ground_truth": "D",
+      "predicted_topic": "chứng khoán",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 591,
+      "ground_truth": "F",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 592,
+      "ground_truth": "C",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 593,
+      "ground_truth": "E",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 594,
+      "ground_truth": "F",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 595,
+      "ground_truth": "E",
+      "predicted_topic": "sở hữu trí tuệ",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Sở hữu trí tuệ\"}"
+    },
+    {
+      "index": 596,
+      "ground_truth": "A",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 597,
+      "ground_truth": "E",
+      "predicted_topic": "giáo dục",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 598,
+      "ground_truth": "A",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 599,
+      "ground_truth": "F",
+      "predicted_topic": "chứng khoán",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 600,
+      "ground_truth": "A",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 601,
+      "ground_truth": "A",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 602,
+      "ground_truth": "D",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 603,
+      "ground_truth": "A",
+      "predicted_topic": "thương mại",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 604,
+      "ground_truth": "D",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 605,
+      "ground_truth": "B",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 606,
+      "ground_truth": "E",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "A",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 607,
+      "ground_truth": "B",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 608,
+      "ground_truth": "B",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 609,
+      "ground_truth": "E",
+      "predicted_topic": "bộ máy hành chính",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bộ máy hành chính\"}"
+    },
+    {
+      "index": 610,
+      "ground_truth": "F",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 611,
+      "ground_truth": "C",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 612,
+      "ground_truth": "B",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 613,
+      "ground_truth": "B",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 614,
+      "ground_truth": "E",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 615,
+      "ground_truth": "E",
+      "predicted_topic": "đầu tư",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 616,
+      "ground_truth": "D",
+      "predicted_topic": "đầu tư",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 617,
+      "ground_truth": "A",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 618,
+      "ground_truth": "E",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 619,
+      "ground_truth": "E",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 620,
+      "ground_truth": "C",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 621,
+      "ground_truth": "B",
+      "predicted_topic": "giáo dục",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 622,
+      "ground_truth": "B",
+      "predicted_topic": "giáo dục",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 623,
+      "ground_truth": "A",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 624,
+      "ground_truth": "E",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 625,
+      "ground_truth": "F",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 626,
+      "ground_truth": "A",
+      "predicted_topic": "quyền dân sự",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Quyền dân sự\"}"
+    },
+    {
+      "index": 627,
+      "ground_truth": "F",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 628,
+      "ground_truth": "A",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 629,
+      "ground_truth": "A",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 630,
+      "ground_truth": "F",
+      "predicted_topic": "lao động - tiền lương",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lao động - tiền lương\"}"
+    },
+    {
+      "index": 631,
+      "ground_truth": "B",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 632,
+      "ground_truth": "A",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 633,
+      "ground_truth": "B",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 634,
+      "ground_truth": "D",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 635,
+      "ground_truth": "B",
+      "predicted_topic": "giáo dục",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 636,
+      "ground_truth": "C",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 637,
+      "ground_truth": "D",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 638,
+      "ground_truth": "A",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 639,
+      "ground_truth": "D",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 640,
+      "ground_truth": "F",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "B",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 641,
+      "ground_truth": "B",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 642,
+      "ground_truth": "B",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 643,
+      "ground_truth": "E",
+      "predicted_topic": "giáo dục",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Giáo dục\"}"
+    },
+    {
+      "index": 644,
+      "ground_truth": "E",
+      "predicted_topic": "bất động sản",
+      "prediction": "F",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 645,
+      "ground_truth": "C",
+      "predicted_topic": "thương mại",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 646,
+      "ground_truth": "E",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 647,
+      "ground_truth": "E",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 648,
+      "ground_truth": "D",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 649,
+      "ground_truth": "C",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 650,
+      "ground_truth": "F",
+      "predicted_topic": "bất động sản",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 651,
+      "ground_truth": "D",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    },
+    {
+      "index": 652,
+      "ground_truth": "D",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "B",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 653,
+      "ground_truth": "F",
+      "predicted_topic": "quyền dân sự",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Quyền dân sự\"}"
+    },
+    {
+      "index": 654,
+      "ground_truth": "A",
+      "predicted_topic": "doanh nghiệp",
+      "prediction": "B",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Doanh nghiệp\"}"
+    },
+    {
+      "index": 655,
+      "ground_truth": "D",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 656,
+      "ground_truth": "C",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 657,
+      "ground_truth": "F",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 658,
+      "ground_truth": "B",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "C",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 659,
+      "ground_truth": "C",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 660,
+      "ground_truth": "A",
+      "predicted_topic": "trách nhiệm hình sự",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Trách nhiệm hình sự\"}"
+    },
+    {
+      "index": 661,
+      "ground_truth": "D",
+      "predicted_topic": "dịch vụ pháp lý",
+      "prediction": "D",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Dịch vụ pháp lý\"}"
+    },
+    {
+      "index": 662,
+      "ground_truth": "E",
+      "predicted_topic": "kế toán - kiểm toán",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Kế toán - kiểm toán\"}"
+    },
+    {
+      "index": 663,
+      "ground_truth": "F",
+      "predicted_topic": "tiền tệ ngân hàng",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tiền tệ ngân hàng\"}"
+    },
+    {
+      "index": 664,
+      "ground_truth": "A",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 665,
+      "ground_truth": "F",
+      "predicted_topic": "đầu tư",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 666,
+      "ground_truth": "D",
+      "predicted_topic": "quyền dân sự",
+      "prediction": "F",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Quyền dân sự\"}"
+    },
+    {
+      "index": 667,
+      "ground_truth": "B",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "B",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 668,
+      "ground_truth": "C",
+      "predicted_topic": "thể thao - y tế",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thể thao - y tế\"}"
+    },
+    {
+      "index": 669,
+      "ground_truth": "E",
+      "predicted_topic": "tài chính nhà nước",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài chính nhà nước\"}"
+    },
+    {
+      "index": 670,
+      "ground_truth": "B",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "E",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 671,
+      "ground_truth": "F",
+      "predicted_topic": "tài nguyên - môi trường",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Tài nguyên - môi trường\"}"
+    },
+    {
+      "index": 672,
+      "ground_truth": "C",
+      "predicted_topic": "đầu tư",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Đầu tư\"}"
+    },
+    {
+      "index": 673,
+      "ground_truth": "C",
+      "predicted_topic": "lĩnh vực khác",
+      "prediction": "D",
+      "correct": false,
+      "raw_output": "{\"topic\":\"Lĩnh vực khác\"}"
+    },
+    {
+      "index": 674,
+      "ground_truth": "A",
+      "predicted_topic": "văn hóa - xã hội",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Văn hóa - xã hội\"}"
+    },
+    {
+      "index": 675,
+      "ground_truth": "F",
+      "predicted_topic": "xuất nhập khẩu",
+      "prediction": "F",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Xuất nhập khẩu\"}"
+    },
+    {
+      "index": 676,
+      "ground_truth": "A",
+      "predicted_topic": "thuế - phí - lệ phí",
+      "prediction": "A",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thuế - phí - lệ phí\"}"
+    },
+    {
+      "index": 677,
+      "ground_truth": "C",
+      "predicted_topic": "thương mại",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 678,
+      "ground_truth": "C",
+      "predicted_topic": "chứng khoán",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Chứng khoán\"}"
+    },
+    {
+      "index": 679,
+      "ground_truth": "C",
+      "predicted_topic": "công nghệ thông tin",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Công nghệ thông tin\"}"
+    },
+    {
+      "index": 680,
+      "ground_truth": "E",
+      "predicted_topic": "thủ tục tố tụng",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thủ tục tố tụng\"}"
+    },
+    {
+      "index": 681,
+      "ground_truth": "E",
+      "predicted_topic": "thương mại",
+      "prediction": "E",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Thương mại\"}"
+    },
+    {
+      "index": 682,
+      "ground_truth": "C",
+      "predicted_topic": "bất động sản",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bất động sản\"}"
+    },
+    {
+      "index": 683,
+      "ground_truth": "C",
+      "predicted_topic": "bảo hiểm",
+      "prediction": "C",
+      "correct": true,
+      "raw_output": "{\"topic\":\"Bảo hiểm\"}"
+    }
+  ]
+}

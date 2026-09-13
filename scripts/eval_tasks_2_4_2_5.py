@@ -114,7 +114,7 @@ def main() -> None:
         )
     model = AutoModelForCausalLM.from_pretrained(args.model, **model_kwargs)
     if args.adapter is not None:
-        model = PeftModel.from_pretrained(model, args.adapter)
+        model = PeftModel.from_pretrained(model, str(args.adapter))
     model.eval()
     model.generation_config.do_sample = False
     model.generation_config.temperature = None

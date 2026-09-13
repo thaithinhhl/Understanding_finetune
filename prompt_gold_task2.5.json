@@ -1,0 +1,3 @@
+{
+  "prompt": "System: Câu hỏi có thể có MỘT HOẶC NHIỀU đáp án đúng. Hãy chọn TẤT CẢ đáp án phù hợp, chỉ trả lời các chữ cái phân cách bằng dấu phẩy (ví dụ: A,C), không giải thích.\n\nUser: {instruction}\n\n{question}\n\n{answers}"
+}

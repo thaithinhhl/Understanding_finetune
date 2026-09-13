@@ -1,0 +1,3 @@
+{
+  "prompt": "System: Bạn phân loại lĩnh vực pháp luật của câu hỏi tiếng Việt.\n\nUser: {question}\n\nCâu hỏi này chỉ thuộc một trong các lĩnh vực sau (giữ nguyên cách viết):\n{choice_list}\n\nBẮT BUỘC: chỉ được chọn NGUYÊN VĂN một lĩnh vực trong danh sách trên, TUYỆT ĐỐI KHÔNG chọn hoặc bịa lĩnh vực nào khác ngoài danh sách. Chỉ trả về đúng định dạng JSON, không giải thích gì thêm:\n{\"topic\": string}"
+}

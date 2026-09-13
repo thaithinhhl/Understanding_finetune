@@ -1,0 +1,50 @@
+  ... 49/1280 mau  (50/1728 luot goi)
+  ... 97/1280 mau  (100/1728 luot goi)
+  ... 142/1280 mau  (150/1728 luot goi)
+  ... 192/1280 mau  (200/1728 luot goi)
+  ... 239/1280 mau  (250/1728 luot goi)
+  ... 286/1280 mau  (300/1728 luot goi)
+  ... 333/1280 mau  (350/1728 luot goi)
+  ... 382/1280 mau  (400/1728 luot goi)
+  ... 432/1280 mau  (450/1728 luot goi)
+  ... 482/1280 mau  (500/1728 luot goi)
+  ... 531/1280 mau  (550/1728 luot goi)
+  ... 578/1280 mau  (600/1728 luot goi)
+  ... 625/1280 mau  (650/1728 luot goi)
+  ... 675/1280 mau  (700/1728 luot goi)
+  ... 722/1280 mau  (750/1728 luot goi)
+  ... 771/1280 mau  (800/1728 luot goi)
+  ... 820/1280 mau  (850/1728 luot goi)
+  ... 870/1280 mau  (900/1728 luot goi)
+  ... 919/1280 mau  (950/1728 luot goi)
+  ... 968/1280 mau  (1000/1728 luot goi)
+  ... 1017/1280 mau  (1050/1728 luot goi)
+  ... 1066/1280 mau  (1100/1728 luot goi)
+  ... 1113/1280 mau  (1150/1728 luot goi)
+  ... 1162/1280 mau  (1200/1728 luot goi)
+  ... 1211/1280 mau  (1250/1728 luot goi)
+  ... 1258/1280 mau  (1300/1728 luot goi)
+  ... 1280/1280 mau  (1350/1728 luot goi)
+  ... 1280/1280 mau  (1400/1728 luot goi)
+  ... 1280/1280 mau  (1450/1728 luot goi)
+  ... 1280/1280 mau  (1500/1728 luot goi)
+  ... 1280/1280 mau  (1550/1728 luot goi)
+  ... 1280/1280 mau  (1600/1728 luot goi)
+  ... 1280/1280 mau  (1650/1728 luot goi)
+  ... 1280/1280 mau  (1700/1728 luot goi)
+train: 1000 mau -> data-finetune-v3-task1.1/task_1_1_v3_train.jsonl
+dev: 100 mau -> data-finetune-v3-task1.1/task_1_1_v3_dev.jsonl
+test: 180 mau -> data-finetune-v3-task1.1/task_1_1_v3_test.jsonl
+
+Phan bo gia tri (rui ro cao) sau khi sinh:
+  STATE_BODY: 535 gia tri khac nhau da dung, top3 = [('Bộ Xây dựng', 4, '0.2%'), ('Bộ Kế hoạch và Đầu tư', 4, '0.2%'), ('Bộ Lao động - Thương binh và Xã hội', 4, '0.2%')]
+  COURT: 184 gia tri khac nhau da dung, top3 = [('Tòa án nhân dân tỉnh Nghệ An', 10, '0.6%'), ('Tòa án nhân dân tỉnh Đà Nẵng', 10, '0.6%'), ('Tòa án nhân dân tỉnh Cần Thơ', 10, '0.6%')]
+  ORGANIZATION: 127 gia tri khac nhau da dung, top3 = [('Mặt trận Tổ quốc Việt Nam', 5, '0.8%'), ('Hội Nông dân Việt Nam', 5, '0.8%'), ('Hội Liên hiệp Phụ nữ Việt Nam', 5, '0.8%')]
+  LAW: 30 gia tri khac nhau da dung, top3 = [('Luật Cạnh tranh', 66, '3.8%'), ('Luật Quản lý thuế', 65, '3.8%'), ('Luật Doanh nghiệp', 61, '3.5%')]
+  LOCATION: 45 gia tri khac nhau da dung, top3 = [('tỉnh Cà Mau', 49, '2.8%'), ('TP Cần Thơ', 47, '2.7%'), ('tỉnh Lạng Sơn', 46, '2.7%')]
+  LEGAL_ROLE: 20 gia tri khac nhau da dung, top3 = [('thẩm phán chủ tọa', 96, '5.6%'), ('Giám đốc', 93, '5.4%'), ('Giám đốc Sở', 92, '5.3%')]
+
+Da sinh 1280 mau hop le.
+Luot goi API: 1329 (loi API 0, loi parse 18)
+Loai bo: 23 khong grounding, 0 qua it entity hop le, 1 trung lap
+Token: 1,870,436 in / 960,817 out  (~$20.02 voi claude-sonnet-4-6)

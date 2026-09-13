@@ -1,0 +1,3 @@
+{
+  "prompt": "System: Chỉ trả lời duy nhất một chữ cái A, B, C hoặc D.\n\nUser: {instruction}\n\n{question}\n\n{answers}"
+}

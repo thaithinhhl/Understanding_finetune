@@ -1,0 +1,22 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:11,  3.84s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:08<00:08,  4.34s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:12<00:04,  4.40s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:16<00:00,  3.86s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:16<00:00,  4.01s/it]
+Traceback (most recent call last):
+  File "/root/VIET_LEGAL_TEAM/scripts/eval_tasks_2_4_2_5.py", line 195, in <module>
+    main()
+  File "/root/VIET_LEGAL_TEAM/scripts/eval_tasks_2_4_2_5.py", line 117, in main
+    model = PeftModel.from_pretrained(model, str(args.adapter))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/peft/peft_model.py", line 619, in from_pretrained
+    load_result = model.load_adapter(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/peft/peft_model.py", line 1484, in load_adapter
+    adapters_weights = load_peft_weights(
+                       ^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/peft/utils/save_and_load.py", line 1043, in load_peft_weights
+    has_remote_safetensors_file = file_exists(
+                                  ^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'adapters/7b/qwen2.5-7b-task2.5-v4'. Use `repo_type` argument if needed.
