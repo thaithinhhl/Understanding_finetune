@@ -1,0 +1,35 @@
+INFO 09-13 17:31:38 [__init__.py:239] Automatically detected platform cuda.
+INFO 09-13 17:31:46 [config.py:717] This model supports multiple tasks: {'score', 'reward', 'embed', 'classify', 'generate'}. Defaulting to 'generate'.
+INFO 09-13 17:31:46 [config.py:2003] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 09-13 17:31:48 [core.py:58] Initializing a V1 LLM engine (v0.8.5) with config: model='models/7b/Qwen2.5-7B-Instruct', speculative_config=None, tokenizer='models/7b/Qwen2.5-7B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=12288, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='auto', reasoning_backend=None), observability_config=ObservabilityConfig(show_hidden_metrics=False, otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=None, served_model_name=models/7b/Qwen2.5-7B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"level":3,"custom_ops":["none"],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"use_inductor":true,"compile_sizes":[],"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":512}
+WARNING 09-13 17:31:48 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f3ac62f12d0>
+INFO 09-13 17:31:48 [parallel_state.py:1004] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0
+INFO 09-13 17:31:48 [cuda.py:221] Using Flash Attention backend on V1 engine.
+WARNING 09-13 17:31:48 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 09-13 17:31:48 [gpu_model_runner.py:1329] Starting to load model models/7b/Qwen2.5-7B-Instruct...
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:01,  1.69it/s]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.45it/s]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.59it/s]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.63it/s]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.60it/s]
+
+INFO 09-13 17:31:51 [loader.py:458] Loading weights took 2.56 seconds
+INFO 09-13 17:31:51 [punica_selector.py:18] Using PunicaWrapperGPU.
+INFO 09-13 17:31:51 [gpu_model_runner.py:1347] Model loading took 14.3248 GiB and 2.741888 seconds
+INFO 09-13 17:32:01 [backends.py:420] Using cache directory: /home/ubuntu/.cache/vllm/torch_compile_cache/08a02854ea/rank_0_0 for vLLM's torch.compile
+INFO 09-13 17:32:01 [backends.py:430] Dynamo bytecode transform time: 9.56 s
+INFO 09-13 17:32:07 [backends.py:118] Directly load the compiled graph(s) for shape None from the cache, took 5.273 s
+INFO 09-13 17:32:09 [monitor.py:33] torch.compile takes 9.56 s in total
+INFO 09-13 17:32:09 [kv_cache_utils.py:634] GPU KV cache size: 1,968,656 tokens
+INFO 09-13 17:32:09 [kv_cache_utils.py:637] Maximum concurrency for 12,288 tokens per request: 160.21x
+INFO 09-13 17:32:36 [gpu_model_runner.py:1686] Graph capturing finished in 27 secs, took 0.83 GiB
+INFO 09-13 17:32:36 [core.py:159] init engine (profile, create kv cache, warmup model) took 44.70 seconds
+INFO 09-13 17:32:36 [core_client.py:439] Core engine process 0 ready.
+Processed prompts:   0%|          | 0/1359 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   0%|          | 1/1359 [00:02<1:03:57,  2.83s/it, est. speed input: 99.44 toks/s, output: 2.48 toks/s]Processed prompts:  13%|█▎        | 180/1359 [00:03<00:16, 70.65it/s, est. speed input: 16862.20 toks/s, output: 423.12 toks/s]Processed prompts:  25%|██▌       | 344/1359 [00:03<00:07, 133.46it/s, est. speed input: 28941.03 toks/s, output: 728.41 toks/s]Processed prompts:  61%|██████    | 832/1359 [00:03<00:01, 425.59it/s, est. speed input: 65960.40 toks/s, output: 1786.87 toks/s]Processed prompts:  76%|███████▋  | 1037/1359 [00:03<00:00, 552.16it/s, est. speed input: 84206.15 toks/s, output: 2288.58 toks/s]Processed prompts: 100%|█████████▉| 1357/1359 [00:04<00:00, 820.87it/s, est. speed input: 108584.74 toks/s, output: 2968.71 toks/s]Processed prompts: 100%|██████████| 1359/1359 [00:04<00:00, 331.41it/s, est. speed input: 108853.11 toks/s, output: 2976.40 toks/s]
+
+=== Qwen2.5-7B legal-v2-h200 (LoRA bf16, train prompt full-8, vLLM) ===
+Exact Match : 288/1359 = 21.19%
+Micro-F1    : 51.72% (P=87.72%, R=36.67%)
+avg pred/gold per example: 0.92 / 2.19
+Results: predict/task-2.5-trainprompt-full8-vllm-7b-finetune-h200.json

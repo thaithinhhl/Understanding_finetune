@@ -102,13 +102,18 @@ def main() -> None:
 
     dtype_name = model_cfg.get("bnb_4bit_compute_dtype", "bfloat16")
     compute_dtype = getattr(torch, dtype_name)
-    quantization = BitsAndBytesConfig(
-        load_in_4bit=bool(model_cfg.get("use_4bit", True)),
-        bnb_4bit_quant_type=model_cfg.get("bnb_4bit_quant_type", "nf4"),
-        bnb_4bit_use_double_quant=bool(
-            model_cfg.get("bnb_4bit_use_double_quant", True)
-        ),
-        bnb_4bit_compute_dtype=compute_dtype,
+    use_4bit = bool(model_cfg.get("use_4bit", True))
+    quantization = (
+        BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_quant_type=model_cfg.get("bnb_4bit_quant_type", "nf4"),
+            bnb_4bit_use_double_quant=bool(
+                model_cfg.get("bnb_4bit_use_double_quant", True)
+            ),
+            bnb_4bit_compute_dtype=compute_dtype,
+        )
+        if use_4bit
+        else None
     )
     local_rank = int(os.environ.get("LOCAL_RANK", "0"))
     model = AutoModelForCausalLM.from_pretrained(
@@ -120,10 +125,13 @@ def main() -> None:
         attn_implementation=model_cfg.get("attn_implementation", "sdpa"),
     )
     model.config.use_cache = False
-    model = prepare_model_for_kbit_training(
-        model,
-        use_gradient_checkpointing=bool(train_cfg.get("gradient_checkpointing", True)),
-    )
+    if use_4bit:
+        model = prepare_model_for_kbit_training(
+            model,
+            use_gradient_checkpointing=bool(train_cfg.get("gradient_checkpointing", True)),
+        )
+    else:
+        model.enable_input_require_grads()
     peft_config = LoraConfig(
         task_type="CAUSAL_LM",
         r=int(lora_cfg["r"]),

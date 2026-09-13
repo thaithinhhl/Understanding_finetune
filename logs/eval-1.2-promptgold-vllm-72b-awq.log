@@ -1,0 +1,41 @@
+INFO 09-13 16:56:32 [__init__.py:239] Automatically detected platform cuda.
+INFO 09-13 16:56:40 [config.py:717] This model supports multiple tasks: {'embed', 'score', 'generate', 'classify', 'reward'}. Defaulting to 'generate'.
+INFO 09-13 16:56:41 [awq_marlin.py:113] The model is convertible to awq_marlin during runtime. Using awq_marlin kernel.
+INFO 09-13 16:56:41 [config.py:2003] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 09-13 16:56:41 [core.py:58] Initializing a V1 LLM engine (v0.8.5) with config: model='models/72b/Qwen2.5-72B-Instruct-AWQ', speculative_config=None, tokenizer='models/72b/Qwen2.5-72B-Instruct-AWQ', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=awq_marlin, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='auto', reasoning_backend=None), observability_config=ObservabilityConfig(show_hidden_metrics=False, otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=None, served_model_name=models/72b/Qwen2.5-72B-Instruct-AWQ, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"level":3,"custom_ops":["none"],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"use_inductor":true,"compile_sizes":[],"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":512}
+WARNING 09-13 16:56:42 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f8df7390850>
+INFO 09-13 16:56:42 [parallel_state.py:1004] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0
+INFO 09-13 16:56:42 [cuda.py:221] Using Flash Attention backend on V1 engine.
+WARNING 09-13 16:56:42 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 09-13 16:56:42 [gpu_model_runner.py:1329] Starting to load model models/72b/Qwen2.5-72B-Instruct-AWQ...
+Loading safetensors checkpoint shards:   0% Completed | 0/11 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:   9% Completed | 1/11 [00:00<00:04,  2.04it/s]
+Loading safetensors checkpoint shards:  18% Completed | 2/11 [00:01<00:05,  1.54it/s]
+Loading safetensors checkpoint shards:  27% Completed | 3/11 [00:02<00:05,  1.42it/s]
+Loading safetensors checkpoint shards:  36% Completed | 4/11 [00:02<00:05,  1.36it/s]
+Loading safetensors checkpoint shards:  45% Completed | 5/11 [00:03<00:04,  1.33it/s]
+Loading safetensors checkpoint shards:  55% Completed | 6/11 [00:04<00:03,  1.32it/s]
+Loading safetensors checkpoint shards:  64% Completed | 7/11 [00:04<00:02,  1.39it/s]
+Loading safetensors checkpoint shards:  73% Completed | 8/11 [00:05<00:02,  1.37it/s]
+Loading safetensors checkpoint shards:  82% Completed | 9/11 [00:06<00:01,  1.59it/s]
+Loading safetensors checkpoint shards:  91% Completed | 10/11 [00:06<00:00,  1.62it/s]
+Loading safetensors checkpoint shards: 100% Completed | 11/11 [00:07<00:00,  1.62it/s]
+Loading safetensors checkpoint shards: 100% Completed | 11/11 [00:07<00:00,  1.50it/s]
+
+INFO 09-13 16:56:50 [loader.py:458] Loading weights took 7.43 seconds
+INFO 09-13 16:56:54 [gpu_model_runner.py:1347] Model loading took 38.7699 GiB and 11.168376 seconds
+INFO 09-13 16:57:13 [backends.py:420] Using cache directory: /home/ubuntu/.cache/vllm/torch_compile_cache/b26af7eb0d/rank_0_0 for vLLM's torch.compile
+INFO 09-13 16:57:13 [backends.py:430] Dynamo bytecode transform time: 19.16 s
+INFO 09-13 16:57:26 [backends.py:118] Directly load the compiled graph(s) for shape None from the cache, took 11.989 s
+INFO 09-13 16:57:35 [monitor.py:33] torch.compile takes 19.16 s in total
+INFO 09-13 16:57:38 [kv_cache_utils.py:634] GPU KV cache size: 263,616 tokens
+INFO 09-13 16:57:38 [kv_cache_utils.py:637] Maximum concurrency for 4,096 tokens per request: 64.36x
+INFO 09-13 16:58:10 [gpu_model_runner.py:1686] Graph capturing finished in 32 secs, took 1.57 GiB
+INFO 09-13 16:58:10 [core.py:159] init engine (profile, create kv cache, warmup model) took 76.47 seconds
+INFO 09-13 16:58:10 [core_client.py:439] Core engine process 0 ready.
+Processed prompts:   0%|          | 0/683 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:   0%|          | 1/683 [01:06<12:33:24, 66.28s/it, est. speed input: 3.88 toks/s, output: 0.15 toks/s]Processed prompts:   2%|▏         | 13/683 [01:13<47:19,  4.24s/it, est. speed input: 47.03 toks/s, output: 1.61 toks/s] Processed prompts:   4%|▍         | 26/683 [01:17<20:57,  1.91s/it, est. speed input: 88.58 toks/s, output: 3.09 toks/s]Processed prompts:  11%|█         | 74/683 [01:18<04:45,  2.14it/s, est. speed input: 249.33 toks/s, output: 9.41 toks/s]Processed prompts:  20%|█▉        | 134/683 [01:18<01:50,  4.96it/s, est. speed input: 450.38 toks/s, output: 17.69 toks/s]Processed prompts:  30%|███       | 205/683 [01:18<00:49,  9.62it/s, est. speed input: 685.72 toks/s, output: 27.44 toks/s]Processed prompts:  38%|███▊      | 258/683 [01:18<00:29, 14.37it/s, est. speed input: 863.63 toks/s, output: 34.80 toks/s]Processed prompts:  48%|████▊     | 326/683 [01:19<00:15, 22.86it/s, est. speed input: 1088.87 toks/s, output: 44.20 toks/s]Processed prompts:  58%|█████▊    | 394/683 [01:19<00:08, 34.50it/s, est. speed input: 1314.42 toks/s, output: 53.55 toks/s]Processed prompts:  68%|██████▊   | 463/683 [01:19<00:04, 50.70it/s, est. speed input: 1541.44 toks/s, output: 62.82 toks/s]Processed prompts:  86%|████████▋ | 590/683 [01:19<00:01, 91.11it/s, est. speed input: 1963.06 toks/s, output: 80.22 toks/s]Processed prompts: 100%|██████████| 683/683 [01:19<00:00,  8.57it/s, est. speed input: 2271.52 toks/s, output: 93.80 toks/s]
+
+=== Qwen2.5-72B-Instruct-AWQ (vLLM) ===
+Accuracy: 605/683 = 88.58%
+Unmapped: 0/683
+Results: predict/task-1.2-promptgold-vllm-72b-awq.json
