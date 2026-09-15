@@ -247,6 +247,30 @@ def random_legal_document(rng: random.Random) -> str:
     return f"{kind} {rng.randint(1, 220)}/{rng.randint(2019, 2026)}/{rng.choice(LEGAL_DOC_AGENCIES)}"
 
 
+def random_date_pair(rng: random.Random) -> tuple[str, str]:
+    """2 giá trị DATE khác nhau, dùng cho seed liệt kê cùng loại (khắc phục lỗi
+    'gộp cụm' 2026-09-15: model gộp '2h, 4h đến trên 6h' thành 1 entity vì DATE
+    chỉ có 6/1000 ví dụ liệt kê liền nhau trong data V2 cũ, chủ yếu mượn khuôn
+    LOCATION)."""
+    kind = rng.choice(["hour", "year", "day"])
+    if kind == "hour":
+        h1, h2 = sorted(rng.sample(range(0, 24), 2))
+        return f"{h1}h", f"{h2}h"
+    if kind == "year":
+        y1, y2 = sorted(rng.sample(range(2019, 2027), 2))
+        return f"năm {y1}", f"năm {y2}"
+    d1, d2 = sorted(rng.sample(range(1, 28), 2))
+    m = rng.randint(1, 12)
+    return f"ngày {d1} tháng {m}", f"ngày {d2} tháng {m}"
+
+
+# Loại thực thể đủ pool/cơ chế để ép sinh 1 câu LIỆT KÊ LIỀN NHAU 2 giá trị cùng
+# loại (phải tách thành 2 entity riêng, không gộp) — khắc phục đúng lỗ hổng đã
+# đo được 2026-09-15: 87/112 case liệt-kê-cùng-loại trong V2 cũ chỉ là LOCATION
+# (địa chỉ hành chính, mẫu câu công thức), còn STATE_BODY/DATE/ORGANIZATION/LAW
+# gần như không có ví dụ nào -> model không tổng quát hoá được quy tắc tách.
+ENUM_ELIGIBLE_TYPES = ["STATE_BODY", "COURT", "ORGANIZATION", "LAW", "LOCATION", "LEGAL_ROLE", "DATE"]
+
 SYSTEM_EXTRA = """Bạn là chuyên gia xây dựng dữ liệu huấn luyện cho hệ thống trích xuất \
 thực thể pháp lý tiếng Việt. Bạn viết ĐOẠN VĂN thực tế (không phải danh sách), tự nhiên \
 như văn bản pháp lý/tin tức/báo cáo thật, rồi gán nhãn CHÍNH XÁC các thực thể xuất hiện.
@@ -263,12 +287,21 @@ trong đoạn văn, kể cả các thực thể gợi ý.
 Chỉ trả về JSON: {"paragraph": "...", "entities": [{"text": "...", "type": "..."}]}"""
 
 
-def build_user_prompt(genre_desc: str, seeds: dict[str, str]) -> str:
+def build_user_prompt(genre_desc: str, seeds: dict[str, str], enum_seed: tuple[str, str, str] | None = None) -> str:
     seed_lines = "\n".join(f"- {t}: {v}" for t, v in seeds.items())
+    enum_block = ""
+    if enum_seed is not None:
+        etype, val_a, val_b = enum_seed
+        enum_block = f"""
+
+YÊU CẦU THÊM (bắt buộc): trong đoạn văn phải có 1 câu LIỆT KÊ LIỀN NHAU (nối bằng \
+dấu phẩy hoặc "và") CẢ HAI giá trị sau, đều thuộc loại {etype}: "{val_a}" và "{val_b}". \
+Khi gán nhãn, đây PHẢI là 2 entity {etype} TÁCH RIÊNG (mỗi entity chỉ chứa đúng 1 \
+trong 2 chuỗi trên) — KHÔNG được gộp cả hai (kèm từ nối ở giữa) thành một entity duy nhất."""
     return f"""Viết MỘT đoạn văn tiếng Việt (100-220 từ), thể loại: {genre_desc}
 
 Các thực thể GỢI Ý cần đưa vào đoạn văn (giữ nguyên văn cách viết):
-{seed_lines}
+{seed_lines}{enum_block}
 
 Trả về đúng JSON theo format đã nêu."""
 
@@ -345,18 +378,43 @@ def main() -> None:
             keys.append("ORGANIZATION")
             seeds["ORGANIZATION"] = org_pool.next()
         chosen = {k: seeds[k] for k in keys}
-        return {"genre_key": genre_key, "genre_desc": genre_desc, "seeds": chosen, "difficulty": rng.choice(DIFFICULTIES)}
+
+        # ~30% cac mau: ep 1 cau liet ke lien nhau 2 gia tri CUNG LOAI (khac phuc
+        # lo hong "gop cum" - xem ENUM_ELIGIBLE_TYPES o tren). Chia deu cac loai
+        # de STATE_BODY/DATE/COURT/... duoc luyen tap nhu LOCATION, khong lech.
+        enum_seed = None
+        if rng.random() < 0.30:
+            etype = rng.choice(ENUM_ELIGIBLE_TYPES)
+            pool_map = {
+                "STATE_BODY": state_body_pool, "COURT": court_pool, "ORGANIZATION": org_pool,
+                "LAW": law_pool, "LOCATION": location_pool, "LEGAL_ROLE": legal_role_pool,
+            }
+            if etype == "DATE":
+                val_a, val_b = random_date_pair(rng)
+            else:
+                val_a = pool_map[etype].next()
+                val_b = pool_map[etype].next()
+                if val_a == val_b:
+                    val_b = pool_map[etype].next()
+            if val_a != val_b:
+                enum_seed = (etype, val_a, val_b)
+
+        return {
+            "genre_key": genre_key, "genre_desc": genre_desc, "seeds": chosen,
+            "difficulty": rng.choice(DIFFICULTIES), "enum_seed": enum_seed,
+        }
 
     lock = threading.Lock()
     collected: list[dict] = []
     seen_paragraphs: set[str] = set()
     stats = {"calls": 0, "api_err": 0, "parse_err": 0, "rejected_ungrounded": 0,
-             "rejected_dup": 0, "rejected_badtype": 0, "in_tok": 0, "out_tok": 0}
+             "rejected_dup": 0, "rejected_badtype": 0, "rejected_enum_merged": 0,
+             "in_tok": 0, "out_tok": 0}
 
     def run_one(spec: dict) -> None:
         if len(collected) >= total_n:
             return
-        user = build_user_prompt(spec["genre_desc"], spec["seeds"])
+        user = build_user_prompt(spec["genre_desc"], spec["seeds"], spec.get("enum_seed"))
         try:
             resp = client.messages.create(
                 model=model, max_tokens=1500,
@@ -408,6 +466,17 @@ def main() -> None:
                 stats["rejected_badtype"] += 1
             return
 
+        enum_seed = spec.get("enum_seed")
+        if enum_seed is not None:
+            etype, val_a, val_b = enum_seed
+            keys_present = {k for k in seen_pairs if k[0] == etype}
+            if (etype, val_a.lower()) not in keys_present or (etype, val_b.lower()) not in keys_present:
+                # model gop chung hoac bo sot 1 trong 2 gia tri -> loai, khong dua
+                # vao data (tranh day nguoc lai dung loi da tim thay)
+                with lock:
+                    stats["rejected_enum_merged"] += 1
+                return
+
         dup_key = re.sub(r"\s+", " ", paragraph.lower())[:120]
         with lock:
             if dup_key in seen_paragraphs:
@@ -421,7 +490,7 @@ def main() -> None:
                 "genre": spec["genre_key"], "difficulty": spec["difficulty"],
             })
 
-    n_calls = int(total_n * 1.35)  # dư bù mẫu bị loại (ungrounded/dup/parse err)
+    n_calls = int(total_n * 1.6)  # dư bù mẫu bị loại (ungrounded/dup/parse err/enum bị gộp)
     specs = [make_spec() for _ in range(n_calls)]
 
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
@@ -486,7 +555,8 @@ def main() -> None:
     print(f"\nDa sinh {len(collected)} mau hop le.")
     print(f"Luot goi API: {stats['calls']} (loi API {stats['api_err']}, loi parse {stats['parse_err']})")
     print(f"Loai bo: {stats['rejected_ungrounded']} khong grounding, "
-          f"{stats['rejected_badtype']} qua it entity hop le, {stats['rejected_dup']} trung lap")
+          f"{stats['rejected_badtype']} qua it entity hop le, {stats['rejected_dup']} trung lap, "
+          f"{stats['rejected_enum_merged']} enum-seed bi gop cum")
     print(f"Token: {stats['in_tok']:,} in / {stats['out_tok']:,} out  (~${cost:.2f} voi {model})")
 
 

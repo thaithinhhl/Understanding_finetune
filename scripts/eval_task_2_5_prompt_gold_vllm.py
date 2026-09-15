@@ -41,6 +41,12 @@ MULTI_LABEL_HINT = (
     "đúng, không chỉ chọn một."
 )
 
+CHITCHAT_EXCLUSIVE_HINT = (
+    " Lưu ý: chitchat LOẠI TRỪ mọi intent khác — nếu câu hỏi có bất kỳ nội dung pháp lý nào "
+    "(dù nhỏ) thì KHÔNG được chọn chitchat; chỉ chọn chitchat khi đó là intent DUY NHẤT, "
+    "tuyệt đối không kết hợp chitchat với bất kỳ intent nào khác trong cùng một câu trả lời."
+)
+
 ALL_INTENTS = set(INTENT_DESCRIPTIONS)
 
 
@@ -74,6 +80,13 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Chỉ có tác dụng cùng --train-prompt: thêm 1 câu nhắc ngắn vào cuối system "
         "prompt rằng câu hỏi có thể phù hợp với nhiều intent cùng lúc, hãy chọn đầy đủ.",
+    )
+    p.add_argument(
+        "--chitchat-exclusive-hint",
+        action="store_true",
+        help="Chỉ có tác dụng cùng --train-prompt: thêm 1 câu nhắc ngắn vào cuối system "
+        "prompt rằng chitchat loại trừ mọi intent khác, không được chọn chung với intent "
+        "pháp lý nào — thử nghiệm sửa lỗi model hay trộn chitchat với intent khác.",
     )
     p.add_argument(
         "--score-intents",
@@ -176,6 +189,8 @@ def main() -> None:
             system_content = TRAIN_SYSTEM_TEMPLATE.format(intent_list=intent_list)
             if args.multi_label_hint:
                 system_content += MULTI_LABEL_HINT
+            if args.chitchat_exclusive_hint:
+                system_content += CHITCHAT_EXCLUSIVE_HINT
             user_content = f"Earlier turns:\n(none)\n\nCurrent turn:\n{row['question']}"
             messages = [
                 {"role": "system", "content": system_content},
@@ -283,6 +298,7 @@ def main() -> None:
             "train": (
                 ("train (intents narrowed to benchmark's 4 choices)" if args.narrow_intents else "train (full 8-intent list as in actual training)")
                 + (" + multi-label hint" if args.multi_label_hint else "")
+                + (" + chitchat-exclusive hint" if args.chitchat_exclusive_hint else "")
             ),
             "prompt_gold": str(args.prompt_file),
         }[mode],

@@ -1,0 +1,135 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:09,  3.33s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.86s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:11<00:03,  3.97s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:14<00:00,  3.53s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:14<00:00,  3.63s/it]
+trainable params: 40,370,176 || all params: 7,655,986,688 || trainable%: 0.5273
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 1000 examples [00:00, 76251.75 examples/s]
+Map (num_proc=4):   0%|          | 0/1000 [00:00<?, ? examples/s]Map (num_proc=4):  18%|█▊        | 176/1000 [00:00<00:03, 228.10 examples/s]Map (num_proc=4):  39%|███▉      | 393/1000 [00:00<00:01, 496.14 examples/s]Map (num_proc=4):  71%|███████   | 709/1000 [00:01<00:00, 833.73 examples/s]Map (num_proc=4):  95%|█████████▍| 947/1000 [00:01<00:00, 1078.95 examples/s]Map (num_proc=4): 100%|██████████| 1000/1000 [00:01<00:00, 764.24 examples/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 100 examples [00:00, 18926.51 examples/s]
+Map (num_proc=4):   0%|          | 0/100 [00:00<?, ? examples/s]Map (num_proc=4):  25%|██▌       | 25/100 [00:00<00:02, 34.95 examples/s]Map (num_proc=4):  50%|█████     | 50/100 [00:00<00:00, 64.60 examples/s]Map (num_proc=4):  75%|███████▌  | 75/100 [00:00<00:00, 93.19 examples/s]Map (num_proc=4): 100%|██████████| 100/100 [00:01<00:00, 120.16 examples/s]Map (num_proc=4): 100%|██████████| 100/100 [00:01<00:00, 83.72 examples/s] 
+Converting train dataset to ChatML (num_proc=4):   0%|          | 0/1000 [00:00<?, ? examples/s]Converting train dataset to ChatML (num_proc=4): 100%|██████████| 1000/1000 [00:00<00:00, 6594.40 examples/s]
+Adding EOS to train dataset (num_proc=4):   0%|          | 0/1000 [00:00<?, ? examples/s]Adding EOS to train dataset (num_proc=4): 100%|██████████| 1000/1000 [00:00<00:00, 5951.39 examples/s]
+Tokenizing train dataset (num_proc=4):   0%|          | 0/1000 [00:00<?, ? examples/s]Tokenizing train dataset (num_proc=4):   4%|▎         | 36/1000 [00:00<00:22, 42.44 examples/s]Tokenizing train dataset (num_proc=4):  14%|█▎        | 137/1000 [00:00<00:05, 169.75 examples/s]Tokenizing train dataset (num_proc=4):  33%|███▎      | 334/1000 [00:01<00:01, 458.27 examples/s]Tokenizing train dataset (num_proc=4):  58%|█████▊    | 581/1000 [00:01<00:00, 819.56 examples/s]Tokenizing train dataset (num_proc=4):  84%|████████▎ | 835/1000 [00:01<00:00, 1115.91 examples/s]Tokenizing train dataset (num_proc=4): 100%|██████████| 1000/1000 [00:01<00:00, 624.09 examples/s]
+Truncating train dataset (num_proc=4):   0%|          | 0/1000 [00:00<?, ? examples/s]Truncating train dataset (num_proc=4): 100%|██████████| 1000/1000 [00:00<00:00, 6469.04 examples/s]
+Converting eval dataset to ChatML (num_proc=4):   0%|          | 0/100 [00:00<?, ? examples/s]Converting eval dataset to ChatML (num_proc=4): 100%|██████████| 100/100 [00:00<00:00, 592.40 examples/s]
+Adding EOS to eval dataset (num_proc=4):   0%|          | 0/100 [00:00<?, ? examples/s]Adding EOS to eval dataset (num_proc=4): 100%|██████████| 100/100 [00:00<00:00, 669.07 examples/s]
+Tokenizing eval dataset (num_proc=4):   0%|          | 0/100 [00:00<?, ? examples/s]Tokenizing eval dataset (num_proc=4):  25%|██▌       | 25/100 [00:00<00:02, 29.23 examples/s]Tokenizing eval dataset (num_proc=4):  75%|███████▌  | 75/100 [00:01<00:00, 78.76 examples/s]Tokenizing eval dataset (num_proc=4): 100%|██████████| 100/100 [00:01<00:00, 98.85 examples/s]Tokenizing eval dataset (num_proc=4): 100%|██████████| 100/100 [00:01<00:00, 75.45 examples/s]
+Truncating eval dataset (num_proc=4):   0%|          | 0/100 [00:00<?, ? examples/s]Truncating eval dataset (num_proc=4): 100%|██████████| 100/100 [00:00<00:00, 652.27 examples/s]
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+  0%|          | 0/186 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/root/VIET_LEGAL_TEAM/scripts/train_qlora.py", line 215, in <module>
+    main()
+  File "/root/VIET_LEGAL_TEAM/scripts/train_qlora.py", line 204, in main
+    result = trainer.train(resume_from_checkpoint=args.resume)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/trl/trainer/sft_trainer.py", line 733, in training_step
+    return super().training_step(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/transformers/trainer.py", line 3736, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/trl/trainer/sft_trainer.py", line 687, in compute_loss
+    (loss, outputs) = super().compute_loss(
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/transformers/trainer.py", line 3801, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/accelerate/utils/operations.py", line 814, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/accelerate/utils/operations.py", line 802, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/peft/peft_model.py", line 2101, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/peft/tuners/tuners_utils.py", line 333, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 823, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 549, in forward
+    layer_outputs = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 278, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 59, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                                                ^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/peft/tuners/lora/bnb.py", line 527, in forward
+    result = self.base_layer(x, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/bitsandbytes/nn/modules.py", line 484, in forward
+    return bnb.matmul_4bit(x, self.weight.t(), bias=bias, quant_state=self.weight.quant_state).to(inp_dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/bitsandbytes/autograd/_functions.py", line 533, in matmul_4bit
+    return MatMul4Bit.apply(A, B, out, bias, quant_state)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/VIET_LEGAL_TEAM/legal/lib/python3.12/site-packages/bitsandbytes/autograd/_functions.py", line 462, in forward
+    output = torch.nn.functional.linear(A, F.dequantize_4bit(B, quant_state).to(A.dtype).t(), bias)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 260.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 47.69 MiB is free. Including non-PyTorch memory, this process has 23.46 GiB memory in use. Of the allocated memory 22.66 GiB is allocated by PyTorch, and 353.76 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+  0%|          | 0/186 [00:00<?, ?it/s]

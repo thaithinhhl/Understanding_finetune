@@ -41,6 +41,11 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--adapter", type=Path, default=None)
     p.add_argument("--data", type=Path, required=True)
     p.add_argument("--prompt-source", type=Path, default=Path("data-finetune-v2/data_finetune_v2_train.jsonl"))
+    p.add_argument(
+        "--prompt-gold-file", type=Path, default=None,
+        help="Đọc system prompt từ file dạng {'prompt': 'System: ...\\n\\nUser: {paragraph}'} "
+        "(vd prompt_gold_task1.1.json) thay vì --prompt-source.",
+    )
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--limit", type=int, default=None)
     p.add_argument("--max-new-tokens", type=int, default=512)
@@ -73,6 +78,13 @@ def load_v2_system_prompt(path: Path, split_hint: bool = False) -> str:
                 prompt = row["messages"][0]["content"]
                 return prompt + SPLIT_HINT if split_hint else prompt
     raise SystemExit("Không tìm thấy mẫu V2 nào trong file prompt-source.")
+
+
+def load_prompt_gold_system_prompt(path: Path) -> str:
+    full_prompt = json.loads(path.read_text(encoding="utf-8"))["prompt"]
+    _, rest = full_prompt.split("System:", 1)
+    system_part, _user_part = rest.split("User:", 1)
+    return system_part.strip()
 
 
 def norm(text: str) -> str:
@@ -149,7 +161,12 @@ def f1(pred: set, gold: set) -> float:
 def main() -> None:
     args = parse_args()
 
-    system_prompt = load_v2_system_prompt(args.prompt_source, split_hint=args.split_hint)
+    if args.prompt_gold_file:
+        system_prompt = load_prompt_gold_system_prompt(args.prompt_gold_file)
+        if args.split_hint:
+            system_prompt += SPLIT_HINT
+    else:
+        system_prompt = load_v2_system_prompt(args.prompt_source, split_hint=args.split_hint)
     rows = [json.loads(l) for l in args.data.open(encoding="utf-8") if l.strip()]
     if args.limit:
         rows = rows[: args.limit]

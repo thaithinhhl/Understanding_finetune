@@ -7,14 +7,12 @@ model:
   bnb_4bit_compute_dtype: bfloat16
 
 data:
-  train_file: data-finetune-v2/data_2_5_v4_train.jsonl
-  validation_file: data-finetune-v2/data_2_5_v4_dev.jsonl
+  train_file: data-finetune-v3-task1.1/task_1_1_v3_train.jsonl
   max_seq_length: 2048
   num_proc: 4
   packing: false
   default_system_prompt: >-
-    Bạn là trợ lý pháp lý Việt Nam. Trả lời chính xác, nêu rõ căn cứ khi có đủ
-    thông tin và không tự tạo điều luật hoặc văn bản pháp luật.
+    Bạn trích xuất thực thể pháp lý tiếng Việt từ một đoạn văn.
 
 lora:
   r: 16
@@ -23,8 +21,8 @@ lora:
   target_modules: all-linear
 
 training:
-  output_dir: checkpoints/7b/task2.5-v4
-  final_adapter_dir: adapters/7b/qwen2.5-7b-task2.5-v4
+  output_dir: checkpoints/7b/task1.1-v3-1026
+  final_adapter_dir: adapters/7b/qwen2.5-7b-task1.1-v3-1026
   num_train_epochs: 3
   learning_rate: 0.0002
   per_device_train_batch_size: 2
@@ -37,7 +35,6 @@ training:
   weight_decay: 0.0
   max_grad_norm: 0.3
   logging_steps: 10
-  eval_steps: 50
   save_steps: 50
   save_total_limit: 2
   seed: 42
