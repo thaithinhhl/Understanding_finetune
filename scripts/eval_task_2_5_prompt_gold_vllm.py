@@ -75,6 +75,12 @@ def parse_args() -> argparse.Namespace:
         help="Chỉ có tác dụng cùng --train-prompt: thêm 1 câu nhắc ngắn vào cuối system "
         "prompt rằng câu hỏi có thể phù hợp với nhiều intent cùng lúc, hãy chọn đầy đủ.",
     )
+    p.add_argument(
+        "--score-intents",
+        action="store_true",
+        help="Với --train-prompt, đổi ground-truth A-D sang tên intent và chấm trực tiếp "
+        "trong không gian 8 intent. Intent dự đoán ngoài 4 lựa chọn vẫn là false positive.",
+    )
     p.add_argument("--data", type=Path, required=True)
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--limit", type=int, default=None)
@@ -131,6 +137,8 @@ def main() -> None:
     args = parse_args()
     if args.raw_prompt and args.train_prompt:
         raise SystemExit("Chỉ được chọn một trong --raw-prompt hoặc --train-prompt.")
+    if args.score_intents and not args.train_prompt:
+        raise SystemExit("--score-intents chỉ dùng cùng --train-prompt.")
     mode = "raw" if args.raw_prompt else ("train" if args.train_prompt else "prompt_gold")
 
     system_prompt = None
@@ -224,11 +232,19 @@ def main() -> None:
             # đã liệt kê ở system prompt), nhưng chỉ intent nào trùng với 1 trong 4 lựa
             # chọn của câu hỏi mới map được sang chữ cái để chấm điểm.
             predicted_intents = extract_intents(raw_output, ALL_INTENTS)
-            prediction = {intent_to_letter[i] for i in predicted_intents if i in intent_to_letter}
+            if args.score_intents:
+                prediction = predicted_intents
+            else:
+                prediction = {intent_to_letter[i] for i in predicted_intents if i in intent_to_letter}
         else:
             valid_letters = set(re.findall(r"\b([A-D])\.\s", row["answers"]))
             prediction = extract_answers(raw_output, valid_letters)
-        gold = {str(letter).strip().upper() for letter in row["ground_truth"]}
+        gold_letters = {str(letter).strip().upper() for letter in row["ground_truth"]}
+        gold = (
+            {letter_to_intent[letter] for letter in gold_letters if letter in letter_to_intent}
+            if mode == "train" and args.score_intents
+            else gold_letters
+        )
 
         is_exact = prediction == gold
         exact_matches += int(is_exact)
@@ -261,6 +277,7 @@ def main() -> None:
         "precision_mode": "awq" if is_prequantized else "bf16",
         "backend": "vllm",
         "prompt_mode": mode,
+        "score_space": "intents" if args.score_intents else "letters",
         "prompt_file": {
             "raw": "raw (instruction+question+answers, no system prompt)",
             "train": (

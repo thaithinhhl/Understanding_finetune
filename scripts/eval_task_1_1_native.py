@@ -46,15 +46,32 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--max-new-tokens", type=int, default=512)
     p.add_argument("--max-model-len", type=int, default=8192)
     p.add_argument("--gpu-memory-utilization", type=float, default=0.85)
+    p.add_argument(
+        "--split-hint",
+        action="store_true",
+        help="Thêm 1 câu nhắc ngắn vào cuối system prompt: nếu nhiều thực thể cùng loại "
+        "bị liệt kê liền nhau (cách nhau bởi dấu phẩy/chấm phẩy/và), phải tách thành các "
+        "entity riêng biệt, không gộp chung — thử nghiệm không cần train lại, xem prompt "
+        "có sửa được lỗi 'gộp cụm' hay không.",
+    )
     return p.parse_args()
 
 
-def load_v2_system_prompt(path: Path) -> str:
+SPLIT_HINT = (
+    "\n\nLưu ý quan trọng: nếu nhiều thực thể CÙNG LOẠI được liệt kê liền nhau trong "
+    "cùng một câu/mệnh đề (cách nhau bởi dấu phẩy, dấu chấm phẩy, hoặc từ \"và\"), hãy "
+    "tách MỖI thực thể thành một mục JSON riêng biệt — không gộp chung nhiều thực thể "
+    "vào một chuỗi text."
+)
+
+
+def load_v2_system_prompt(path: Path, split_hint: bool = False) -> str:
     with path.open(encoding="utf-8") as handle:
         for line in handle:
             row = json.loads(line)
             if row.get("group") == "V2":
-                return row["messages"][0]["content"]
+                prompt = row["messages"][0]["content"]
+                return prompt + SPLIT_HINT if split_hint else prompt
     raise SystemExit("Không tìm thấy mẫu V2 nào trong file prompt-source.")
 
 
@@ -132,7 +149,7 @@ def f1(pred: set, gold: set) -> float:
 def main() -> None:
     args = parse_args()
 
-    system_prompt = load_v2_system_prompt(args.prompt_source)
+    system_prompt = load_v2_system_prompt(args.prompt_source, split_hint=args.split_hint)
     rows = [json.loads(l) for l in args.data.open(encoding="utf-8") if l.strip()]
     if args.limit:
         rows = rows[: args.limit]
@@ -171,6 +188,7 @@ def main() -> None:
     total_generated = 0
     tier_count: dict[str, int] = {}
     results = []
+    tp = fp = fn = 0
 
     for row, out in zip(rows, outputs):
         raw = out.outputs[0].text.strip()
@@ -193,6 +211,14 @@ def main() -> None:
         is_correct = prediction == truth
         correct += int(is_correct)
 
+        # Micro-F1: so trực tiếp tập thực thể model sinh (đã lọc vào vùng tranh
+        # chấp) với tập thực thể của ĐÁP ÁN ĐÚNG — cho điểm từng phần thay vì
+        # chỉ đúng/sai theo chữ cái đã chọn.
+        gold_ents = options.get(truth, set())
+        tp += len(restricted & gold_ents)
+        fp += len(restricted - gold_ents)
+        fn += len(gold_ents - restricted)
+
         results.append({
             "question": row["question"][:200],
             "ground_truth": truth,
@@ -207,6 +233,12 @@ def main() -> None:
         })
 
     n = len(rows)
+    micro_precision = tp / (tp + fp) if (tp + fp) else 0.0
+    micro_recall = tp / (tp + fn) if (tp + fn) else 0.0
+    micro_f1 = (
+        2 * micro_precision * micro_recall / (micro_precision + micro_recall)
+        if (micro_precision + micro_recall) else 0.0
+    )
     summary = {
         "task": "1.1-native-prompt",
         "model": str(args.model),
@@ -217,6 +249,9 @@ def main() -> None:
         "num_examples": n,
         "correct": correct,
         "accuracy": correct / n,
+        "micro_precision": micro_precision,
+        "micro_recall": micro_recall,
+        "micro_f1": micro_f1,
         "invalid": invalid,
         "ties": ties,
         "avg_entities_generated": total_generated / n,
@@ -228,7 +263,8 @@ def main() -> None:
     args.output.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print("\n=== Task 1.1 — prompt native (JSON entities, như lúc train) ===")
-    print(f"Accuracy : {correct}/{n} = {correct/n:.2%}")
+    print(f"Micro-F1 : {micro_f1:.2%} (P={micro_precision:.2%}, R={micro_recall:.2%})")
+    print(f"Accuracy (chọn đúng chữ cái): {correct}/{n} = {correct/n:.2%}")
     print(f"Invalid (không parse được): {invalid}/{n}")
     print(f"Hoà điểm giữa các phương án (tie): {ties}/{n}")
     print(f"Trung bình số thực thể model sinh: {total_generated/n:.2f}")

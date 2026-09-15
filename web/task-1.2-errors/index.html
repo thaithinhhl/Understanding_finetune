@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Task 1.2 — Phân tích 275 case lỗi</title>
+  <style>
+    :root{--bg:#f6f7fb;--card:#fff;--ink:#18202b;--muted:#667085;--line:#e5e7eb;--red:#b42318;--redbg:#fef3f2;--blue:#175cd3;--bluebg:#eff8ff;--green:#067647}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+    header{background:#101828;color:#fff;padding:28px max(24px,calc((100% - 1200px)/2))} h1{font-size:26px;margin:0 0 6px} header p{margin:0;color:#cbd5e1}
+    main{max-width:1200px;margin:auto;padding:24px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+    .stat,.panel,.case{background:var(--card);border:1px solid var(--line);border-radius:12px}.stat{padding:15px}.stat b{display:block;font-size:24px}.stat span{color:var(--muted)}
+    .panel{padding:14px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;position:sticky;top:0;z-index:2;box-shadow:0 5px 20px #1018280d}
+    input,select{width:100%;border:1px solid #d0d5dd;border-radius:8px;padding:10px;background:#fff;color:var(--ink)}
+    #summary{margin:16px 2px;color:var(--muted)}.list{display:grid;gap:12px}.case{padding:18px}.case-head{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:13px}
+    .question{font-size:16px;margin:12px 0 15px;white-space:pre-wrap}.labels{display:grid;grid-template-columns:1fr 1fr;gap:10px}.label{padding:11px 12px;border-radius:8px}
+    .gold{background:var(--bluebg);color:var(--blue)}.pred{background:var(--redbg);color:var(--red)}.label small{display:block;color:var(--muted)}
+    details{margin-top:12px}summary{cursor:pointer;color:var(--blue)}pre{white-space:pre-wrap;word-break:break-word;background:#f9fafb;padding:12px;border-radius:8px;border:1px solid var(--line)}
+    .empty{text-align:center;padding:60px;color:var(--muted)}@media(max-width:760px){.stats{grid-template-columns:1fr 1fr}.panel{grid-template-columns:1fr}.labels{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header><h1>Task 1.2 — Case không map được</h1><p>Model Qwen2.5-7B legal-v2-h200 · Prompt đầy đủ 26 topic</p></header>
+  <main>
+    <section class="stats">
+      <div class="stat"><b id="total">—</b><span>Tổng case lỗi</span></div>
+      <div class="stat"><b id="goldCount">—</b><span>Ground-truth topic</span></div>
+      <div class="stat"><b id="predCount">—</b><span>Topic dự đoán</span></div>
+      <div class="stat"><b>40,26%</b><span>Tỷ lệ unmapped</span></div>
+    </section>
+    <section class="panel">
+      <input id="search" placeholder="Tìm trong nội dung…">
+      <select id="gold"><option value="">Tất cả ground truth</option></select>
+      <select id="pred"><option value="">Tất cả prediction</option></select>
+    </section>
+    <div id="summary"></div><section id="list" class="list"></section>
+  </main>
+  <script src="data.js"></script>
+  <script>
+    const rows=window.ERROR_CASES||[], q=document.querySelector('#search'), gold=document.querySelector('#gold'), pred=document.querySelector('#pred'), list=document.querySelector('#list');
+    const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const unique=k=>[...new Set(rows.map(x=>x[k]))].sort((a,b)=>a.localeCompare(b,'vi'));
+    function options(el,values){values.forEach(v=>el.insertAdjacentHTML('beforeend',`<option>${esc(v)}</option>`))}
+    options(gold,unique('ground_truth_topic')); options(pred,unique('predict'));
+    total.textContent=rows.length; goldCount.textContent=unique('ground_truth_topic').length; predCount.textContent=unique('predict').length;
+    function render(){const needle=q.value.trim().toLocaleLowerCase('vi');const out=rows.filter(x=>(!needle||x.content.toLocaleLowerCase('vi').includes(needle))&&(!gold.value||x.ground_truth_topic===gold.value)&&(!pred.value||x.predict===pred.value));
+      summary.textContent=`Hiển thị ${out.length} / ${rows.length} case`;
+      list.innerHTML=out.length?out.map(x=>`<article class="case"><div class="case-head"><span>Benchmark dòng ${x.source_line}</span><span>Ground truth ${esc(x.ground_truth_letter)}</span></div><div class="question">${esc(x.content)}</div><div class="labels"><div class="label gold"><small>Ground truth</small><b>${esc(x.ground_truth_topic)}</b></div><div class="label pred"><small>Model dự đoán</small><b>${esc(x.predict)}</b></div></div><details><summary>Xem 6 lựa chọn và raw output</summary><pre>${esc(x.answers)}</pre><pre>${esc(x.raw_output)}</pre></details></article>`).join(''):'<div class="empty">Không có case phù hợp.</div>'}
+    [q,gold,pred].forEach(x=>x.addEventListener('input',render)); render();
+  </script>
+</body>
+</html>
